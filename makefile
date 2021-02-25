@@ -26,6 +26,8 @@ run: $(OUT_DIR)/$(LAUNCHER_NAME).exe
 	./$(OUT_DIR)/$(LAUNCHER_NAME).exe
 
 
+#to add a file called example.c/example.h in folder src/example you would do the following:
+#use ur brain to find/replace ur file names where example and src/example would be, this is for COMPILATION not for pure headers
 
 example.o: $(SRC_DIR)/example/example.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/example/example.c -o $(OUT_DIR)/example.o
