@@ -32,3 +32,12 @@ run: $(OUT_DIR)/$(LAUNCHER_NAME).exe
 example.o: $(SRC_DIR)/example/example.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/example/example.c -o $(OUT_DIR)/example.o
 
+#Shared Memory
+#client.o: $(SRC_DIR)/shmem/client.c
+#	$(CXX) $(CFLAGS) -c $(SRC_DIR)/client/client.c -o $(OUT_DIR)/client.o
+
+#server.o: $(SRC_DIR)/shmem/server.c
+#	$(CXX) $(CFLAGS) -c $(SRC_DIR)/server/server.c -o $(OUT_DIR)/server.o
+	
+#execute.o: $(SRC_DIR)/shmem/execute.c
+#	$(CXX) $(CFLAGS) -c $(SRC_DIR)/execute/execute.c -o $(OUT_DIR)/execute.o
