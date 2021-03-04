@@ -34,6 +34,7 @@ int send(){
         exit(1);
     }
 
+    //Message to be shared
     memcpy(shm, "Shared Memory Benchmark", 24);
     shmdt(shm);
     
