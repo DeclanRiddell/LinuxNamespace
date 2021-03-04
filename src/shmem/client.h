@@ -4,5 +4,7 @@
 #include <stdio.h>
 
 int receive();
+void print_msg();
+void clean_ipc();
 
 #endif

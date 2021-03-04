@@ -14,10 +14,11 @@
 
 #define SHM_SIZE 4096
 
+int shmid;
+key_t key;
+char *shm;
+
 int receive(){
-    int shmid;
-    key_t key;
-    char *shm;
 
     key = 3821;
 
@@ -36,12 +37,17 @@ int receive(){
         exit(1);
     }
 
-    //Reads the data associated from the shared memory
-    //printf("The data read from memory is: %s\n", shm);
+    return 0;
+}
 
+void print_msg(){
+    
+    //Reads the data associated from the shared memory
+    printf("The data read from memory is: %s\n", shm);
+}
+
+void clean_ipc(){
     //Cleaning
     shmdt(shm);
     shmctl(shmid, IPC_RMID, NULL);
-
-    return 0;
 }

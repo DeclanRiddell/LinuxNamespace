@@ -23,7 +23,8 @@ int main(){
         elapsedTime = (t2.tv_sec - t1.tv_sec) * 1000; //sec to ms
     }
     printf("The number of times this has executed is %d\n", count);
-
+    print_msg();
+    clean_ipc();
     return 0;
 }
 
