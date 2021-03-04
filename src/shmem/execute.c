@@ -9,11 +9,12 @@ int main(){
     float elapsedTime = 0;
     int count = 0;
     int total = 0;
-    
+
+    gettimeofday(&t1, NULL);
+
     //1 second = 1000 milliseconds
     while(elapsedTime < 1000){
         count++;
-        gettimeofday(&t1, NULL);
 
         send();
         receive();
