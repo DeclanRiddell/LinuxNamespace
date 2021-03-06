@@ -1,14 +1,20 @@
 #include "server.h"
 #include "client.h"
 #include <sys/time.h>
+#include <string.h>
 #include <stdio.h>
 
-int main(){
+int main(int argc, char* argv[]){
 
     struct timeval t1, t2;
     float elapsedTime = 0;
     int count = 0;
     int total = 0;
+
+    if(argc != 2){
+        printf("This program requires an argument in quotes with a maximum size of 1024 bytes\n");
+        return 0;
+    }
 
     gettimeofday(&t1, NULL);
 
@@ -16,7 +22,7 @@ int main(){
     while(elapsedTime < 1000){
         count++;
 
-        send();
+        send(argv[1]);
         receive();
 
         gettimeofday(&t2, NULL);

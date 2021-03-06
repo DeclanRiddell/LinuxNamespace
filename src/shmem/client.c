@@ -12,7 +12,8 @@
  * When this code is executed, it reads data from the shared memory
  */
 
-#define SHM_SIZE 4096
+//If a message were to be 1024, there needs to be one more for NULL
+#define SHM_SIZE 1025
 
 int shmid;
 key_t key;
@@ -20,7 +21,7 @@ char *shm;
 
 int receive(){
 
-    key = 3821;
+    key = 30821;
 
     //Create or get block of memory associated with the key
     shmid = shmget(key, SHM_SIZE, IPC_CREAT | 0666);

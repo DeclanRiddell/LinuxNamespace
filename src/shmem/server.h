@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-int send();
+int send(char* message);
 
 #endif
