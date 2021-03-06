@@ -8,11 +8,16 @@
 
 /**
  * Shared Memory SystemV Server Side
+ * 
+ * When running the program, it takes a parameter (a message) and copies it
+ * into memory so that Client can read it. Running this program will give no
+ * output unless there is an error. In order to read the message, run client.c
  */
 
-//If a message were to be 1024, there needs to be one more for NULL character
-#define SHM_SIZE 1025
+#define SHM_SIZE 1024
 
+ 
+ // The message that was entered as a parameter is copied into memory
 int send(char* message){
     int shmid;
     key_t key;
@@ -20,7 +25,6 @@ int send(char* message){
 
     key = 30821;
 
-    
     if(sizeof(message) > SHM_SIZE){
         printf("The message entered is too large\n");
         printf("The size of message cannot be longer than 1024 characters\n");

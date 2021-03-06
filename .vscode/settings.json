@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "types.h": "c",
-        "shm.h": "c"
+        "shm.h": "c",
+        "server.h": "c"
     }
 }

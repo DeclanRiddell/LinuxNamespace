@@ -9,16 +9,18 @@
 /**
  * Shared Memory SystemV Client side
  * 
- * When this code is executed, it reads data from the shared memory
+ * The Client is able to read the data from Shared Memory
+ * that was used as an argument in server.c
  */
 
-//If a message were to be 1024, there needs to be one more for NULL
-#define SHM_SIZE 1025
+
+#define SHM_SIZE 1024
 
 int shmid;
 key_t key;
 char *shm;
 
+// Reads/Prints the message in memory that was placed by server.c
 int receive(){
 
     key = 30821;
@@ -41,13 +43,15 @@ int receive(){
     return 0;
 }
 
+//Reads the data associated from the shared memory
 void print_msg(){
     
-    //Reads the data associated from the shared memory
     printf("The data read from memory is: %s\n", shm);
 }
 
+// Removes IPC
 void clean_ipc(){
+
     //Cleaning
     shmdt(shm);
     shmctl(shmid, IPC_RMID, NULL);

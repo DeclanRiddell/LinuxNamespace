@@ -3,6 +3,18 @@
 #include <sys/time.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * This program is used to demonstrate Shared Memory using SystemV
+ * it counts how many times a message is sent and read from Shared
+ * Memory in 1 second
+ * 
+ * Compile using: gcc -o shared_mem server.c client.c execute.c 
+ * 
+ * An argument is needed to be able to print the message
+ * ./shared_mem "Message goes in here"
+ */
 
 int main(int argc, char* argv[]){
 
@@ -12,8 +24,8 @@ int main(int argc, char* argv[]){
     int total = 0;
 
     if(argc != 2){
-        printf("This program requires an argument in quotes with a maximum size of 1024 bytes\n");
-        return 0;
+        printf("This program requires a message in quotes with a max size of 1024 bytes\n");
+        exit(1);
     }
 
     gettimeofday(&t1, NULL);
@@ -28,7 +40,7 @@ int main(int argc, char* argv[]){
         gettimeofday(&t2, NULL);
         elapsedTime = (t2.tv_sec - t1.tv_sec) * 1000; //sec to ms
     }
-    printf("The number of times this has executed is %d\n", count);
+    printf("In one second, the number of times this has executed is %d\n", count);
     print_msg();
     clean_ipc();
     return 0;
