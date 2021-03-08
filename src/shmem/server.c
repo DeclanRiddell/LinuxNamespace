@@ -35,6 +35,8 @@ int send(char* message){
     
     //Detach
     shmdt(shm);
+    shmdt(shm);
+    shmdt(shm);
 
     return 0;
 }
