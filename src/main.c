@@ -3,8 +3,9 @@
 
 int main(int argc, char* argv[]){
 
-    shared_mem_execute(argc, argv);
-    semaphore_execute(argc, argv);
+    //shared_mem_execute(argc, argv);
+    for(int i = 0; i < 100; i ++)
+        semaphore_execute(argc, argv);
     return 0;
 
 }

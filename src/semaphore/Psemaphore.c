@@ -27,7 +27,7 @@ void* thread1_function(void* arg)
 
     //converting microseconds to milliseconds
     elapsedTime += (t2.tv_usec - t1.tv_usec)/1000.0;
-    printf("%f ms.\n", elapsedTime);
+    printf("Semaphore IPC Communicated in %f ms.\n", elapsedTime);
 }
 
 //This process just grabs and releases the semaphore
