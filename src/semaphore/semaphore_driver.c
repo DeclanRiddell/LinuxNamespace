@@ -1,4 +1,7 @@
-int main()
+#include "semaphore_driver.h"
+
+
+int semaphore_execute(int argc, char* argv[])
 {
     //create the semaphore
     sem_init(&semaphore, 0, 1);

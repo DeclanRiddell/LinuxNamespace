@@ -19,7 +19,7 @@
  * ./shared_mem "Message goes in here"
  */
 
-int execute(int argc, char* argv[]);
+int shared_mem_execute(int argc, char* argv[]);
 
 
 

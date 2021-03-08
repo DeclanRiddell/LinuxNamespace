@@ -8,7 +8,7 @@ int receive(){
     //Create or get block of memory associated with the key
     shmid = shmget(key, SHM_SIZE, IPC_CREAT | 0666);
     if(shmid < 0){
-        perror("shmget error in client\n");
+        perror("SharedMemory: shmget error in client\n");
         exit(1);
     }
 
@@ -16,7 +16,7 @@ int receive(){
     shm = shmat(shmid, NULL, 0);
 
     if(shm == (char *) -1){
-        perror("shmat error in client\n");
+        perror("SharedMemory: shmat error in client\n");
         exit(1);
     }
 

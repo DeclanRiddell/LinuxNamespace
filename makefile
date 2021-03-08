@@ -14,7 +14,7 @@ INC=-I $(SRC_DIR)/
 
 
 SHARED_MEM_OBJS = client.o server.o shared_mem_driver.o
-SEMAPHORE_OBJS = Psemaphore.o
+SEMAPHORE_OBJS = Psemaphore.o semaphore_driver.o
 OBJS = $(SHARED_MEM_OBJS) $(SEMAPHORE_OBJS)				#list of objects
 OUT_OBJECTS = $(patsubst %.o, $(OUT_DIR)/%.o, $(OBJS))
 
@@ -46,7 +46,8 @@ server.o: $(SRC_DIR)/shmem/server.c
 shared_mem_driver.o: $(SRC_DIR)/shmem/shared_mem_driver.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/shmem/shared_mem_driver.c -o $(OUT_DIR)/shared_mem_driver.o
 
-
+semaphore_driver.o: $(SRC_DIR)/semaphore/semaphore_driver.c
+	$(CXX) $(CFLAGS) -c $(SRC_DIR)/semaphore/semaphore_driver.c -o $(OUT_DIR)/semaphore_driver.o
 
 Psemaphore.o: $(SRC_DIR)/semaphore/Psemaphore.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/semaphore/Psemaphore.c -o $(OUT_DIR)/Psemaphore.o

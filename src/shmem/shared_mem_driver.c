@@ -1,6 +1,6 @@
 #include "shared_mem_driver.h"
 
-int execute(int argc, char* argv[]){
+int shared_mem_execute(int argc, char* argv[]){
 
     struct timeval t1, t2;
     float elapsedTime = 0;

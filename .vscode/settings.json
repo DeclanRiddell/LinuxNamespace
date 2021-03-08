@@ -2,6 +2,8 @@
     "files.associations": {
         "types.h": "c",
         "shm.h": "c",
-        "server.h": "c"
+        "server.h": "c",
+        "semaphore_driver.h": "c",
+        "shared_mem_driver.h": "c"
     }
 }
