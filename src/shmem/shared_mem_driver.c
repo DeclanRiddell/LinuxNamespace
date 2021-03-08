@@ -4,6 +4,7 @@ int shared_mem_execute(int argc, char* argv[]){
 
     struct timeval t1, t2;
     float elapsedTime = 0;
+    float sample = 0;
     int count = 0;
     int total = 0;
 
@@ -23,8 +24,9 @@ int shared_mem_execute(int argc, char* argv[]){
 
         gettimeofday(&t2, NULL);
         elapsedTime = (t2.tv_sec - t1.tv_sec) * 1000; //sec to ms
+        sample = elapsedTime;
     }
-    printf("In one second, the number of times this has executed is %d\n", count);
+    printf("In one second, POSIX SharedMemory IPC has executed is %d times.\n", count);
     print_msg();
     clean_ipc();
     return 0;
