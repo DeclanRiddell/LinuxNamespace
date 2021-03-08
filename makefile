@@ -25,8 +25,6 @@ all: main
 main: $(ENTRY_POINT) $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o $(OUT_DIR)/$(LAUNCHER_NAME) $(OUT_OBJECTS) $(ENTRY_POINT)
 
-run: $(OUT_DIR)/$(LAUNCHER_NAME).exe
-	./$(OUT_DIR)/$(LAUNCHER_NAME).exe
 
 
 #to add a file called example.c/example.h in folder src/example you would do the following:
