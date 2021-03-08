@@ -55,4 +55,6 @@ void clean_ipc(){
     //Cleaning
     shmdt(shm);
     shmctl(shmid, IPC_RMID, NULL);
+    shmdt(shm);
+    shmdt(shm);
 }
