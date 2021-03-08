@@ -4,6 +4,8 @@
         "shm.h": "c",
         "server.h": "c",
         "semaphore_driver.h": "c",
-        "shared_mem_driver.h": "c"
+        "shared_mem_driver.h": "c",
+        "message_queue_driver.h": "c",
+        "debug_utils.h": "c"
     }
 }
