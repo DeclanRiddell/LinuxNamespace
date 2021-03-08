@@ -23,23 +23,16 @@ int msgq_get(key_t key)
 */
 key_t msgq_send(char *message)
 {
-    printf("a\n");
     struct msgbuf msg;
-    printf("a\n");
 
     key_t key = ftok(".", 0);
-    printf("a\n");
 
     int msgqid = msgget(key, 0666 | IPC_CREAT);
-    printf("a\n");
 
     msg.msgtype = 1;
-    printf("a\n");
     msg.text = message;
 
-    printf("a\n");
-    msgsnd(msgqid, &msg, sizeof(message), 0);
-    printf("a\n");
+    msgsnd(msgqid, &msg, sizeof(message), IPC_NOWAIT);
     
     return key;
 }
