@@ -1,22 +1,6 @@
-#include "server.h"
-#include "client.h"
-#include <sys/time.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "shared_mem_driver.h"
 
-/**
- * This program is used to demonstrate Shared Memory using SystemV
- * it counts how many times a message is sent and read from Shared
- * Memory in 1 second
- * 
- * Compile using: gcc -o shared_mem server.c client.c execute.c 
- * 
- * An argument is needed to be able to print the message
- * ./shared_mem "Message goes in here"
- */
-
-int main(int argc, char* argv[]){
+int execute(int argc, char* argv[]){
 
     struct timeval t1, t2;
     float elapsedTime = 0;

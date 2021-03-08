@@ -1,6 +1,6 @@
 
 CXX = gcc
-CFLAGS = -Wall -w -g
+CFLAGS = -Wall -w -g -pthread
 
 OUT_DIR = bin
 LAUNCHER_NAME = LinuxIPC
@@ -13,9 +13,9 @@ INC=-I $(SRC_DIR)/
 
 
 
-SHARED_MEM_OBJS = client.o server.o execute.o
+SHARED_MEM_OBJS = client.o server.o shared_mem_driver.o
 SEMAPHORE_OBJS = Psemaphore.o
-OBJS = $(SHARED_MEM_OBJS) $(SHARED_MEM_OBJS)				#list of objects
+OBJS = $(SHARED_MEM_OBJS) $(SEMAPHORE_OBJS)				#list of objects
 OUT_OBJECTS = $(patsubst %.o, $(OUT_DIR)/%.o, $(OBJS))
 
 
@@ -23,7 +23,7 @@ OUT_OBJECTS = $(patsubst %.o, $(OUT_DIR)/%.o, $(OBJS))
 all: main
 
 main: $(ENTRY_POINT) $(OBJS)
-	$(CXX) $(CXXFLAGS) $(INC) -o $(OUT_DIR)/$(LAUNCHER_NAME) $(OUT_OBJECTS) $(ENTRY_POINT)
+	$(CXX) $(CFLAGS) $(INC) -o $(OUT_DIR)/$(LAUNCHER_NAME) $(OUT_OBJECTS) $(ENTRY_POINT)
 
 run: $(OUT_DIR)/$(LAUNCHER_NAME).exe
 	./$(OUT_DIR)/$(LAUNCHER_NAME).exe
@@ -42,10 +42,17 @@ client.o: $(SRC_DIR)/shmem/client.c
 
 server.o: $(SRC_DIR)/shmem/server.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/shmem/server.c -o $(OUT_DIR)/server.o
-	
-execute.o: $(SRC_DIR)/shmem/execute.c
-	$(CXX) $(CFLAGS) -c $(SRC_DIR)/shmem/execute.c -o $(OUT_DIR)/execute.o
+
+shared_mem_driver.o: $(SRC_DIR)/shmem/shared_mem_driver.c
+	$(CXX) $(CFLAGS) -c $(SRC_DIR)/shmem/shared_mem_driver.c -o $(OUT_DIR)/shared_mem_driver.o
+
 
 
 Psemaphore.o: $(SRC_DIR)/semaphore/Psemaphore.c
 	$(CXX) $(CFLAGS) -c $(SRC_DIR)/semaphore/Psemaphore.c -o $(OUT_DIR)/Psemaphore.o
+
+
+
+
+clean:
+	rm bin/*

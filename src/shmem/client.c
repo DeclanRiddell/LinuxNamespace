@@ -1,24 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/ipc.h>
-#include <sys/shm.h>
 #include "client.h"
-
-/**
- * Shared Memory SystemV Client side
- * 
- * The Client is able to read the data from Shared Memory
- * that was used as an argument in server.c
- */
-
-
-#define SHM_SIZE 1024
-
-int shmid;
-key_t key;
-char *shm;
 
 // Reads/Prints the message in memory that was placed by server.c
 int receive(){
@@ -45,7 +25,6 @@ int receive(){
 
 //Reads the data associated from the shared memory
 void print_msg(){
-    
     printf("The data read from memory is: %s\n", shm);
 }
 
