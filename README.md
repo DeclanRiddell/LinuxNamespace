@@ -1,2 +1,2 @@
 # LinuxNamespace
-Repo for a project for SWE at Rowan
+Test IPC's in linux SysV and POSIX on native and namespace environments
