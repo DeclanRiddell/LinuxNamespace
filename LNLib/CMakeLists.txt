@@ -1,4 +1,5 @@
-set(CMAKE_CC_COMPILER gcc)
+set(CMAKE_C_COMPILER /usr/bin/gcc)
+set(CMAKE_C_FLAGS -pthread)
 
 add_library(
     LNLib SHARED
@@ -24,6 +25,6 @@ add_library(
     src/debug_utils.h
 
 )
-
+target_compile_options(LNLib PRIVATE -pthread)
 target_include_directories(LNLib PUBLIC "${ABS_ROOT}/LNLib/src")
 message(${ABS_ROOT}/LNLib/src)
