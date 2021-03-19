@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/LNDriver.dir/src/main.c.o  -o LNDriver  -Wl,-rpath,/home/luke/LinuxNamespace/build/LNLib ../LNLib/libLNLib.so 
