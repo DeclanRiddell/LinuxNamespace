@@ -3,5 +3,7 @@ project(LinuxNamespace VERSION 1.0.1)
 
 set(ABS_ROOT "${CMAKE_SOURCE_DIR}/")
 
+set(LIB_FLAGS "-pthread -lrt")
+
 add_subdirectory(LNLib)
 add_subdirectory(LNDriver)
