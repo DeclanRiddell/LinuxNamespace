@@ -26,6 +26,6 @@ add_library(
 
 )
 target_compile_options(LNLib PRIVATE -pthread)
-target_link_libraries(LBLib PRIVATE rt)
+target_link_libraries(LNLib PRIVATE rt)
 target_include_directories(LNLib PUBLIC "${ABS_ROOT}/LNLib/src")
 message(${ABS_ROOT}/LNLib/src)
