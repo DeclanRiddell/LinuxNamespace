@@ -25,7 +25,7 @@ add_library(
     src/debug_utils.h
 
 )
-target_compile_options(LNLib PRIVATE ${LIB_FLAGS})
-target_link_libraries(LBLib PRIVATE -lrt)
+target_compile_options(LNLib PRIVATE -pthread)
+target_link_libraries(LBLib PRIVATE rt)
 target_include_directories(LNLib PUBLIC "${ABS_ROOT}/LNLib/src")
 message(${ABS_ROOT}/LNLib/src)
