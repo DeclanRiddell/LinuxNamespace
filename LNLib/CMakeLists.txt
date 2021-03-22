@@ -4,15 +4,20 @@ set(CMAKE_C_FLAGS -pthread)
 add_library(
     LNLib SHARED
     
-    src/messagequeue/message_queue_driver.c
-    src/messagequeue/message_queue_driver.h
     src/messagequeue/message_queue.c
     src/messagequeue/message_queue.h
+    src/messagequeue/message_queue_driver.c
+    src/messagequeue/message_queue_driver.h
 
-    src/semaphore/semaphore_driver.c
-    src/semaphore/semaphore_driver.h
-    src/semaphore/Psemaphore.c
-    src/semaphore/Psemaphore.h
+    #src/semaphore/Psemaphore.c
+    #src/semaphore/Psemaphore.h
+    #src/semaphore/semaphore_driver.h
+    #src/semaphore/semaphore_driver.c
+
+    src/SYSV_semaphore/SYSVsemaphore.c
+    src/SYSV_semaphore/SYSVsemaphore.h
+    src/SYSV_semaphore/SYSVsemaphore_driver.h
+    src/SYSV_semaphore/SYSVsemaphore_driver.c
 
 
     src/shmem/client.h

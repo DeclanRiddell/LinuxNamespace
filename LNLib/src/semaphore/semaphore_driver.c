@@ -10,10 +10,10 @@ int psemaphore_execute(int argc, char* argv[])
     //spawn two processes with pthreads that will use the semaphore, both threads will run the thread function
     
     //thread1
-    pthread_create(&thread1, NULL, thread, NULL);
+    pthread_create(&thread1, NULL, posix_thread, NULL);
    
     //thread2
-    pthread_create(&thread2,NULL, thread, NULL);
+    pthread_create(&thread2,NULL, posix_thread, NULL);
   
 
 

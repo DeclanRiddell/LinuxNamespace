@@ -1,7 +1,7 @@
 #include "SYSVsemaphore.h"
 
 
-void* thread(void* arg) //This is the function that both pthreads will execute
+void* sysv_thread(void* arg) //This is the function that both pthreads will execute
     {
         if ( (semop(semaphore, &lock, 1)) == -1)    //Grab semaphore if it is available or wait until it is available
         {

@@ -3,13 +3,13 @@
 
 #include "SYSVsemaphore.h"
 #include <sys/time.h>
+#include <sys/errno.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int sysvsemaphore_execute(int argc, char* argv[]);
 
-struct sembuf lock;
-struct sembuf unlock;
+
 
 #endif

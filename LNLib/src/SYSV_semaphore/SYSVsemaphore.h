@@ -11,9 +11,13 @@
 #include <math.h>
 #include <stdlib.h>
 
+
+struct sembuf lock;
+struct sembuf unlock;
+
 int semaphore;
 
-void* thread(void* arg);
+void* sysv_thread(void* arg);
 
 
 #endif
