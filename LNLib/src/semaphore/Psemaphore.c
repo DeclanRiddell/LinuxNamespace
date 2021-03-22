@@ -5,35 +5,31 @@
 void* thread(void* arg)
 { 
     struct timeval t1, t2;
-    float loopTime = 0;
+    double loopTime = 0;
 
     //loop for 3000ms = 3s
-    while(loopTime < 3000)
+    while(count < SIZE_TIMES)
     {
-        float elapsedTime = 0;
+        double elapsedTime = 0;
         //start timer
         gettimeofday(&t1, NULL);
         sem_t semaphore;
         sem_init(&semaphore, 0, 1);
-        printf("Running %d times\n", count);
-        fflush(stdout);
+        //printf("Running %d times\n", count);
         //wait grabs hold of semaphore
         sem_wait(&semaphore);
-        printf("\nGrabbed Semaphore\n");
-        fflush(stdout);
+        //printf("\nGrabbed Semaphore\n");
 
 
 
         //release semaphore
-        printf("\nReleasing Semaphore\n");
-        fflush(stdout);
+        //printf("\nReleasing Semaphore\n");
         sem_post(&semaphore);
         
 
-        printf("\Destroying Semaphore\n");
-        fflush(stdout);
+        //printf("\Destroying Semaphore\n");
         sem_destroy(&semaphore);
-        printf("Destroyed\n");
+        //printf("Destroyed\n");
         //stop timer
         gettimeofday(&t2, NULL);
         count++;
@@ -44,7 +40,7 @@ void* thread(void* arg)
         loopTime+= elapsedTime;
 
         times[(count - 1)%SIZE_TIMES] = elapsedTime; //Add the elapsed time to the array
-
+        printf("%d : %f\n", count, elapsedTime);
 
     }
     
