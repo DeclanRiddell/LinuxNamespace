@@ -1,6 +1,7 @@
 all: main
 
 main:
+	./clean.script
 	./run.script 
 	
 clean:

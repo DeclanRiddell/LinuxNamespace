@@ -9,13 +9,16 @@
 #include <math.h>
 
 
+
 //This program willl use the POSIX implementation of semaphores
 
-sem_t semaphore;
+
 
 void* thread(void* arg);
 
-float times [3000]; // This array will hold the elapsed time of each wait()/post() executed by the threads while looping
+#define SIZE_TIMES 65536
+
+float times [SIZE_TIMES]; // This array will hold the elapsed time of each wait()/post() executed by the threads while looping
 
 int count; //Will count how many wait()/post() are executed by the threads while looping
 

@@ -6,10 +6,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int psemaphore_execute(int argc, char* argv[]);
 
-float min, max, sum, mean, variance, standard_deviation; 
+double min, max, sum, mean, variance, standard_deviation; 
 
 
 #endif

@@ -6,7 +6,7 @@
 int main(int argc, char* argv[]){
 
     printf("Starting main driver\n");
-    DBG_WRAP_DRIVER(semaphore_execute(argc, argv));
+    DBG_WRAP_DRIVER(psemaphore_execute(argc, argv));
     DBG_WRAP_DRIVER(message_queue_execute(argc, argv));
     DBG_WRAP_DRIVER(shared_mem_execute(argc, argv));
     return 0;

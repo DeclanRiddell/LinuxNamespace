@@ -4,7 +4,6 @@
 int psemaphore_execute(int argc, char* argv[])
 {
     //create the semaphore
-    sem_init(&semaphore, 0, 1);
     pthread_t thread1, thread2;
     
 
@@ -22,7 +21,7 @@ int psemaphore_execute(int argc, char* argv[])
     //ensures the processes have time to finish running
 
 
-    sem_destroy(&semaphore);
+    //sem_destroy(&semaphore);
    
     
     max = times[0];
@@ -56,7 +55,7 @@ int psemaphore_execute(int argc, char* argv[])
     }
     variance = variance / count;
 
-    standard_deviation = sqrtf(variance);
+    standard_deviation = sqrt(variance);
 
     printf("Posix Semaphore Stats:\n");
     printf("Number of Iterations: %d\n", count);
