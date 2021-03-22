@@ -15,32 +15,43 @@ void* thread(void* arg)
         gettimeofday(&t1, NULL);
         sem_t semaphore;
         sem_init(&semaphore, 0, 1);
-        //printf("Running %d times\n", count);
+        #ifdef DEBUG
+        printf("Running %d times\n", count);
+        #endif
         //wait grabs hold of semaphore
         sem_wait(&semaphore);
-        //printf("\nGrabbed Semaphore\n");
+        #ifdef DEBUG
+        printf("\nGrabbed Semaphore\n");
+        #endif
 
 
 
         //release semaphore
-        //printf("\nReleasing Semaphore\n");
+        #ifdef DEBUG
+        printf("\nReleasing Semaphore\n");
+        #endif
         sem_post(&semaphore);
         
-
-        //printf("\Destroying Semaphore\n");
+        #ifdef DEBUG
+        printf("\Destroying Semaphore\n");
+        #endif
         sem_destroy(&semaphore);
-        //printf("Destroyed\n");
+        #ifdef DEBUG
+        printf("Destroyed\n");
+        #endif
         //stop timer
         gettimeofday(&t2, NULL);
         count++;
 
         elapsedTime += (t2.tv_sec - t1.tv_sec) * 1000.0; //converts seconds to milliseconds
         elapsedTime += (t2.tv_usec - t1.tv_usec) / 1000.0; //converts microseconds to milliseconds
-
+        if(elapsedTime <= MIN_TIME_EXE) elapsedTime = MIN_TIME_EXE;
         loopTime+= elapsedTime;
 
         times[(count - 1)%SIZE_TIMES] = elapsedTime; //Add the elapsed time to the array
+        #ifdef DEBUG
         printf("%d : %f\n", count, elapsedTime);
+        #endif
 
     }
     

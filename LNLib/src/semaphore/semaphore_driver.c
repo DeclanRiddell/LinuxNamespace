@@ -60,7 +60,7 @@ int psemaphore_execute(int argc, char* argv[])
     printf("Posix Semaphore Stats:\n");
     printf("Number of Iterations: %d\n", count);
     printf("Average wait()/post() Time: %f\n", mean);
-    printf("Minimum wait()/post() Time: %f\n", min);
+    printf("Minimum wait()/post() Time: %f\n", min < MIN_TIME_EXE ? MIN_TIME_EXE : min);
     printf("Maximum wait()/post() Time: %f\n", max);
     printf("Variance of wait()/post() Times: %f\n", variance);
     printf("Standard Deviation of wait()/post() Times: %f\n", standard_deviation);
