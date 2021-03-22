@@ -1,0 +1,47 @@
+#include "Psemaphore.h"
+
+
+//This process grabs the semaphore, then releases it and prints the time it took to do so
+void* thread(void* arg)
+{ 
+    struct timeval t1, t2;
+    float loopTime = 0;
+
+    //loop for 3000ms = 3s
+    while(loopTime < 3000)
+    {
+        float elapsedTime = 0;
+        //start timer
+        gettimeofday(&t1, NULL);
+
+        //wait grabs hold of semaphore
+        sem_wait(&semaphore);
+        printf("\nGrabbed Semaphore\n");
+
+
+
+        //release semaphore
+        printf("\nReleasing Semaphore\n");
+        sem_post(&semaphore);
+        
+
+        //stop timer
+        gettimeofday(&t2, NULL);
+        count++;
+
+        elapsedTime += (t2.tv_sec - t1.tv_sec) * 1000.0; //converts seconds to milliseconds
+        elapsedTime += (t2.tv_usec - t1.tv_usec) / 1000.0; //converts microseconds to milliseconds
+
+        loopTime+= elapsedTime;
+
+        times[count - 1] = elapsedTime; //Add the elapsed time to the array
+
+
+    }
+    
+    
+}
+
+
+
+
