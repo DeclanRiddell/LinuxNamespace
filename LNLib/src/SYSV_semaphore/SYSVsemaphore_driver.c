@@ -5,13 +5,13 @@
 int sysvsemaphore_execute(int argc, char* argv[])
 {
     //This struct will be used as a paramter in semop for grabbing the semaphore
-    lock.sem_num = 13;
+    lock.sem_num = 0;
     lock.sem_op = -1;
     lock.sem_flg = 0;
 
     //This struct will be used as a paramter in semop for releasing the semaphore
 
-    unlock.sem_num = 13;
+    unlock.sem_num = 0;
     unlock.sem_op =  1;
     unlock.sem_flg = 0;
     
