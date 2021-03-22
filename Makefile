@@ -1,7 +1,9 @@
 all: main
 
 main:
+	rm -rf build
+	./kill_ipcs.sh
 	./run.script 
 	
 clean:
-	./clean.script
+	rm -rf build
