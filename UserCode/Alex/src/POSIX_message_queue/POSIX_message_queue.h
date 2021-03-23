@@ -17,10 +17,10 @@
 mqd_t mqdes;
 
 //Receives and removes message from message queue
-void * posix_message_queue_receive();
+void * posix_message_queue_receive(void *);
 
 //Adds message to message queue
-void * posix_message_queue_send();
+void * posix_message_queue_send(void *);
 
 
 #endif

@@ -29,10 +29,15 @@ int POSIX_message_queue_execute(int argc, char* argv[])
     {
         printf("Loop iterating\n");
         pthread_t thread1, thread2;
+
+        inc_msg = argv[1];
+
+        printf("start timer for send\n");
         start = clock();
         pthread_create(&thread1, NULL, posix_message_queue_send, NULL);
         pthread_join(thread1,NULL);
         end = clock();
+        printf("end send\n");
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
         printf("Posix Message Send executed in %f seconds\n", execution_time);
         snd_times[index] = ((double)(end - start))/CLOCKS_PER_SEC;

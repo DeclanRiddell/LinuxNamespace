@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <debug_utils.h>
 
-void * posix_message_queue_send()
+void * posix_message_queue_send(void * arg)
 {   
     char text[1024];
     char* message = inc_msg;
@@ -22,10 +22,12 @@ void * posix_message_queue_send()
         exit(1);
     }
     mq_close(mqdes);
+
+    printf("end send");
     
 }
 
-void * posix_message_queue_receive() 
+void * posix_message_queue_receive(void * arg) 
 {
     int prio;
 
