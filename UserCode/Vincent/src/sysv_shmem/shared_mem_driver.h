@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <pthread.h>
 
 /**
  * This program is used to demonstrate Shared Memory using SystemV
@@ -18,7 +19,11 @@
  */
 
 int shared_mem_execute(int argc, char* argv[]);
-
-
+int append_results(char* message);
+void results();
+   
+struct timeval start, end;
+float elapsedTime = 0;
+pthread_t thread1, thread2;
 
 #endif

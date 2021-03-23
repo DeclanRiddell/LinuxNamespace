@@ -1,4 +1,3 @@
-
 #ifndef MSG_Q_H
 #define MSG_Q_H
 #include <sys/types.h>
@@ -6,20 +5,22 @@
 #include <sys/msg.h>
 #include <string.h>
 #include <stdio.h>
+#include <errno.h>
 #include <stdlib.h>
 #include <string.h>
+#include "SYSV_message_queue_driver.h"
 
 //Message buffer for message being sent and received
-struct msgbuf{
+struct sysv_msgbuf{
         long msgtype;
-        char *text;
-    };
+        char text[1024];
+    }msg;
 
-//Takes message key as parameter and gets the message queue associated with that message
-int msgq_get(key_t);
+//Receives and removes message from message queue
+void * sysv_msgq_rcv();
 
 //Adds message to message queue
-key_t msgq_send(char[]);
+void * sysv_msgq_send();
 
 
 #endif

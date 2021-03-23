@@ -1,11 +1,14 @@
 #ifndef SERVER_H
 #define SERVER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+#include <errno.h>
+#include <sys/time.h>
 
 /**
  * Shared Memory SystemV Server Side
@@ -17,6 +20,19 @@
 
 #define SHM_SIZE 1024
 
-int send(char* message);
+int serverCount;
+int shmid;
+key_t key;
+char *shm;
+struct timeval startServer, endServer;
+float writeDelta;
+float longestServer;
+float shortestServer;
+float averageServer;
+float totalServerTime;
+
+
+void * send(void * message);
+int set_varServer();
 
 #endif

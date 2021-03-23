@@ -4,5 +4,5 @@ project(LinuxNamespace VERSION 1.0.1)
 set(ABS_ROOT "${CMAKE_SOURCE_DIR}/")
 
 
-add_subdirectory(LNLib)
+add_subdirectory(UserCode)
 add_subdirectory(LNDriver)

@@ -1,3 +1,7 @@
 set(CMAKE_C_COMPILER /usr/bin/gcc)
+set(CMAKE_C_FLAGS -pthread)
 add_executable(LNDriver src/main.c)
-target_link_libraries(LNDriver PRIVATE LNLib)
+target_link_libraries(LNDriver PRIVATE AlexLib)
+target_link_libraries(LNDriver PRIVATE VincentLib)
+#target_link_libraries(LNDriver PRIVATE EricLib)
+#target_link_libraries(LNDriver PRIVATE DeclanLib)

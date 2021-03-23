@@ -1,0 +1,5400 @@
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 91
+Average Access Time : 0.032198 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.631000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 91
+Average Access Time : 0.021659 ms
+Minimum Access Time : 0.011000 ms
+Longest Access Time : 0.120000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: beans
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.019158 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.052000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.019137 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.046000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 90
+Average Access Time : 0.019167 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.047000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 90
+Average Access Time : 0.019433 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.048000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 77
+Average Access Time : 0.021948 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 0.059000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 77
+Average Access Time : 0.081571 ms
+Minimum Access Time : 0.012000 ms
+Longest Access Time : 4.476000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: aslfghklasjgklasjfkljaslfjklglsdklsdgjlkjsdkglsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 84
+Average Access Time : 0.028024 ms
+Minimum Access Time : 0.016000 ms
+Longest Access Time : 0.410000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 84
+Average Access Time : 0.022857 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.081000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+
+The message is: sup
+
+Shared Memory System V findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.020263 ms
+Minimum Access Time : 0.017000 ms
+Longest Access Time : 0.038000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.022642 ms
+Minimum Access Time : 0.018000 ms
+Longest Access Time : 0.117000 ms
+------------------------------------
+

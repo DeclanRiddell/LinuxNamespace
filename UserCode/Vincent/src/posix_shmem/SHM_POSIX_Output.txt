@@ -1,0 +1,144 @@
+The message read in POSIX Shared Memory is hello
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.009316 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.027000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.005905 ms
+Minimum Access Time : 0.004000 ms
+Longest Access Time : 0.029000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is Have you ever had a dream that, that, um, that you had, uh, that you had to, you could, you do, you wit, you wa, you could do so, you do you could, you want, you wanted him to do you so much you could do anything?
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 85
+Average Access Time : 0.018376 ms
+Minimum Access Time : 0.008000 ms
+Longest Access Time : 0.660000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 85
+Average Access Time : 0.039753 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 2.641000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: Have you ever had a dream that, that, um, that you had, uh, that you had to, you could, you do, you wit, you wa, you could do so, you do you could, you want, you wanted him to do you so much you could do anything?
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 116
+Average Access Time : 0.009138 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.100000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 116
+Average Access Time : 0.004845 ms
+Minimum Access Time : 0.003000 ms
+Longest Access Time : 0.025000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: alkshglasjkglashglasfjklasklhglkasjfklaskljfklasghklaslkjfklas
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 73
+Average Access Time : 0.009247 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.036000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 73
+Average Access Time : 0.005589 ms
+Minimum Access Time : 0.004000 ms
+Longest Access Time : 0.022000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: hello
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 114
+Average Access Time : 0.007105 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.013000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 114
+Average Access Time : 0.005000 ms
+Minimum Access Time : 0.003000 ms
+Longest Access Time : 0.033000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: hello
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 96
+Average Access Time : 0.008302 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.039000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 96
+Average Access Time : 0.005104 ms
+Minimum Access Time : 0.003000 ms
+Longest Access Time : 0.017000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: hello
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 79
+Average Access Time : 0.014671 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.408000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 79
+Average Access Time : 0.006101 ms
+Minimum Access Time : 0.004000 ms
+Longest Access Time : 0.022000 ms
+------------------------------------
+
+The message read in POSIX Shared Memory is: hello
+
+Shared Memory POSIX findings
+The size of the shared memory is 1024
+-----------------------------------
+Operation: Shared Memory Read
+Number of iterations in 1 second: 95
+Average Access Time : 0.008474 ms
+Minimum Access Time : 0.005000 ms
+Longest Access Time : 0.030000 ms
+
+Operation: Shared Memory Write
+Number of iterations in 1 second: 95
+Average Access Time : 0.005347 ms
+Minimum Access Time : 0.004000 ms
+Longest Access Time : 0.025000 ms
+------------------------------------
+
