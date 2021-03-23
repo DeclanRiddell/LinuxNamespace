@@ -3,15 +3,15 @@
 #include <sys/msg.h>
 #include <stdio.h>
 #include <pthread.h>
-#include "../debug_utils.h"
+#include <debug_utils.h>
 #include "SYSV_message_queue_driver.h"
 
 
 //Creates threads for the message send and message receive operations and then
-int sysv_message_queue_execute(int argc, char* argv[])
+int SYS_V_message_queue_execute(int argc, char* argv[])
 {
     inc_msg = argv[1];
-    if(argc != 2){
+    if(argc < 2){
         printf("This program requires a message in quotes with a max size of 1024 bytes\n");
         exit(1);
     }

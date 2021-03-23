@@ -41,6 +41,6 @@ void * sysv_msgq_send()
     printf("cur message: '%s'\nmsg is: '%s'\n", message, msg.text);
 
     int id = msgsnd(msgqid, &msg, sizeof(msg.text), IPC_NOWAIT);
-    //if(id != 0)
-        //printf("Error: %d, %d=%s\n", id, errno, strerror(errno));
+    if(id != 0)
+        printf("Error: %d, %d=%s\n", id, errno, strerror(errno));
 }

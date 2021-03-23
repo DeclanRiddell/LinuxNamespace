@@ -14,6 +14,6 @@
 
 //void sysv_message_queue_execute(int argc, char* argv[]);
 char* inc_msg;
-int sysv_message_queue_execute(int argc, char* argv[]);
+int SYS_V_message_queue_execute(int argc, char* argv[]);
 
 #endif

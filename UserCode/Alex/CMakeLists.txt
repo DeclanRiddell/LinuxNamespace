@@ -11,6 +11,13 @@ add_library(
     src/POSIX_message_queue/POSIX_msgq_metrics.c
     src/POSIX_message_queue/POSIX_msgq_metrics.h
 
+    src/sysv_messagequeue/SYSV_message_queue_driver.c
+    src/sysv_messagequeue/SYSV_message_queue_driver.h
+    src/sysv_messagequeue/SYSV_message_queue.c
+    src/sysv_messagequeue/SYSV_message_queue.h
+    src/sysv_messagequeue/SYSV_msgq_metrics.c
+    src/sysv_messagequeue/SYSV_msgq_metrics.h
+
 
     ../debug_utils.h
 

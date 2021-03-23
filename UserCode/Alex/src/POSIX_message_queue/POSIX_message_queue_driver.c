@@ -12,7 +12,7 @@
 int POSIX_message_queue_execute(int argc, char* argv[])
 {
     printf("Starting POSIX msg queue\n");
-    if(argc != 2){
+    if(argc < 2){
         printf("This program requires a message in quotes with a max size of 1024 bytes\n");
         exit(1);
     }

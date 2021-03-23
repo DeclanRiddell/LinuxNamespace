@@ -10,7 +10,7 @@
 #include "posix_server.h"
 
 
-int shmem_driver_posix(int argc, char* argv[]);
+int POSIX_shared_memory_execute(int argc, char* argv[]);
 int posix_append_results();
 void posix_results();
 

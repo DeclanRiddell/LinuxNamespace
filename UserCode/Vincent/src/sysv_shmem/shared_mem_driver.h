@@ -18,7 +18,7 @@
  * ./shared_mem "Message goes in here"
  */
 
-int shared_mem_execute(int argc, char* argv[]);
+int SYS_V_shared_memory_execute(int argc, char* argv[]);
 int append_results(char* message);
 void results();
    

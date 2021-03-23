@@ -9,6 +9,11 @@ add_library(
     src/semaphore/Psemaphore.c
     src/semaphore/Psemaphore.h
 
+    src/SYSV_semaphore/SYSVsemaphore.c
+    src/SYSV_semaphore/SYSVsemaphore.h
+    src/SYSV_semaphore/SYSVsemaphore_driver.h
+    src/SYSV_semaphore/SYSVsemaphore_driver.c
+
 
     ../debug_utils.h
 

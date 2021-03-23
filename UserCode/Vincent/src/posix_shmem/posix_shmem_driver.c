@@ -4,9 +4,9 @@
  * This program is used to demonstrate Shared Memory using POSIX API
  */
 
-int shmem_driver_posix(int argc, char* argv[]){
+int POSIX_shared_memory_execute(int argc, char* argv[]){
 
-    if(argc != 2){
+    if(argc < 2){
         printf("This program requires a message in quotes with a max size of 1024 bytes\n");
         exit(1);
     }

@@ -1,7 +1,7 @@
 #include "semaphore_driver.h"
 
 
-int psemaphore_execute(int argc, char* argv[])
+int POSIX_semaphore_execute(int argc, char* argv[])
 {
     //create the semaphore
     pthread_t thread1, thread2;
