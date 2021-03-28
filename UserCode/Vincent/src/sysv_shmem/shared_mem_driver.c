@@ -25,16 +25,14 @@ int SYS_V_shared_memory_execute(int argc, char* argv[]){
         //Create a pthread to read the message
         pthread_create(&thread2, NULL, receive, NULL);
         pthread_join(thread2, NULL);
-
-        gettimeofday(&end, NULL);//ends timer
-        //Add to the elapsed time to make sure we are still under the 1 second threshold
-        elapsedTime += abs(((end.tv_usec - start.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
     }
+    gettimeofday(&end, NULL);//ends timer
+    elapsedTime += abs(((end.tv_usec - start.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
 
     //Averages time spent for Server and Client
     averageClient = totalClientTime/clientCount;
     averageServer = totalServerTime/serverCount;
-    msgPerSecondSYSV = elapsedTime/counterSYSV;
+    msgPerSecondSYSV = counterSYSV/(elapsedTime/1000.0); //Go from millisecond to second
 
     //print results, append results to file, clean the ipc off of the ipcs list
     results();

@@ -25,16 +25,14 @@ int POSIX_shared_memory_execute(int argc, char* argv[]){
         //Create pthread and read the message
         pthread_create(&thread2Posix, NULL, posix_receive, NULL);
         pthread_join(thread2Posix, NULL);
-
-        gettimeofday(&endPosix, NULL); //end timer
-        
-        elapsedTimePosix += abs(((endPosix.tv_usec - startPosix.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
     }
+    gettimeofday(&endPosix, NULL); //end timer
+    elapsedTimePosix += abs(((endPosix.tv_usec - startPosix.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
 
     //Averages time spent for Server and Client
     averageClientPosix = totalClientTimePosix/clientCountPosix;
     averageServerPosix = totalServerTimePosix/serverCountPosix;
-    msgPerSecondPosix = elapsedTimePosix/posixCounter;
+    msgPerSecondPosix = posixCounter/(elapsedTimePosix/1000.0); //Go from millisecond to second
 
     
     //Print results and append results to file
