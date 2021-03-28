@@ -14,9 +14,9 @@ int SYS_V_shared_memory_execute(int argc, char* argv[]){
         exit(1);
     }
     
-    //1 second = 1000 milliseconds
     gettimeofday(&start,NULL); //starts timer
-    while(elapsedTime < 1000.0){
+    while(counterSYSV < 1000.0){
+        counterSYSV++;
 
         //Create a pthread and run the send function with the message
         pthread_create(&thread1, NULL, send, argv[1]);
@@ -28,12 +28,13 @@ int SYS_V_shared_memory_execute(int argc, char* argv[]){
 
         gettimeofday(&end, NULL);//ends timer
         //Add to the elapsed time to make sure we are still under the 1 second threshold
-        elapsedTime += ((end.tv_usec - start.tv_usec) / 1000.0); //converts from microseconds to milliseconds
+        elapsedTime += abs(((end.tv_usec - start.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
     }
 
     //Averages time spent for Server and Client
     averageClient = totalClientTime/clientCount;
     averageServer = totalServerTime/serverCount;
+    msgPerSecondSYSV = elapsedTime/counterSYSV;
 
     //print results, append results to file, clean the ipc off of the ipcs list
     results();
@@ -49,14 +50,16 @@ void results(){
     printf("Shared Memory System V findings\n");
     printf("-----------------------------------\n");
     printf("Operation: Shared Memory Read\n");
-    printf("Number of iterations in 1 second: %d\n", clientCount);
+    printf("Number of iterations : %d\n", counterSYSV);
+    printf("Total time spent : %f ms\n", elapsedTime);
+    printf("Message rate : %f messages per second\n", msgPerSecondSYSV);
+    printf("\n");
     printf("Average Access Time : %f ms\n", averageClient);
     printf("Minimum Access Time : %f ms\n", shortestClient);
     printf("Longest Access Time : %f ms\n", longestClient);
     printf("\n");
 
     printf("Operation: Shared Memory Write\n");
-    printf("Number of iterations in 1 second: %d\n", serverCount);
     printf("Average Access Time : %f ms\n", averageServer);
     printf("Minimum Access Time : %f ms\n", shortestServer);
     printf("Longest Access Time : %f ms\n", longestServer);
@@ -66,30 +69,17 @@ void results(){
 /**
  * Write results to file
  * The file is located in the "build" folder
+ * Time is in ms
+ * First value is Read Average
+ * Second value is Write Average
  */
 int append_results(char* message){
     
     FILE *store_results;
     store_results = fopen("SHM_SYSV_Output.txt", "a");
+    fprintf(store_results,"%f\n", averageClient);
+    fprintf(store_results,"%f\n", averageServer);
     fprintf(store_results, "\n");
-    fprintf(store_results,"Shared Memory System V findings\n");
-    fprintf(store_results, "The size of the shared memory is %d\n", SHM_SIZE);
-    fprintf(store_results,"-----------------------------------\n");
-    fprintf(store_results,"Operation: Shared Memory Read\n");
-    fprintf(store_results, "Number of iterations in 1 second: %d\n", clientCount);
-    fprintf(store_results,"Average Access Time : %f ms\n", averageClient);
-    fprintf(store_results,"Minimum Access Time : %f ms\n", shortestClient);
-    fprintf(store_results,"Longest Access Time : %f ms\n", longestClient);
-    fprintf(store_results,"\n");
-
-    fprintf(store_results,"Operation: Shared Memory Write\n");
-    fprintf(store_results, "Number of iterations in 1 second: %d\n", serverCount);
-    fprintf(store_results,"Average Access Time : %f ms\n", averageServer);
-    fprintf(store_results,"Minimum Access Time : %f ms\n", shortestServer);
-    fprintf(store_results,"Longest Access Time : %f ms\n", longestServer);
-    fprintf(store_results, "------------------------------------\n");
-    fprintf(store_results, "\n");
-
     fclose(store_results);
 
 }

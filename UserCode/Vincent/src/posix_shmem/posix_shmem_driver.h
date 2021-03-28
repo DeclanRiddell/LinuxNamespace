@@ -17,5 +17,7 @@ void posix_results();
 struct timeval startPosix, endPosix;
 float elapsedTimePosix;
 pthread_t thread1Posix, thread2Posix;
+float msgPerSecondPosix;
+int posixCounter = 0;
 
 #endif

@@ -6,6 +6,8 @@
 
 int POSIX_shared_memory_execute(int argc, char* argv[]){
 
+
+
     if(argc < 2){
         printf("This program requires a message in quotes with a max size of 1024 bytes\n");
         exit(1);
@@ -13,7 +15,8 @@ int POSIX_shared_memory_execute(int argc, char* argv[]){
 
     gettimeofday(&startPosix, NULL);
     //1 second = 1000 milliseconds
-    while(elapsedTimePosix < 1000.0){
+    while(posixCounter < 1000){
+        posixCounter++;
         
         //Create pthread and send the message
         pthread_create(&thread1Posix, NULL, posix_send, argv[1]);
@@ -25,12 +28,14 @@ int POSIX_shared_memory_execute(int argc, char* argv[]){
 
         gettimeofday(&endPosix, NULL); //end timer
         
-        elapsedTimePosix += ((endPosix.tv_usec - startPosix.tv_usec) / 1000.0); //converts from microseconds to milliseconds
+        elapsedTimePosix += abs(((endPosix.tv_usec - startPosix.tv_usec) / 1000.0)); //converts from microseconds to milliseconds
     }
 
     //Averages time spent for Server and Client
     averageClientPosix = totalClientTimePosix/clientCountPosix;
     averageServerPosix = totalServerTimePosix/serverCountPosix;
+    msgPerSecondPosix = elapsedTimePosix/posixCounter;
+
     
     //Print results and append results to file
     posix_results();
@@ -44,15 +49,17 @@ void posix_results(){
     printf("\n");
     printf("Shared Memory POSIX findings\n");
     printf("-----------------------------------\n");
+    printf("Number of Iterations : %d\n", posixCounter);
+    printf("Total time spent : %f ms\n", elapsedTimePosix);
+    printf("Message rate : %f messages per second\n", msgPerSecondPosix);
+    printf("\n");
     printf("Operation: Shared Memory Read\n");
-    printf("Number of iterations in 1 second: %d\n", clientCountPosix);
     printf("Average Access Time : %f ms\n", averageClientPosix);
     printf("Minimum Access Time : %f ms\n", shortestClientPosix);
     printf("Longest Access Time : %f ms\n", longestClientPosix);
     printf("\n");
 
     printf("Operation: Shared Memory Write\n");
-    printf("Number of iterations in 1 second: %d\n", serverCountPosix);
     printf("Average Access Time : %f ms\n", averageServerPosix);
     printf("Minimum Access Time : %f ms\n", shortestServerPosix);
     printf("Longest Access Time : %f ms\n", longestServerPosix);
@@ -62,28 +69,16 @@ void posix_results(){
 /**
  * Write results to file
  * The file is located in the "build" folder
+ * Time is recorded in ms
+ * First value is Read Average
+ * Second value is Write Average
  */
 int posix_append_results(){
     
     FILE *store_results;
     store_results = fopen("SHM_POSIX_Output.txt", "a");
-    fprintf(store_results, "\n");
-    fprintf(store_results,"Shared Memory POSIX findings\n");
-    fprintf(store_results, "The size of the shared memory is %d\n", SHM_SIZE);
-    fprintf(store_results,"-----------------------------------\n");
-    fprintf(store_results,"Operation: Shared Memory Read\n");
-    fprintf(store_results, "Number of iterations in 1 second: %d\n", clientCountPosix);
-    fprintf(store_results,"Average Access Time : %f ms\n", averageClientPosix);
-    fprintf(store_results,"Minimum Access Time : %f ms\n", shortestClientPosix);
-    fprintf(store_results,"Longest Access Time : %f ms\n", longestClientPosix);
-    fprintf(store_results,"\n");
-
-    fprintf(store_results,"Operation: Shared Memory Write\n");
-    fprintf(store_results, "Number of iterations in 1 second: %d\n", serverCountPosix);
-    fprintf(store_results,"Average Access Time : %f ms\n", averageServerPosix);
-    fprintf(store_results,"Minimum Access Time : %f ms\n", shortestServerPosix);
-    fprintf(store_results,"Longest Access Time : %f ms\n", longestServerPosix);
-    fprintf(store_results, "------------------------------------\n");
+    fprintf(store_results,"%f\n", averageClientPosix);
+    fprintf(store_results,"%f\n", averageServerPosix);
     fprintf(store_results, "\n");
 
     fclose(store_results);

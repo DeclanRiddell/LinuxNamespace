@@ -25,5 +25,8 @@ void results();
 struct timeval start, end;
 float elapsedTime = 0;
 pthread_t thread1, thread2;
+int counterSYSV = 0;
+float msgPerSecondSYSV;
+
 
 #endif

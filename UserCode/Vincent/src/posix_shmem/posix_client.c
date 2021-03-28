@@ -60,10 +60,6 @@ void * posix_receive(){
 
 //Prints message
 void posix_print_msg(){
-    FILE *store_results;
-    store_results = fopen("SHM_POSIX_Output.txt", "a");
-    fprintf(store_results, "The message read in POSIX Shared Memory is: %s\n", (char*)ptr);
-    fclose(store_results);
     printf("The data read from memory is: %s\n", (char*)ptr);
 }
 
