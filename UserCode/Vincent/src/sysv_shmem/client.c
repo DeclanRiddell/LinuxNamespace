@@ -66,10 +66,6 @@ void * receive(){
 
 //Reads the data associated from the shared memory
 void print_msg(){
-    FILE *store_results;
-    store_results = fopen("SHM_SYSV_Output.txt", "a");
-    fprintf(store_results, "The message read in SYSV Shared Memory is: %s\n", shm);
-    fclose(store_results);
     printf("The data read from memory is: %s\n", shm);
 }
 
