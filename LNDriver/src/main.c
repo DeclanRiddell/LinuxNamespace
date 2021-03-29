@@ -1,11 +1,6 @@
-#include <sysv_shmem/shared_mem_driver.h>
-#include <posix_shmem/posix_shmem_driver.h>
-
 #include <SYSV_semaphore/SYSVsemaphore_driver.h>
 #include <semaphore/semaphore_driver.h>
 
-#include <POSIX_message_queue/POSIX_message_queue_driver.h>
-#include <sysv_messagequeue/SYSV_message_queue_driver.h>
 #include <debug_utils.h>
 #include <stdlib.h>
 #define EXECUTE_ALL     0
