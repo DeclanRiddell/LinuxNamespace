@@ -25,6 +25,11 @@ alex:
 	rm -rf build
 	./kill_ipcs.sh
 	./run_alex.script 
-	
+both: 
+	rm -rf build
+	./kill_ipcs.sh
+	./run_alex.script
+	./kill_ipcs.sh
+	./run_vincent.script
 clean:
 	rm -rf build
