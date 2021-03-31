@@ -19,7 +19,7 @@ vincent:
 declan:
 	rm -rf build
 	./kill_ipcs.sh
-	./run_declcan.script 
+	./run_declan.script 
 
 alex:
 	rm -rf build
