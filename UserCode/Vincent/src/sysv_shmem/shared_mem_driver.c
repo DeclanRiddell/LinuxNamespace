@@ -74,7 +74,7 @@ void results(){
 int append_results(char* message){
     
     FILE *store_results;
-    store_results = fopen("SHM_SYSV_Output.txt", "a");
+    store_results = fopen("../UserCode/Vincent/src/sysv_shmem/SHM_SYSV_Output.txt", "a");
     fprintf(store_results,"%f\n", averageClient);
     fprintf(store_results,"%f\n", averageServer);
     fprintf(store_results, "\n");

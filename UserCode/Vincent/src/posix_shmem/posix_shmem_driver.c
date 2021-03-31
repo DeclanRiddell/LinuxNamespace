@@ -74,7 +74,7 @@ void posix_results(){
 int posix_append_results(){
     
     FILE *store_results;
-    store_results = fopen("SHM_POSIX_Output.txt", "a");
+    store_results = fopen("../UserCode/Vincent/src/posix_shmem/SHM_POSIX_Output.txt", "a");
     fprintf(store_results,"%f\n", averageClientPosix);
     fprintf(store_results,"%f\n", averageServerPosix);
     fprintf(store_results, "\n");
