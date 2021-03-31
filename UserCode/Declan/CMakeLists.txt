@@ -4,6 +4,9 @@ set(CMAKE_C_FLAGS -pthread)
 add_library(
     DeclanLib SHARED
 
+    src/DLib_Driver.h
+    src/DLib_Driver.c
+
     ../debug_utils.h
 
 )

@@ -15,6 +15,12 @@ vincent:
 	./kill_ipcs.sh
 	./run_vincent.script 
 
+
+declan:
+	rm -rf build
+	./kill_ipcs.sh
+	./run_declcan.script 
+
 alex:
 	rm -rf build
 	./kill_ipcs.sh
