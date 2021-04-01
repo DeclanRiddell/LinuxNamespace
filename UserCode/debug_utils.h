@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <cassert>
 //#ifdef DEBUG
-#define DBG_WRAP_DRIVER(x) printf("=\tStarting '%s'\n", #x); x; printf("=\tEnd of '%s'\n", #x)
 //#else 
 //#define DBG_WRAP_DRIVER(x) x
 
@@ -40,6 +39,7 @@
 #define INIT_LOG(...) printf(ANSI_COLOR_BOLD_BLUE "INIT::" __FILE__ ":" STR(__LINE__) "\t" ANSI_COLOR_RESET ANSI_COLOR_BLUE __VA_ARGS__); printf(ANSI_COLOR_RESET "\n")
 #define UNLOAD_LOG(...) printf(ANSI_COLOR_BOLD_MAGENTA "UNLOAD::" __FILE__ ":" STR(__LINE__) "\t" ANSI_COLOR_RESET ANSI_COLOR_MAGENTA __VA_ARGS__); printf(ANSI_COLOR_RESET "\n")
 #endif
+#define DBG_WRAP_DRIVER(x) DEBUG("=\tStarting '%s'\n", #x); x; UNLOAD_LOG("=\tEnd of '%s'\n", #x)
 
 #define ITERATION_COUNT 1024
 #endif
