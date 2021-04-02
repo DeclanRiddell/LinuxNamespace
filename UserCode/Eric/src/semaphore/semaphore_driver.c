@@ -57,13 +57,13 @@ int POSIX_semaphore_execute()
 
     standard_deviation = sqrt(variance);
 
-   LOG("Posix Semaphore Stats:\n");
-   LOG("Number of Iterations: %d\n", count);
-   LOG("Average wait()/post() Time: %f\n", mean);
-   LOG("Minimum wait()/post() Time: %f\n", min < MIN_TIME_EXE ? MIN_TIME_EXE : min);
-   LOG("Maximum wait()/post() Time: %f\n", max);
-   LOG("Variance of wait()/post() Times: %f\n", variance);
-   LOG("Standard Deviation of wait()/post() Times: %f\n", standard_deviation);
+   LOG("Posix Semaphore Stats:");
+   LOG("Number of Iterations: %d", count);
+   LOG("Average wait()/post() Time: %f", mean);
+   LOG("Minimum wait()/post() Time: %f", min < MIN_TIME_EXE ? MIN_TIME_EXE : min);
+   LOG("Maximum wait()/post() Time: %f", max);
+   LOG("Variance of wait()/post() Times: %f", variance);
+   LOG("Standard Deviation of wait()/post() Times: %f", standard_deviation);
 
 
 

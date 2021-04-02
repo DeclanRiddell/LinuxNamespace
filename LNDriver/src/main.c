@@ -73,6 +73,8 @@ int run_IPCS(){
             break;
         }
     }
+
+    UNLOAD_LOG("Finished IPC Drivers");
     return 0;
 }
 
@@ -97,13 +99,16 @@ int driver(int argc, char* argv[]){
     // send child into ipc namespace
    // 0x08000000
     //0x04000000
-    int ret = clone(run_IPCS, mem + STACK_SIZE, CLONE_NEWIPC, (void*)0);
-    if(ret == -1){
+    pid_t child_clone_pid = clone(run_IPCS, mem + STACK_SIZE, CLONE_NEWIPC, (void*)0);
+    if(child_clone_pid == -1){
          ERROR("Error code %d=%s\n", errno, strerror(errno));
          exit(1);
      }
 
-    LOG("Clone id %d\n", ret);
+    
+    LOG("Clone id %d\n", child_clone_pid);
+    
+    waitpid(child_clone_pid, NULL, 0);
     return 0;
 
 }

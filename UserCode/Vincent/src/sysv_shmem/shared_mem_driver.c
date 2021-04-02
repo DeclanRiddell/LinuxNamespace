@@ -12,7 +12,7 @@ int SYS_V_shared_memory_execute(){
 
     
     gettimeofday(&start,NULL); //starts timer
-    while(counterSYSV < 1000.0){
+    while(counterSYSV < ITERATION_COUNT){
         counterSYSV++;
 
         //Create a pthread and run the send function with the message

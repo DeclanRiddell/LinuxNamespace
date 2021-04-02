@@ -8,8 +8,7 @@ int POSIX_shared_memory_execute(){
 
 
     gettimeofday(&startPosix, NULL);
-    //1 second = 1000 milliseconds
-    while(posixCounter < 1000){
+    while(posixCounter < ITERATION_COUNT){
         posixCounter++;
         
         //Create pthread and send the message
