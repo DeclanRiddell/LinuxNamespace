@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include "POSIX_msgq_metrics.h"
 #include "POSIX_message_queue.h"
+#include <debug_utils.h>
 
 #define MIN_POSSIBLE_EXE_TIME 0.00001
 

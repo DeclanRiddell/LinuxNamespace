@@ -27,7 +27,6 @@ int SYS_V_message_queue_execute()
         pthread_join(thread1,NULL);
         end = clock();
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
-        printf("Message Send executed in %f seconds\n", execution_time);
         snd_times[index] = ((double)(end - start))/CLOCKS_PER_SEC;
         
         //create pthread for receive operation
@@ -37,13 +36,11 @@ int SYS_V_message_queue_execute()
         end = clock();
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
         execution_time = MIN_POSSIBLE_EXE_TIME > execution_time ? MIN_POSSIBLE_EXE_TIME : execution_time;
-        printf("Message Receive executed in %f seconds\n", execution_time);
         rcv_times[index] = execution_time;
         min = execution_time < min ? execution_time : min;
         max = execution_time > max ? execution_time : max;
         avg += execution_time;
 
-        printf("Iterated %d times\n", index);
         index++;
     }       
     avg /= ITERATION_COUNT;
@@ -56,6 +53,6 @@ int SYS_V_message_queue_execute()
     SYSV_msgq_outputDataFile(snd_times, "System V Message Queue Send", ITERATION_COUNT);
     SYSV_msgq_outputDataFile(rcv_times, "System V Message Queue Receive", ITERATION_COUNT);
 
-    printf("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
+   LOG("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
     return 0;
 }

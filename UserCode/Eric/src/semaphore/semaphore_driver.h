@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <debug_utils.h>
 
 int POSIX_semaphore_execute();
 

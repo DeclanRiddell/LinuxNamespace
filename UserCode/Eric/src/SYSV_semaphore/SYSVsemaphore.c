@@ -9,11 +9,11 @@ void* sysv_thread(void* arg) //This is the function that both pthreads will exec
             exit(1);
         }
 
-        printf("Grabbed\n");
+       LOG("Grabbed\n");
 
         sleep(2);
 
-        printf("Releasing\n");
+       LOG("Releasing\n");
 
         if ( (semop(semaphore, &unlock, 1)) == -1)  //release semaphore
         {

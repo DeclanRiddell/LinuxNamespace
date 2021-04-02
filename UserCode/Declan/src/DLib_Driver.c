@@ -2,6 +2,6 @@
 
 
 void execute_declan(){
-    printf("Sup\n");
+   LOG("Sup\n");
 
 }

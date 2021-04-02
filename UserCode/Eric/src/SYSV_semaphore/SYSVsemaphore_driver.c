@@ -25,7 +25,7 @@ int SYS_V_semaphore_execute()
      if ( (id = semop(semaphore, &unlock, 1)) == -1)     //Unlock semaphore because it is initially locked upon creation
      {
          perror("Error: Unlock in main");
-         printf("Error code %d for semid %d\t %d=%s\n", id, unlock.sem_num, errno, strerror(errno));
+        LOG("Error code %d for semid %d\t %d=%s\n", id, unlock.sem_num, errno, strerror(errno));
          exit(1);
      }
 
@@ -43,7 +43,7 @@ int SYS_V_semaphore_execute()
     }
     
     
-    printf("semaphore removed\n");
+   LOG("semaphore removed\n");
 
 
     return 0;

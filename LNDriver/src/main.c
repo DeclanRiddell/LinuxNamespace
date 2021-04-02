@@ -90,7 +90,7 @@ int driver(int argc, char* argv[]){
     if(!run_namespace) return run_IPCS();
     LOG("Running namespace");
     mem = malloc(STACK_SIZE);
-    if(!mem) printf("Error allocating stack\n");
+    if(!mem)LOG("Error allocating stack\n");
     
     //generate a new ipc namespace
     //create child process for run_ipcs

@@ -11,7 +11,7 @@
 //Creates threads for the message send and message receive operations and then
 int POSIX_message_queue_execute()
 {
-    printf("Starting POSIX msg queue\n");
+   LOG("Starting POSIX msg queue\n");
 
     int index = 0;
     clock_t start, end;
@@ -23,19 +23,15 @@ int POSIX_message_queue_execute()
     
     while(index < ITERATION_COUNT)
     {
-        printf("Loop iterating\n");
         pthread_t thread1, thread2;
 
         inc_msg = __msg;
 
-        printf("start timer for send\n");
         start = clock();
         pthread_create(&thread1, NULL, posix_message_queue_send, NULL);
         pthread_join(thread1,NULL);
         end = clock();
-        printf("end send\n");
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
-        printf("Posix Message Send executed in %f seconds\n", execution_time);
         snd_times[index] = ((double)(end - start))/CLOCKS_PER_SEC;
         
         //create pthread for receive operation
@@ -44,7 +40,6 @@ int POSIX_message_queue_execute()
         pthread_join(thread2,NULL);
         end = clock();
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
-        printf("Posix Message Receive executed in %f seconds\n", execution_time);
         rcv_times[index] = execution_time;
 
 
@@ -53,7 +48,6 @@ int POSIX_message_queue_execute()
         max = execution_time > max ? execution_time : max;
         avg += execution_time;
 
-        printf("Iterated %d times\n", index);
         index++; 
     } 
 
@@ -68,6 +62,6 @@ int POSIX_message_queue_execute()
     POSIX_msgq_outputDataFile(snd_times, "POSIX Message Queue Send", ITERATION_COUNT);
     POSIX_msgq_outputDataFile(rcv_times, "POSIX Message Queue Receive", ITERATION_COUNT);
     
-    printf("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
+    LOG("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
     return 0;
 }

@@ -9,6 +9,7 @@
 #include <sys/shm.h>
 #include <errno.h>
 #include <sys/time.h>
+#include <debug_utils.h>
 
 /**
  * Shared Memory SystemV Server Side

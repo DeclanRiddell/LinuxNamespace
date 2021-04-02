@@ -66,7 +66,7 @@ void * receive(){
 
 //Reads the data associated from the shared memory
 void print_msg(){
-    printf("The data read from memory is: %s\n", shm);
+   LOG("The data read from memory is: %s\n", shm);
 }
 
 // Removes IPC

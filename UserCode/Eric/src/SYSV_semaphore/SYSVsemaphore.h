@@ -10,6 +10,7 @@
 #include <sys/sem.h>
 #include <math.h>
 #include <stdlib.h>
+#include <debug_utils.h>
 
 
 struct sembuf lock;

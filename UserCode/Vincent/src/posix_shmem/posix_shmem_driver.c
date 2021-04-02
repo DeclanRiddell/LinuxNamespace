@@ -38,24 +38,24 @@ int POSIX_shared_memory_execute(){
 
 //prints results
 void posix_results(){        
-    printf("\n");
-    printf("Shared Memory POSIX findings\n");
-    printf("-----------------------------------\n");
-    printf("Number of Iterations : %d\n", posixCounter);
-    printf("Total time spent : %f ms\n", elapsedTimePosix);
-    printf("Message rate : %f messages per second\n", msgPerSecondPosix);
-    printf("\n");
-    printf("Operation: Shared Memory Read\n");
-    printf("Average Access Time : %f ms\n", averageClientPosix);
-    printf("Minimum Access Time : %f ms\n", shortestClientPosix);
-    printf("Longest Access Time : %f ms\n", longestClientPosix);
-    printf("\n");
+   LOG("\n");
+   LOG("Shared Memory POSIX findings\n");
+   LOG("-----------------------------------\n");
+   LOG("Number of Iterations : %d\n", posixCounter);
+   LOG("Total time spent : %f ms\n", elapsedTimePosix);
+   LOG("Message rate : %f messages per second\n", msgPerSecondPosix);
+   LOG("\n");
+   LOG("Operation: Shared Memory Read\n");
+   LOG("Average Access Time : %f ms\n", averageClientPosix);
+   LOG("Minimum Access Time : %f ms\n", shortestClientPosix);
+   LOG("Longest Access Time : %f ms\n", longestClientPosix);
+   LOG("\n");
 
-    printf("Operation: Shared Memory Write\n");
-    printf("Average Access Time : %f ms\n", averageServerPosix);
-    printf("Minimum Access Time : %f ms\n", shortestServerPosix);
-    printf("Longest Access Time : %f ms\n", longestServerPosix);
-    printf("\n");
+   LOG("Operation: Shared Memory Write\n");
+   LOG("Average Access Time : %f ms\n", averageServerPosix);
+   LOG("Minimum Access Time : %f ms\n", shortestServerPosix);
+   LOG("Longest Access Time : %f ms\n", longestServerPosix);
+   LOG("\n");
 }
 
 /**

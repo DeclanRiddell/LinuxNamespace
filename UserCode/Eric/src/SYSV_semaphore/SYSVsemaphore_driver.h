@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <debug_utils.h>
 
 int SYS_V_semaphore_execute();
 

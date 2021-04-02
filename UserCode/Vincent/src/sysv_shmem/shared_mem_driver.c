@@ -41,24 +41,24 @@ int SYS_V_shared_memory_execute(){
 
 //prints results
 void results(){        
-    printf("\n");
-    printf("Shared Memory System V findings\n");
-    printf("-----------------------------------\n");
-    printf("Operation: Shared Memory Read\n");
-    printf("Number of iterations : %d\n", counterSYSV);
-    printf("Total time spent : %f ms\n", elapsedTime);
-    printf("Message rate : %f messages per second\n", msgPerSecondSYSV);
-    printf("\n");
-    printf("Average Access Time : %f ms\n", averageClient);
-    printf("Minimum Access Time : %f ms\n", shortestClient);
-    printf("Longest Access Time : %f ms\n", longestClient);
-    printf("\n");
+   LOG("\n");
+   LOG("Shared Memory System V findings\n");
+   LOG("-----------------------------------\n");
+   LOG("Operation: Shared Memory Read\n");
+   LOG("Number of iterations : %d\n", counterSYSV);
+   LOG("Total time spent : %f ms\n", elapsedTime);
+   LOG("Message rate : %f messages per second\n", msgPerSecondSYSV);
+   LOG("\n");
+   LOG("Average Access Time : %f ms\n", averageClient);
+   LOG("Minimum Access Time : %f ms\n", shortestClient);
+   LOG("Longest Access Time : %f ms\n", longestClient);
+   LOG("\n");
 
-    printf("Operation: Shared Memory Write\n");
-    printf("Average Access Time : %f ms\n", averageServer);
-    printf("Minimum Access Time : %f ms\n", shortestServer);
-    printf("Longest Access Time : %f ms\n", longestServer);
-    printf("\n");
+   LOG("Operation: Shared Memory Write\n");
+   LOG("Average Access Time : %f ms\n", averageServer);
+   LOG("Minimum Access Time : %f ms\n", shortestServer);
+   LOG("Longest Access Time : %f ms\n", longestServer);
+   LOG("\n");
 }
 
 /**

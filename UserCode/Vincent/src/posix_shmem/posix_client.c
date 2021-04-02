@@ -60,7 +60,7 @@ void * posix_receive(){
 
 //Prints message
 void posix_print_msg(){
-    printf("The data read from memory is: %s\n", (char*)ptr);
+   LOG("The data read from memory is: %s\n", (char*)ptr);
 }
 
 //Set first iteration min and max

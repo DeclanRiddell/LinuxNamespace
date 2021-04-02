@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <pthread.h>
 #include <sys/time.h>
+#include <debug_utils.h>
 
 /**
  * Shared Memory SystemV Client side

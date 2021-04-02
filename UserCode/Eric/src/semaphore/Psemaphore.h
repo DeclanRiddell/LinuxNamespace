@@ -9,6 +9,7 @@
 #include <math.h>
 
 
+#include <debug_utils.h>
 
 //This program willl use the POSIX implementation of semaphores
 

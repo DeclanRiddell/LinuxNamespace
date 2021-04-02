@@ -11,8 +11,8 @@ void * posix_send(void * msg){
     serverCountPosix++;
 
     if(sizeof(msg) > SHM_SIZE){
-        printf("The message entered is too large (Posix)\n");
-        printf("The size of message cannot be longer than 1024 characters\n");
+       LOG("The message entered is too large (Posix)\n");
+       LOG("The size of message cannot be longer than 1024 characters\n");
         exit(1);
     }
 

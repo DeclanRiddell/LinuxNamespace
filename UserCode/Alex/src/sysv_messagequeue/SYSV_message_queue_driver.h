@@ -9,6 +9,7 @@
 #include <math.h>
 #include "SYSV_msgq_metrics.h"
 #include "SYSV_message_queue.h"
+#include <debug_utils.h>
 
 #define MIN_POSSIBLE_EXE_TIME 0.00001
 
