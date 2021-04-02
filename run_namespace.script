@@ -1,1 +1,0 @@
-sudo unshare -i ipc_exe
