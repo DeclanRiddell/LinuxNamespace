@@ -2,7 +2,7 @@
 
 
 
-int SYS_V_semaphore_execute(int argc, char* argv[])
+int SYS_V_semaphore_execute()
 {
     //This struct will be used as a paramter in semop for grabbing the semaphore
     lock.sem_num = 0;

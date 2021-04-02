@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-void execute_declan(int argc, char* argv[]);
+void execute_declan();
 
 #endif

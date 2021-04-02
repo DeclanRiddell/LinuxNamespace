@@ -4,14 +4,8 @@
  * This program is used to demonstrate Shared Memory using POSIX API
  */
 
-int POSIX_shared_memory_execute(int argc, char* argv[]){
+int POSIX_shared_memory_execute(){
 
-
-
-    if(argc < 2){
-        printf("This program requires a message in quotes with a max size of 1024 bytes\n");
-        exit(1);
-    }
 
     gettimeofday(&startPosix, NULL);
     //1 second = 1000 milliseconds
@@ -19,7 +13,7 @@ int POSIX_shared_memory_execute(int argc, char* argv[]){
         posixCounter++;
         
         //Create pthread and send the message
-        pthread_create(&thread1Posix, NULL, posix_send, argv[1]);
+        pthread_create(&thread1Posix, NULL, posix_send, __msg);
         pthread_join(thread1Posix, NULL);
 
         //Create pthread and read the message
@@ -37,7 +31,7 @@ int POSIX_shared_memory_execute(int argc, char* argv[]){
     
     //Print results and append results to file
     posix_results();
-    posix_append_results(argv[1]);
+    posix_append_results(__msg);
 
     return 0;
 }

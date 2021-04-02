@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int POSIX_semaphore_execute(int argc, char* argv[]);
+int POSIX_semaphore_execute();
 
 double min, max, sum, mean, variance, standard_deviation; 
 

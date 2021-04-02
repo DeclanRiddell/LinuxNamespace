@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <debug_utils.h>
 
 /**
  * This program is used to demonstrate Shared Memory using SystemV
@@ -18,7 +19,7 @@
  * ./shared_mem "Message goes in here"
  */
 
-int SYS_V_shared_memory_execute(int argc, char* argv[]);
+int SYS_V_shared_memory_execute();
 int append_results(char* message);
 void results();
    

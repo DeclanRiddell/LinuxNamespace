@@ -7,19 +7,16 @@
  * This program is used to demonstrate Shared Memory using System V
  */
 
-int SYS_V_shared_memory_execute(int argc, char* argv[]){  
+int SYS_V_shared_memory_execute(){  
 
-    if(argc < 2){
-        printf("This program requires a message in quotes with a max size of 1024 bytes\n");
-        exit(1);
-    }
+
     
     gettimeofday(&start,NULL); //starts timer
     while(counterSYSV < 1000.0){
         counterSYSV++;
 
         //Create a pthread and run the send function with the message
-        pthread_create(&thread1, NULL, send, argv[1]);
+        pthread_create(&thread1, NULL, send, __msg);
         pthread_join(thread1, NULL);
         
         //Create a pthread to read the message
@@ -36,7 +33,7 @@ int SYS_V_shared_memory_execute(int argc, char* argv[]){
 
     //print results, append results to file, clean the ipc off of the ipcs list
     results();
-    append_results(argv[1]);
+    append_results(__msg);
     clean_ipc();
 
     return 0;

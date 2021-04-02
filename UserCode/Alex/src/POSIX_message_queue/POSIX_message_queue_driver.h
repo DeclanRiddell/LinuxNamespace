@@ -13,6 +13,6 @@
 
 //Executes message queue
 char* inc_msg;
-int POSIX_message_queue_execute(int argc, char* argv[]);
+int POSIX_message_queue_execute();
 
 #endif

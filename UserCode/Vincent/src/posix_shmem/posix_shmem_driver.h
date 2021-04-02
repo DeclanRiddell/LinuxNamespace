@@ -8,9 +8,10 @@
 #include <time.h>
 #include "posix_client.h"
 #include "posix_server.h"
+#include <debug_utils.h>
 
 
-int POSIX_shared_memory_execute(int argc, char* argv[]);
+int POSIX_shared_memory_execute();
 int posix_append_results();
 void posix_results();
 

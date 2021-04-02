@@ -32,6 +32,12 @@ both:
 	./kill_ipcs.sh
 	./run_vincent.script
 
+
+all_namespace:
+	rm -rf build
+	./kill_ipcs.sh
+	./run_all_namespace.script 
+
 eric_namespace:
 	rm -rf build
 	./kill_ipcs.sh

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int SYS_V_semaphore_execute(int argc, char* argv[]);
+int SYS_V_semaphore_execute();
 
 
 

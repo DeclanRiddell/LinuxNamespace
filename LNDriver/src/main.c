@@ -21,56 +21,55 @@
 
 
 //AlexLib execution
-void execute_alex_lib(int argc, char* argv[]){
-    DBG_WRAP_DRIVER(POSIX_message_queue_execute(argc, argv));
-    DBG_WRAP_DRIVER(SYS_V_message_queue_execute(argc, argv));
+void execute_alex_lib(){
+    DBG_WRAP_DRIVER(POSIX_message_queue_execute());
+    DBG_WRAP_DRIVER(SYS_V_message_queue_execute());
 }
 
 //EricLib execution
-void execute_eric_lib(int argc, char* argv[]){
-    DBG_WRAP_DRIVER(POSIX_semaphore_execute(argc, argv));
-    DBG_WRAP_DRIVER(SYS_V_semaphore_execute(argc, argv));
+void execute_eric_lib(){
+    DBG_WRAP_DRIVER(POSIX_semaphore_execute());
+    DBG_WRAP_DRIVER(SYS_V_semaphore_execute());
 }
 
 //VincentLib execution
-void execute_vincent_lib(int argc, char* argv[]){
-    DBG_WRAP_DRIVER(POSIX_shared_memory_execute(argc, argv));
-    DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(argc, argv));
+void execute_vincent_lib(){
+    DBG_WRAP_DRIVER(POSIX_shared_memory_execute());
+    DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());
 }
 
 
 //DeclanLib execution
-void execute_declan_lib(int argc, char* argv[]){
-    DBG_WRAP_DRIVER(execute_declan(argc, argv));
+void execute_declan_lib(){
+    DBG_WRAP_DRIVER(execute_declan());
 }
+int execution_order = 0;
 
 
-int run_IPCS(int argc, char* argv[]){
+int run_IPCS(){
     LOG("Entered 'run_IPCS'\n");
-    int execution_order = atoi(argv[2]);
-    printf("%s, %d\n", argv[1], execution_order);
     
     switch(execution_order){
         case EXECUTE_DECLAN:{
-            execute_declan_lib(argc, argv);
+            execute_declan_lib();
             break;
         }
         case EXECUTE_ALEX:{
-            execute_alex_lib(argc, argv);
+            execute_alex_lib();
             break;
         }
         case EXECUTE_VINCENT:{
-            execute_vincent_lib(argc, argv);
+            execute_vincent_lib();
             break;
         }
         case EXECUTE_ERIC:{
-            execute_eric_lib(argc, argv);
+            execute_eric_lib();
             break;
         }
         default:{
-            execute_alex_lib(argc, argv);
-            execute_eric_lib(argc, argv);
-            execute_vincent_lib(argc, argv);
+            execute_alex_lib();
+            execute_eric_lib();
+            execute_vincent_lib();
             break;
         }
     }
@@ -85,9 +84,10 @@ int sup(){
 #define STACK_SIZE 65536
 void* mem;
 int driver(int argc, char* argv[]){
-    int run_namespace = atoi(argv[3]);
+    execution_order = atoi(argv[1]);
+    int run_namespace = atoi(argv[2]);
     LOG("run_namespace ? %d", run_namespace );
-    if(!run_namespace) return run_IPCS(argc, argv);
+    if(!run_namespace) return run_IPCS();
     LOG("Running namespace");
     mem = malloc(STACK_SIZE);
     if(!mem) printf("Error allocating stack\n");
@@ -97,7 +97,7 @@ int driver(int argc, char* argv[]){
     // send child into ipc namespace
    // 0x08000000
     //0x04000000
-    int ret = clone(run_IPCS, mem + STACK_SIZE, CLONE_NEWIPC, (void*)argc, (void*)argv);
+    int ret = clone(run_IPCS, mem + STACK_SIZE, CLONE_NEWIPC, (void*)0);
     if(ret == -1){
          ERROR("Error code %d=%s\n", errno, strerror(errno));
          exit(1);

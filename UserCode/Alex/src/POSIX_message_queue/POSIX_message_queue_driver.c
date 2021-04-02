@@ -9,13 +9,9 @@
 
 
 //Creates threads for the message send and message receive operations and then
-int POSIX_message_queue_execute(int argc, char* argv[])
+int POSIX_message_queue_execute()
 {
     printf("Starting POSIX msg queue\n");
-    if(argc < 2){
-        printf("This program requires a message in quotes with a max size of 1024 bytes\n");
-        exit(1);
-    }
 
     int index = 0;
     clock_t start, end;
@@ -30,7 +26,7 @@ int POSIX_message_queue_execute(int argc, char* argv[])
         printf("Loop iterating\n");
         pthread_t thread1, thread2;
 
-        inc_msg = argv[1];
+        inc_msg = __msg;
 
         printf("start timer for send\n");
         start = clock();

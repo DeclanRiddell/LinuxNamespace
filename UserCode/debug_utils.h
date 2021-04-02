@@ -41,4 +41,5 @@
 #define DBG_WRAP_DRIVER(x) DEBUG("=\tStarting '%s'\n", #x); x; UNLOAD_LOG("=\tEnd of '%s'\n", #x)
 
 #define ITERATION_COUNT 1024
+#define __msg "Hello!"
 #endif
