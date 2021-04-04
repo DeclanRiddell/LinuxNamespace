@@ -66,8 +66,15 @@ int POSIX_semaphore_execute(int argc, char* argv[])
     printf("Standard Deviation of wait()/post() Times: %f\n", standard_deviation);
 
 
+    //Store mean into file
+    FILE *store_results;
+    store_results = fopen("../UserCode/Eric/src/semaphore/SEMAPHORE_POSIX_Output.txt", "a");
+    fprintf(store_results, "%f\n", mean);
+    fclose(store_results);
+    
+
 
     
 
-    return 0;
+    return 0
 }
