@@ -8,9 +8,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <debug_utils.h>
+#include <math.h>
 
 int SYS_V_semaphore_execute();
 
-
+double min, max, sum,mean, variance, standard_deviation;
 
 #endif

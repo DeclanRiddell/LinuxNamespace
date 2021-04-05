@@ -45,6 +45,48 @@ int SYS_V_semaphore_execute()
     
    LOG("semaphore removed\n");
 
+   sleep(2); //ensure threads have time to finish execution
+
+   max = times[0];
+   min = times[0];
+   sum = 0;
+   variance = 0;
+
+   //Loop to find the max, min, and sum of the times
+   for(int i = 0; i < count; i++)
+   {
+       if(times[i] < min)
+       {
+           min = times[i];
+       }
+       if(times[i] > max)
+       {
+           max = times[i];
+       }
+
+       sum += times[i];
+   }
+
+   mean = sum/count;
+
+   //Loop to calculate variance
+   for (int i = 0; i < count; i++)
+   {
+       variance += (times[i] - mean) * (times[i] - mean);
+   }
+
+   variance = variance / count;
+
+   standard_deviation = sqrt(variance);
+
+   LOG("SYSV Semaphore Stats:\n");
+   LOG("Number of Iterations: %d\n", count);
+   LOG("Average time for System Class: %f\n", mean);
+   LOG("Minumum system calls time: %f\n", min);
+   LOG("Maximum system calls time: %f\n", max);
+   LOG("Varaince in system call times: %f\n", variance);
+   LOG("Standard Deviation of system call times: %f\n", standard_deviation);
+
 
     return 0;
 }
