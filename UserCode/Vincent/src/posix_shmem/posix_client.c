@@ -47,6 +47,9 @@ void * posix_receive(){
     }
     //Set min and max for iterations beyond 1
     if(readDeltaPosix < shortestClientPosix){
+        if(readDeltaPosix < 0){
+            readDeltaPosix = 0.000010;
+        }
         shortestClientPosix = readDeltaPosix;
     }
     if(readDeltaPosix > longestClientPosix){

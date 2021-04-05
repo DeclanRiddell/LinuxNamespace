@@ -47,6 +47,9 @@ void * receive(){
     }
     //Set min and max for iterations beyond 1
     if(readDelta < shortestClient){
+        if(readDelta < 0){
+            readDelta = 0.000010;
+        }
         shortestClient = readDelta;
     }
     if(readDelta > longestClient){
