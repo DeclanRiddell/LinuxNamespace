@@ -16,8 +16,7 @@ int SYS_V_semaphore_execute()
     unlock.sem_flg = 0;
     
     int id;
-    semaphore = semget( (key_t) 22345, 1, 0666 | IPC_CREAT);
-    if ( (semaphore == -1)) //creates a semaphore set with one semaphore in it
+    if ((semaphore = semget( (key_t) 22345, 1, 0666 | IPC_CREAT)) == -1) //creates a semaphore set with one semaphore in it
      {
          perror("Error: semget");
          exit(1);
