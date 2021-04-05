@@ -47,45 +47,52 @@ int SYS_V_semaphore_execute()
 
    sleep(2); //ensure threads have time to finish execution
 
-   max = times[0];
-   min = times[0];
-   sum = 0;
-   variance = 0;
+   SYSVmax = SYSVtimes[0];
+   SYSVmin = SYSVtimes[0];
+   SYSVsum = 0;
+   SYSVvariance = 0;
 
    //Loop to find the max, min, and sum of the times
-   for(int i = 0; i < count; i++)
+   for(int i = 0; i < SYSVcount; i++)
    {
-       if(times[i] < min)
+       if(SYSVtimes[i] < SYSVmin)
        {
-           min = times[i];
+           SYSVmin = SYSVtimes[i];
        }
-       if(times[i] > max)
+       if(SYSVtimes[i] > SYSVmax)
        {
-           max = times[i];
+           SYSVmax = SYSVtimes[i];
        }
 
-       sum += times[i];
+       SYSVsum += SYSVtimes[i];
    }
 
-   mean = sum/count;
+   SYSVmean = SYSVsum/SYSVcount;
 
    //Loop to calculate variance
-   for (int i = 0; i < count; i++)
+   for (int i = 0; i < SYSVcount; i++)
    {
-       variance += (times[i] - mean) * (times[i] - mean);
+       SYSVvariance += (SYSVtimes[i] - SYSVmean) * (SYSVtimes[i] - SYSVmean);
    }
 
-   variance = variance / count;
+   SYSVvariance = SYSVvariance / SYSVcount;
 
-   standard_deviation = sqrt(variance);
+   SYSVstandard_deviation = sqrt(SYSVvariance);
 
-   LOG("SYSV Semaphore Stats:\n");
-   LOG("Number of Iterations: %d\n", count);
-   LOG("Average time for System Class: %f\n", mean);
-   LOG("Minumum system calls time: %f\n", min);
-   LOG("Maximum system calls time: %f\n", max);
-   LOG("Varaince in system call times: %f\n", variance);
-   LOG("Standard Deviation of system call times: %f\n", standard_deviation);
+
+    LOG("\n");
+    LOG("SYSV Semaphore findings\n");
+    LOG("-----------------------------\n");
+    LOG("Number of Iterations: %d\n", SYSVcount);
+    LOG("Average time for System Calls: %f\n", SYSVmean);
+    LOG("Minumum system calls time: %f\n", SYSVmin < MIN_TIME_EXE ? MIN_TIME_EXE : SYSVmin);
+    LOG("Maximum system calls time: %f\n", SYSVmax);
+    LOG("Varaince in system call times: %f\n", SYSVvariance);
+    LOG("Standard Deviation of system call times: %f\n", SYSVstandard_deviation);
+
+
+   
+   
 
 
     return 0;

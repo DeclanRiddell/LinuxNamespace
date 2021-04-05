@@ -23,9 +23,9 @@ void* sysv_thread(void* arg);
 #define SIZE_TIMES 65536*2
 #define MIN_TIME_EXE 0.00001
 
-float times[SIZE_TIMES]; //This array will hold the elapsed time of each pair of semop system calls
+float SYSVtimes[SIZE_TIMES]; //This array will hold the elapsed time of each pair of semop system calls
 
-int count; //will count how many pairs of semop system calls are executed
+int SYSVcount; //will count how many pairs of semop system calls are executed
 
 
 #endif

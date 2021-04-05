@@ -12,6 +12,6 @@
 
 int SYS_V_semaphore_execute();
 
-double min, max, sum,mean, variance, standard_deviation;
+double SYSVmin, SYSVmax, SYSVsum, SYSVmean, SYSVvariance, SYSVstandard_deviation;
 
 #endif
