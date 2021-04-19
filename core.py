@@ -31,46 +31,46 @@ def run():
 #Native POSIX IPCs
     if(my_map['native']['posix']['s'].get()):
         print("native posix semaphore")
-        subprocess.run(['cd LinuxNamespace; sudo make eric'], shell = True)    
+        subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['posix']['mq'].get()):
         print("native posix message queue")    
-        subprocess.run(['cd LinuxNamespace; sudo make alex'], shell = True)    
+        subprocess.run(['sudo make alex'], shell = True)    
     if(my_map['native']['posix']['sm'].get()):
         print("native posix shared memory")    
-        subprocess.run(['cd LinuxNamespace; sudo make vincent'], shell = True)    
+        subprocess.run(['sudo make vincent'], shell = True)    
 
 #Namespace POSIX IPCs
     if(my_map['namespace']['posix']['s'].get()):
         print("namespace posix semaphore")    
-        subprocess.run(['cd LinuxNamespace; sudo make eric_namespace'], shell = True)    
+        subprocess.run(['sudo make eric_namespace'], shell = True)    
     if(my_map['namespace']['posix']['mq'].get()):
         print("namespace posix message queue")    
-        subprocess.run(['cd LinuxNamespace; sudo make alex_namespace'], shell = True)    
+        subprocess.run(['sudo make alex_namespace'], shell = True)    
     if(my_map['namespace']['posix']['sm'].get()):
         print("namespace posix shared memory")    
-        subprocess.run(['cd LinuxNamespace; sudo make vincent_namespace'], shell = True)    
+        subprocess.run(['sudo make vincent_namespace'], shell = True)    
 
 #Native SYSV IPCs
     if(my_map['native']['sysv']['s'].get()):
         print("native sysv semaphore")    
-        subprocess.run(['cd LinuxNamespace; sudo make eric'], shell = True)    
+        subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['sysv']['mq'].get()):
         print("native sysv message queue")    
-        subprocess.run(['cd LinuxNamespace; sudo make alex'], shell = True)    
+        subprocess.run(['sudo make alex'], shell = True)    
     if(my_map['native']['sysv']['sm'].get()):
         print("native sysv shared memory")  
-        subprocess.run(['cd LinuxNamespace; sudo make vincent'], shell = True)    
+        subprocess.run(['sudo make vincent'], shell = True)    
   
 #Namespace SYSV IPCs
     if(my_map['namespace']['sysv']['s'].get()):
         print("namespace sysv semaphore")    
-        subprocess.run(['cd LinuxNamespace; sudo make eric_namespace'], shell = True)    
+        subprocess.run(['sudo make eric_namespace'], shell = True)    
     if(my_map['namespace']['sysv']['mq'].get()):
         print("namespace sysv message queue")    
-        subprocess.run(['cd LinuxNamespace; sudo make alex_namespace'], shell = True)    
+        subprocess.run(['sudo make alex_namespace'], shell = True)    
     if(my_map['namespace']['sysv']['sm'].get()):
         print("namespace sysv shared memory")   
-        subprocess.run(['cd LinuxNamespace; sudo make vincent_namespace'], shell = True)    
+        subprocess.run(['sudo make vincent_namespace'], shell = True)    
 
 
 
