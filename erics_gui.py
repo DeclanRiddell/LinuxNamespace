@@ -118,7 +118,7 @@ window.grid_columnconfigure(1,weight=1)
 window.grid_columnconfigure(2,weight=1)
 window.grid_columnconfigure(3,weight=1)
 window.grid_columnconfigure(10,weight=50)
-for i in range(3, spanner) :
+for i in range(2, spanner) :
     window.grid_rowconfigure(i,weight=1)
 
 run_button.grid(row = 0, column = 0, columnspan = 1, rowspan = 1, sticky = 'nwse')
@@ -164,6 +164,7 @@ tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=1, row=0, rowspan=5, 
 tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=2, row=0, rowspan=5, sticky='wns') #middle separator line
 tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=2, row=0, rowspan=5, sticky='ens') #right separator line
 
+tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=1, columnspan=3, sticky='ews')
 tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=2, columnspan=3, sticky='ews')
 tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=3, columnspan=3, sticky='ews')
 tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=4, columnspan=3, sticky='ews')
