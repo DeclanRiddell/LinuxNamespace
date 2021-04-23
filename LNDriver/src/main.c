@@ -29,26 +29,26 @@
 
 
 //AlexLib execution
-void execute_alex_lib(bool posix){
-    if(posix){ DBG_WRAP_DRIVER(POSIX_message_queue_execute());}
+void execute_alex_lib(short posix){
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute());}
 }
 
 //EricLib execution
-void execute_eric_lib(bool posix){
-    if(posix){ DBG_WRAP_DRIVER(POSIX_semaphore_execute());}
+void execute_eric_lib(short posix){
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute());}
 }
 
 //VincentLib execution
-void execute_vincent_lib(bool posix){
-    if(posix){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute());}
+void execute_vincent_lib(short posix){
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());}
 }
 
 
 //DeclanLib execution
-void execute_declan_lib(bool posix){
+void execute_declan_lib(short posix){
     DBG_WRAP_DRIVER(execute_declan());
 }
 int execution_order = 0;
@@ -59,56 +59,56 @@ int run_IPCS(){
     
     switch(execution_order){
         case EXECUTE_DECLAN:{
-            execute_declan_lib(true);
-            execute_declan_lib(false);
+            execute_declan_lib(1);
+            execute_declan_lib(0);
             break;
         }
         case EXECUTE_ALEX:{
-            execute_alex_lib(true);
-            execute_alex_lib(false);
+            execute_alex_lib(1);
+            execute_alex_lib(0);
             break;
         }
         case EXECUTE_VINCENT:{
-            execute_vincent_lib(true);
-            execute_vincent_lib(false);
+            execute_vincent_lib(1);
+            execute_vincent_lib(0);
             break;
         }
         case EXECUTE_ERIC:{
-            execute_eric_lib(true);
-            execute_eric_lib(false);
+            execute_eric_lib(1);
+            execute_eric_lib(0);
             break;
         }
         case EXECUTE_ALEX_S:{
-            execute_alex_lib(false);
+            execute_alex_lib(0);
             break;
         }
         case EXECUTE_VINCENT_S:{
-            execute_vincent_lib(false);
+            execute_vincent_lib(0);
             break;
         }
         case EXECUTE_ERIC_S:{
-            execute_eric_lib(false);
+            execute_eric_lib(0);
             break;
         }
         case EXECUTE_ALEX_P:{
-            execute_alex_lib(true);
+            execute_alex_lib(1);
             break;
         }
         case EXECUTE_VINCENT_P:{
-            execute_vincent_lib(true);
+            execute_vincent_lib(1);
             break;
         }
         case EXECUTE_ERIC_P:{
-            execute_eric_lib(true);
+            execute_eric_lib(1);
             break;
         }
         default:{
-            execute_alex_lib(true);
-            execute_alex_lib(false);
-            execute_eric_lib(true);
-            execute_eric_lib(false);
-            execute_vincent_lib(true);
-            execute_vincent_lib(false);
+            execute_alex_lib(1);
+            execute_alex_lib(0);
+            execute_eric_lib(1);
+            execute_eric_lib(0);
+            execute_vincent_lib(1);
+            execute_vincent_lib(0);
             break;
         }
     }
