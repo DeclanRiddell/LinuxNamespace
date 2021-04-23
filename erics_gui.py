@@ -80,6 +80,7 @@ w_height  = 480
 w_width = 720
 window.geometry(''+ str(w_width) +  'x' + str(w_height))
 
+iteration_label = Label(window, text = "Runs:", fg = "blue",)
 native_label = Label(window, text = "Native", fg = "blue",)
 sem_label = Label(window, text = "Semaphore", fg = "blue",)
 sm_label = Label(window, text = "Shared Memory", fg = "blue",)
@@ -94,7 +95,7 @@ sysv_label2 = Label(window, text = "SYSV")
 
 run_button = Button(window, text = "RUN", command = run, fg = "spring green",  padx=40, bg='green')
 #abort_button = Button(window, text = "ABORT", command = abort, fg = "red",  padx=40, bg='green')
-iteration_argument = Entry(window)
+iteration_argument = Entry(window, width = 10)
 
 native_posix_semaphore_button = Checkbutton(window,  var = my_map['native']['posix']['s'], text = "             ", onvalue = 1, offvalue = 0)
 native_posix_messagequeue_button = Checkbutton(window,  var = my_map['native']['posix']['mq'], onvalue = 1, offvalue = 0)
@@ -125,8 +126,8 @@ for i in range(2, spanner) :
     window.grid_rowconfigure(i,weight=1)
 
 run_button.grid(row = 0, column = 0, columnspan = 1, rowspan = 1, sticky = 'nwse')
-iteration_argument.grid(row = 1, column = 0, columnspan = 1, rowspan = 1, sticky = 'nwse')
-
+iteration_argument.grid(row = 1, column = 0, columnspan = 1, rowspan = 1, sticky = 'nse')
+iteration_label.grid(row = 1, column = 0, columnspan = 1, rowspan = 1, sticky = 'nsw')
 
 
 native_label.grid(row = 0, column = 1)
