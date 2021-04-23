@@ -135,9 +135,9 @@ tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=1, row=0, rowspan=5, 
 tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=2, row=0, rowspan=5, sticky='wns') #middle separator line
 tkinter.ttk.Separator(window, orient=VERTICAL).grid(column=2, row=0, rowspan=5, sticky='ens') #right separator line
 
-tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=2, columnspan=5, sticky='ews')
-tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=3, columnspan=5, sticky='ews')
-tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=4, columnspan=5, sticky='ews')
+tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=2, columnspan=3, sticky='ews')
+tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=3, columnspan=3, sticky='ews')
+tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=4, columnspan=3, sticky='ews')
 
 
 
