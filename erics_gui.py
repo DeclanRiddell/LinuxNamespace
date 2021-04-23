@@ -1,39 +1,68 @@
 
 from tkinter import *
 import tkinter.ttk
+import subprocess
+
 window = Tk()
-my_map = {"native" : {"sysv" :  {"mq" : IntVar(), "sm" : IntVar(), "s" : IntVar()}, "posix" :  {"mq" : IntVar(), "sm" : IntVar(), "s" : IntVar()}}, "namespace" : {"sysv" :  {"mq" : IntVar(), "sm" : IntVar(), "s" : IntVar()}, "posix" :  {"mq" : IntVar(), "sm" : IntVar(), "s" : IntVar()}} }
+my_map = {"native" : 
+                    {"sysv" :  
+                            {"mq" : IntVar(), 
+                             "sm" : IntVar(), 
+                             "s" : IntVar()}, 
+
+                    "posix" : {"mq" : IntVar(), 
+                               "sm" : IntVar(), 
+                               "s" : IntVar()
+                               }
+                    }, 
+          "namespace" : 
+                    {"sysv" :  {"mq" : IntVar(), 
+                                "sm" : IntVar(), 
+                                "s" : IntVar()
+                                }, 
+
+                    "posix" :  {"mq" : IntVar(), 
+                                "sm" : IntVar(), 
+                                "s" : IntVar()
+                                }
+                    } 
+        }
+
 def run():
     window.update( );
         
+#Native POSIX IPCs
     if(my_map['native']['posix']['s'].get()):
-        print("native posix semaphore")    
+        subprocess.run(['sudo ./run_eric_native_posix.script'], shell = True)    
     if(my_map['native']['posix']['mq'].get()):
-        print("native posix message queue")    
+        subprocess.run(['sudo ./run_alex_native_posix.script'], shell = True)    
     if(my_map['native']['posix']['sm'].get()):
-        print("native posix shared memory")    
+        subprocess.run(['sudo ./run_vincent_native_posix.script'], shell = True)    
 
+#Namespace POSIX IPCs
     if(my_map['namespace']['posix']['s'].get()):
-        print("namespace posix semaphore")    
+        subprocess.run(['sudo ./run_eric_namespace_posix.script'], shell = True)    
     if(my_map['namespace']['posix']['mq'].get()):
-        print("namespace posix message queue")    
+        subprocess.run(['sudo ./run_alex_namespace_posix.script'], shell = True)    
     if(my_map['namespace']['posix']['sm'].get()):
-        print("namespace posix shared memory")    
+        subprocess.run(['sudo ./run_vincent_namespace_posix.script'], shell = True)    
 
-
+#Native SYSV IPCs
     if(my_map['native']['sysv']['s'].get()):
-        print("native sysv semaphore")    
+        subprocess.run(['sudo ./run_eric_native_sysv.script'], shell = True)    
     if(my_map['native']['sysv']['mq'].get()):
-        print("native sysv message queue")    
+        #SEGMENTATION FAULT
+        subprocess.run(['sudo ./run_alex_native_sysv.script'], shell = True)    
     if(my_map['native']['sysv']['sm'].get()):
-        print("native sysv shared memory")    
-
-    if(my_map['namespace']['sysv']['s'].get()):
-        print("namespace sysv semaphore")    
+        subprocess.run(['sudo ./run_vincent_native_sysv.script'], shell = True)    
+  
+#Namespace SYSV IPCs
+    if(my_map['namespace']['sysv']['s'].get()): 
+        subprocess.run(['sudo ./run_eric_namespace_sysv.script'], shell = True)    
     if(my_map['namespace']['sysv']['mq'].get()):
-        print("namespace sysv message queue")    
+        subprocess.run(['sudo ./run_alex_namespace_sysv.script'], shell = True)    
     if(my_map['namespace']['sysv']['sm'].get()):
-        print("namespace sysv shared memory")   
+        subprocess.run(['sudo ./run_vincent_namespace_sysv.script'], shell = True)   
 
 def abort():
     print("AHHHHH!!!! ABORT!!!")

@@ -2,4 +2,4 @@ mkdir build
 cd build
 cmake ..
 make
-./LNDriver/LNDriver 5 1
+./LNDriver/LNDriver 10 1
