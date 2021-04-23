@@ -30,20 +30,20 @@
 
 //AlexLib execution
 void execute_alex_lib(short posix){
-    if(posix) DBG_WRAP_DRIVER(POSIX_message_queue_execute());
-    else DBG_WRAP_DRIVER(SYS_V_message_queue_execute());
+    if(posix){ DBG_WRAP_DRIVER(POSIX_message_queue_execute());}
+    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute());}
 }
 
 //EricLib execution
 void execute_eric_lib(short posix){
-    if(posix) DBG_WRAP_DRIVER(POSIX_semaphore_execute());
-    else DBG_WRAP_DRIVER(SYS_V_semaphore_execute());
+    if(posix){ DBG_WRAP_DRIVER(POSIX_semaphore_execute());}
+    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute());}
 }
 
 //VincentLib execution
 void execute_vincent_lib(short posix){
-    if(posix) DBG_WRAP_DRIVER(POSIX_shared_memory_execute());
-    else DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());
+    if(posix){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute());}
+    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());}
 }
 
 
