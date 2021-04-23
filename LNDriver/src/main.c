@@ -29,26 +29,26 @@
 
 
 //AlexLib execution
-void execute_alex_lib(short posix){
+void execute_alex_lib(bool posix){
     if(posix){ DBG_WRAP_DRIVER(POSIX_message_queue_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute());}
 }
 
 //EricLib execution
-void execute_eric_lib(short posix){
+void execute_eric_lib(bool posix){
     if(posix){ DBG_WRAP_DRIVER(POSIX_semaphore_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute());}
 }
 
 //VincentLib execution
-void execute_vincent_lib(short posix){
+void execute_vincent_lib(bool posix){
     if(posix){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute());}
     else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());}
 }
 
 
 //DeclanLib execution
-void execute_declan_lib(short posix){
+void execute_declan_lib(bool posix){
     DBG_WRAP_DRIVER(execute_declan());
 }
 int execution_order = 0;
@@ -103,9 +103,12 @@ int run_IPCS(){
             break;
         }
         default:{
-            execute_alex_lib();
-            execute_eric_lib();
-            execute_vincent_lib();
+            execute_alex_lib(true);
+            execute_alex_lib(false);
+            execute_eric_lib(true);
+            execute_eric_lib(false);
+            execute_vincent_lib(true);
+            execute_vincent_lib(false);
             break;
         }
     }
