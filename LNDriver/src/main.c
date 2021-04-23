@@ -13,34 +13,42 @@
 #include <stdlib.h>
 
 #include <sched.h>
-#define EXECUTE_ALL     0
-#define EXECUTE_ERIC    1
-#define EXECUTE_ALEX    2
-#define EXECUTE_VINCENT 3
-#define EXECUTE_DECLAN  4
+#define EXECUTE_ALL         0
+#define EXECUTE_ERIC        1
+#define EXECUTE_ALEX        2
+#define EXECUTE_VINCENT     3
+#define EXECUTE_DECLAN      4
+#define EXECUTE_ERIC_P      5
+#define EXECUTE_ALEX_P      6
+#define EXECUTE_VINCENT_P   7
+#define EXECUTE_DECLAN_P    8
+#define EXECUTE_ERIC_S      9
+#define EXECUTE_ALEX_S      10
+#define EXECUTE_VINCENT_S   11
+#define EXECUTE_DECLAN_S    12
 
 
 //AlexLib execution
-void execute_alex_lib(){
-    DBG_WRAP_DRIVER(POSIX_message_queue_execute());
-    DBG_WRAP_DRIVER(SYS_V_message_queue_execute());
+void execute_alex_lib(bool posix){
+    if(posix) DBG_WRAP_DRIVER(POSIX_message_queue_execute());
+    else DBG_WRAP_DRIVER(SYS_V_message_queue_execute());
 }
 
 //EricLib execution
-void execute_eric_lib(){
-    DBG_WRAP_DRIVER(POSIX_semaphore_execute());
-    DBG_WRAP_DRIVER(SYS_V_semaphore_execute());
+void execute_eric_lib(bool posix){
+    if(posix) DBG_WRAP_DRIVER(POSIX_semaphore_execute());
+    else DBG_WRAP_DRIVER(SYS_V_semaphore_execute());
 }
 
 //VincentLib execution
-void execute_vincent_lib(){
-    DBG_WRAP_DRIVER(POSIX_shared_memory_execute());
-    DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());
+void execute_vincent_lib(bool posix){
+    if(posix) DBG_WRAP_DRIVER(POSIX_shared_memory_execute());
+    else DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());
 }
 
 
 //DeclanLib execution
-void execute_declan_lib(){
+void execute_declan_lib(bool posix){
     DBG_WRAP_DRIVER(execute_declan());
 }
 int execution_order = 0;
@@ -51,19 +59,47 @@ int run_IPCS(){
     
     switch(execution_order){
         case EXECUTE_DECLAN:{
-            execute_declan_lib();
+            execute_declan_lib(true);
+            execute_declan_lib(false);
             break;
         }
         case EXECUTE_ALEX:{
-            execute_alex_lib();
+            execute_alex_lib(true);
+            execute_alex_lib(false);
             break;
         }
         case EXECUTE_VINCENT:{
-            execute_vincent_lib();
+            execute_vincent_lib(true);
+            execute_vincent_lib(false);
             break;
         }
         case EXECUTE_ERIC:{
-            execute_eric_lib();
+            execute_eric_lib(true);
+            execute_eric_lib(false);
+            break;
+        }
+        case EXECUTE_ALEX_S:{
+            execute_alex_lib(false);
+            break;
+        }
+        case EXECUTE_VINCENT_S:{
+            execute_vincent_lib(false);
+            break;
+        }
+        case EXECUTE_ERIC_S:{
+            execute_eric_lib(false);
+            break;
+        }
+        case EXECUTE_ALEX_P:{
+            execute_alex_lib(true);
+            break;
+        }
+        case EXECUTE_VINCENT_P:{
+            execute_vincent_lib(true);
+            break;
+        }
+        case EXECUTE_ERIC_P:{
+            execute_eric_lib(true);
             break;
         }
         default:{
@@ -94,11 +130,6 @@ int driver(int argc, char* argv[]){
     mem = malloc(STACK_SIZE);
     if(!mem)LOG("Error allocating stack\n");
     
-    //generate a new ipc namespace
-    //create child process for run_ipcs
-    // send child into ipc namespace
-   // 0x08000000
-    //0x04000000
     pid_t child_clone_pid = clone(run_IPCS, mem + STACK_SIZE, CLONE_NEWIPC, (void*)0);
     if(child_clone_pid == -1){
          ERROR("Error code %d=%s\n", errno, strerror(errno));
