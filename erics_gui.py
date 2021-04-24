@@ -67,11 +67,8 @@ def run():
 #BUTTON MIGHT BE A BUST
 def abort():
     print("AHHHHH!!!! ABORT!!!")
-    subprocess.run(['$$'], shell = True)
+    #subprocess.run(['$$'], shell = True)
     #subprocess.run(['kill -2 $$'], shell = True)
-
-        
-    
     
     
 
