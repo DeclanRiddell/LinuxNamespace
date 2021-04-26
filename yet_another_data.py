@@ -12,14 +12,17 @@ sns.set_theme(style="ticks", color_codes=True)
 #
 sprint_data = pd.read_csv("UserCode/Vincent/sprint_speed.csv")
 
-root = Tk()
-root.geometry('800x600')
+#root = Tk()
+#root.geometry('800x600')
 
-def graph():
-    sns.lmplot(x="sprint_speed", y="age", col = "position", data=sprint_data)
-    plt.show()
+#def graph():
+fig = plt.figure()
+sns.lmplot(x="sprint_speed", y="age", col = "position", data=sprint_data).savefig('test_pic.png')
+print('image updated')    
+    #plt.show()
 
-data_visualize = Button(root, text="graph it", command=graph)
-data_visualize.pack()
 
-root.mainloop()
+#data_visualize = Button(root, text="graph it", command=graph)
+#data_visualize.pack()
+
+#root.mainloop()

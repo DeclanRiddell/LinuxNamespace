@@ -29,7 +29,8 @@ my_map = {"native" :
         }
 
 def execute(command):
-    subprocess.run([command], shell = True)      
+    subprocess.run([command], shell = True, timeout = 5)
+    subprocess.run('python3 yet_another_data.py', shell = True)
     #update_graph();
     
 
