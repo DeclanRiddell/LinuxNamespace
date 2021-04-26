@@ -2,6 +2,7 @@
 from tkinter import *
 import tkinter.ttk
 import subprocess
+from PIL import ImageTk, Image
 
 window = Tk()
 my_map = {"native" : 
@@ -29,8 +30,8 @@ my_map = {"native" :
         }
 
 def execute(command):
-    subprocess.run([command], shell = True, timeout = 5)
-    subprocess.run('python3 yet_another_data.py', shell = True)
+    subprocess.call([command], shell = True, timeout = 5)
+    subprocess.call('python3 yet_another_data.py', shell = True)
     #update_graph();
     
 
@@ -176,8 +177,9 @@ tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=2, columnspa
 tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=3, columnspan=3, sticky='ews')
 tkinter.ttk.Separator(window, orient=HORIZONTAL).grid(column=0, row=4, columnspan=3, sticky='ews')
 
-
-
-
+#Put pic on GUI
+img = ImageTk.PhotoImage(Image.open('test_pic.png'))
+panel = Label(window, image = img)
+panel.grid(row = 0, column = 6, sticky='w', rowspan = 50, columnspan = 50)
 
 window.mainloop()
