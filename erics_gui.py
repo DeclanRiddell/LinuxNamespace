@@ -28,47 +28,52 @@ my_map = {"native" :
                     } 
         }
 
+def execute(command):
+    subprocess.run([command], shell = True)      
+    #update_graph();
+    
+
 def run():
     window.update( );
         
 #Native POSIX IPCs
     if(my_map['native']['posix']['s'].get()):
-        subprocess.run(['sudo ./run_eric_native_posix.script'], shell = True)    
+        execute('sudo ./run_eric_native_posix.script')    
     if(my_map['native']['posix']['mq'].get()):
-        subprocess.run(['sudo ./run_alex_native_posix.script'], shell = True)    
+        execute('sudo ./run_alex_native_posix.script')    
     if(my_map['native']['posix']['sm'].get()):
-        subprocess.run(['sudo ./run_vincent_native_posix.script'], shell = True)    
+        execute('sudo ./run_vincent_native_posix.script')    
 
 #Namespace POSIX IPCs
     if(my_map['namespace']['posix']['s'].get()):
-        subprocess.run(['sudo ./run_eric_namespace_posix.script'], shell = True)    
+        execute('sudo ./run_eric_namespace_posix.script')    
     if(my_map['namespace']['posix']['mq'].get()):
-        subprocess.run(['sudo ./run_alex_namespace_posix.script'], shell = True)    
+        execute('sudo ./run_alex_namespace_posix.script')    
     if(my_map['namespace']['posix']['sm'].get()):
-        subprocess.run(['sudo ./run_vincent_namespace_posix.script'], shell = True)    
+        execute('sudo ./run_vincent_namespace_posix.script')    
 
 #Native SYSV IPCs
     if(my_map['native']['sysv']['s'].get()):
-        subprocess.run(['sudo ./run_eric_native_sysv.script'], shell = True)    
+        execute('sudo ./run_eric_native_sysv.script')    
     if(my_map['native']['sysv']['mq'].get()):
         #SEGMENTATION FAULT
-        subprocess.run(['sudo ./run_alex_native_sysv.script'], shell = True)    
+        execute('sudo ./run_alex_native_sysv.script')    
     if(my_map['native']['sysv']['sm'].get()):
-        subprocess.run(['sudo ./run_vincent_native_sysv.script'], shell = True)    
+        execute('sudo ./run_vincent_native_sysv.script')    
   
 #Namespace SYSV IPCs
     if(my_map['namespace']['sysv']['s'].get()): 
-        subprocess.run(['sudo ./run_eric_namespace_sysv.script'], shell = True)    
+        execute('sudo ./run_eric_namespace_sysv.script')    
     if(my_map['namespace']['sysv']['mq'].get()):
-        subprocess.run(['sudo ./run_alex_namespace_sysv.script'], shell = True)    
+        execute('sudo ./run_alex_namespace_sysv.script')    
     if(my_map['namespace']['sysv']['sm'].get()):
-        subprocess.run(['sudo ./run_vincent_namespace_sysv.script'], shell = True)   
+        execute('sudo ./run_vincent_namespace_sysv.script')   
 
 #BUTTON MIGHT BE A BUST
 def abort():
     print("AHHHHH!!!! ABORT!!!")
-    #subprocess.run(['$$'], shell = True)
-    #subprocess.run(['kill -2 $$'], shell = True)
+    #execute('$$')
+    #execute('kill -2 $$')
     
     
 
