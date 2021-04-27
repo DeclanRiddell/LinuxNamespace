@@ -66,7 +66,7 @@ def init():
 
    
     #run_button = Button(picker_frame, text="Run", padx=picker_frame.winfo_width() / 2, pady=5, anchor='c').grid(row=0,column=0,rowspan=10);
-    #Button(picker_frame, text="Run", anchor='c', padx=15, bg='#ccffe6').grid(row=10,column=0, columnspan=1);
+    Button(picker_frame, text="Run", command = execute, anchor='c', padx=15, bg='#ccffe6').grid(row=1,column=0, columnspan=1);
     #Label(picker_frame, text="Namespace", bg=p_col).grid(row=0, column=0)
     offset = 2
     namespace_label = Label(picker_frame, text="Namespace",font=(font_type, font_size), bg=p_col).grid(row=0+(int)(offset/2), column=2)
@@ -124,49 +124,50 @@ def setup_map_checkboxes():
     namespace_sysv_sharedmem_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['sharedmemory'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 8, column = 3)
 
 
-    #Native POSIX IPCs
+def execute():
+        #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()):
         print("native posix semaphore")
-        subprocess.run(['sudo make eric'], shell = True)    
+        #subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['posix']['messagequeue'].get()):
         print("native posix message queue")    
-        subprocess.run(['sudo make alex'], shell = True)    
+        #subprocess.run(['sudo make alex'], shell = True)    
     if(my_map['native']['posix']['sharedmemory'].get()):
         print("native posix shared memory")    
-        subprocess.run(['sudo make vincent'], shell = True)    
+        #subprocess.run(['sudo make vincent'], shell = True)    
 
 #Namespace POSIX IPCs
     if(my_map['namespace']['posix']['semaphore'].get()):
         print("namespace posix semaphore")    
-        subprocess.run(['sudo make eric_namespace'], shell = True)    
+        #subprocess.run(['sudo make eric_namespace'], shell = True)    
     if(my_map['namespace']['posix']['messagequeue'].get()):
         print("namespace posix message queue")    
-        subprocess.run(['sudo make alex_namespace'], shell = True)    
+        #subprocess.run(['sudo make alex_namespace'], shell = True)    
     if(my_map['namespace']['posix']['sharedmemory'].get()):
         print("namespace posix shared memory")    
-        subprocess.run(['sudo make vincent_namespace'], shell = True)    
+        #subprocess.run(['sudo make vincent_namespace'], shell = True)    
 
 #Native SYSV IPCs
     if(my_map['native']['sysv']['semaphore'].get()):
         print("native sysv semaphore")    
-        subprocess.run(['sudo make eric'], shell = True)    
+        #subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['sysv']['messagequeue'].get()):
         print("native sysv message queue")    
-        subprocess.run(['sudo make alex'], shell = True)    
+        #subprocess.run(['sudo make alex'], shell = True)    
     if(my_map['native']['sysv']['sharedmemory'].get()):
         print("native sysv shared memory")  
-        subprocess.run(['sudo make vincent'], shell = True)    
+        #subprocess.run(['sudo make vincent'], shell = True)    
   
 #Namespace SYSV IPCs
     if(my_map['namespace']['sysv']['semaphore'].get()):
         print("namespace sysv semaphore")    
-        subprocess.run(['sudo make eric_namespace'], shell = True)    
+        #subprocess.run(['sudo make eric_namespace'], shell = True)    
     if(my_map['namespace']['sysv']['messagequeue'].get()):
         print("namespace sysv message queue")    
-        subprocess.run(['sudo make alex_namespace'], shell = True)    
+        #subprocess.run(['sudo make alex_namespace'], shell = True)    
     if(my_map['namespace']['sysv']['sharedmemory'].get()):
         print("namespace sysv shared memory")   
-        subprocess.run(['sudo make vincent_namespace'], shell = True)
+        #subprocess.run(['sudo make vincent_namespace'], shell = True)
 
 if __name__ == '__main__':
     init()
