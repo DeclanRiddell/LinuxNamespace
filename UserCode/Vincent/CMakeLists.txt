@@ -25,6 +25,7 @@ add_library(
 target_compile_options(VincentLib PRIVATE -pthread)
 target_link_libraries(VincentLib PRIVATE rt)
 target_link_libraries(VincentLib PRIVATE m)
+target_link_libraries(VincentLib PRIVATE mysqlclient)
 target_include_directories(VincentLib PUBLIC "${ABS_ROOT}UserCode/Vincent/src")
 target_include_directories(VincentLib PUBLIC "${ABS_ROOT}UserCode/")
 message(${ABS_ROOT}VincentLib/src)

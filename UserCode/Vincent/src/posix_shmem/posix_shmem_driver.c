@@ -31,7 +31,7 @@ int POSIX_shared_memory_execute(int iteration_count){
     //Print results and append results to file
     posix_results();
     posix_append_results(__msg);
-
+    db();
     return 0;
 }
 
@@ -75,3 +75,51 @@ int posix_append_results(){
     fclose(store_results);
 
 }
+
+
+/**
+ * Connect to the DB here, then use the stored procedures to add the values.
+ * After the values are added, then call the procedure to generate a CSV.
+ *
+ *
+ */
+#include <mysql/mysql.h>
+#include <stdio.h>
+void db() {
+	MYSQL *conn;
+	MYSQL_RES *res;
+	MYSQL_ROW row;
+	
+	char *server = "localhost";
+	char *user = "namespace";
+	char *password = "password"; /* set me first */
+	char *database = "sys";
+	
+	conn = mysql_init(NULL);
+	
+	/* Connect to database */
+	if (!mysql_real_connect(conn, server, user, password, 
+                                      database, 0, NULL, 0)) {
+		fprintf(stderr, "%s\n", mysql_error(conn));
+		exit(1);
+	}
+	
+	/* send SQL query */
+	if (mysql_query(conn, "call sys.addSharedMemory(.0021, .8762)")) {
+		fprintf(stderr, "%s\n", mysql_error(conn));
+		exit(1);
+	}
+   
+//	res = mysql_use_result(conn);
+	
+	/* output table name */
+//	printf("MySQL Tables in mysql database:\n");
+   
+//	while ((row = mysql_fetch_row(res)) != NULL)
+//		printf("%s \n", row[0]);
+   
+//	/* close connection */
+//	mysql_free_result(res);
+	mysql_close(conn);
+}
+
