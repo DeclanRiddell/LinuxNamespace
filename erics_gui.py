@@ -4,6 +4,8 @@ import tkinter.ttk
 import subprocess
 from PIL import ImageTk, Image
 
+
+
 window = Tk()
 my_map = {"native" : 
                     {"sysv" :  

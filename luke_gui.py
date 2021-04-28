@@ -1,9 +1,14 @@
 from tkinter import *
 import tkinter.ttk
+import subprocess
+from PIL import ImageTk, Image
+
 c_width = 1080; c_height = 480;
 root = Tk(className="Linux IPC Metrics")
 canvas = Canvas(root, width = c_width, height = c_height)
 canvas.pack()
+iteration_count = 444;
+
 my_map = {"native" : 
                     {"sysv" :  
                             {"messagequeue" : IntVar(), 
@@ -57,7 +62,7 @@ def init():
     print(canvas['width'])
 
     root.bind('<Configure>',change_size_callback)
-    picker_w = 0.5; picker_h = 1;
+    picker_w = 0.6; picker_h = 1;
     picker_frame.place(width = c_width * picker_w, relheight=picker_h)
     matplot_frame.place(relwidth = 1.0 , relheight = picker_h, x=c_width * picker_w, )
     root.update()
@@ -85,6 +90,12 @@ def init():
     Label(picker_frame, text="\t", bg=p_col,font=(font_type, font_size)).grid(row=5+offset, column=0)
     shared_memory_label = Label(picker_frame, text="Shared Memory", bg=p_col,font=(font_type, font_size)).grid(row=6+offset, column=0, sticky='w')
 
+
+    rando = "" + str(iteration_count)
+    iteration_label = Label(picker_frame, text="Iterations:", bg=p_col,font=(font_type, font_size)).grid(row=0, column=0)
+    iteration_argument = Entry(picker_frame, width = 10, textvariable = rando).grid(row = 0, column = 1)
+    
+
     tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=0, row=3, rowspan=8, sticky='ens') 
     tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=2, row=3, rowspan=8, sticky='ns') 
     tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=4, row=3, rowspan=8, sticky='ns') 
@@ -96,6 +107,10 @@ def init():
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=7, columnspan=8, sticky='ew') 
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=9, columnspan=8, sticky='ew') 
     setup_map_checkboxes()
+
+
+    img = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+    panel = Label(matplot_frame, image = img).grid(row= 0, column = 0)
     
     # ipc_label.grid(row=0, column=0)
     # semaphore_label.grid(row=2, column=0)
@@ -123,11 +138,13 @@ def setup_map_checkboxes():
     namespace_sysv_messagequeue_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['messagequeue'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 6, column = 3)
     namespace_sysv_sharedmem_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['sharedmemory'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 8, column = 3)
 
-
 def execute():
         #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()):
         print("native posix semaphore")
+        #subprocess.call(['sudo ./IPC_EXE 5 0 ' + str(iteration_count)], shell = True, timeout=1)    
+        subprocess.call(['python3 create_graph.py '], shell = True)   
+        matplot_frame.update() 
         #subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['posix']['messagequeue'].get()):
         print("native posix message queue")    
