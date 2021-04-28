@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter.ttk
 import subprocess
 from PIL import ImageTk, Image
+import os, signal
 
 c_width = 1080; c_height = 480;
 root = Tk(className="Linux IPC Metrics")
@@ -58,7 +59,6 @@ def change_size_callback(event):
     c_width = event.width;
     c_height = event.height
 
-
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
     panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
@@ -84,7 +84,11 @@ def init():
 
    
     #run_button = Button(picker_frame, text="Run", padx=picker_frame.winfo_width() / 2, pady=5, anchor='c').grid(row=0,column=0,rowspan=10);
-    Button(picker_frame, text="Run", command = execute, anchor='c', padx=15, bg='#ccffe6').grid(row=1,column=0, columnspan=1);
+    Button(picker_frame, text="Run", command = execute, anchor='c', padx=15, bg='#ccffe6').grid(row=10,column=0, columnspan=1);
+    Button(picker_frame, text="Abort", command = abort, anchor='c', padx=15, bg='red').grid(row=10,column=1, columnspan=1);
+    rando = "" + str(iteration_count)
+    iteration_label = Label(picker_frame, text="Iterations:", bg=p_col,font=(font_type, font_size)).grid(row=11, column=0)
+    iteration_argument = Entry(picker_frame, width = 10, textvariable = rando).grid(row = 11, column = 1)
     #Label(picker_frame, text="Namespace", bg=p_col).grid(row=0, column=0)
     offset = 2
     namespace_label = Label(picker_frame, text="Namespace",font=(font_type, font_size), bg=p_col).grid(row=0+(int)(offset/2), column=2)
@@ -104,16 +108,14 @@ def init():
     shared_memory_label = Label(picker_frame, text="Shared Memory", bg=p_col,font=(font_type, font_size)).grid(row=6+offset, column=0, sticky='w')
 
 
-    rando = "" + str(iteration_count)
-    iteration_label = Label(picker_frame, text="Iterations:", bg=p_col,font=(font_type, font_size)).grid(row=0, column=0)
-    iteration_argument = Entry(picker_frame, width = 10, textvariable = rando).grid(row = 0, column = 1)
+
     
 
-    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=0, row=3, rowspan=8, sticky='ens') 
-    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=2, row=3, rowspan=8, sticky='ns') 
-    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=4, row=3, rowspan=8, sticky='ns') 
-    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=6, row=3, rowspan=8, sticky='ns') 
-    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=8, row=3, rowspan=8, sticky='ns') 
+    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=0, row=3, rowspan=7, sticky='ens') 
+    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=2, row=3, rowspan=7, sticky='ns') 
+    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=4, row=3, rowspan=7, sticky='ns') 
+    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=6, row=3, rowspan=7, sticky='ns') 
+    tkinter.ttk.Separator(picker_frame, orient=VERTICAL).grid(column=8, row=3, rowspan=7, sticky='ns') 
 
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=3, columnspan=8, sticky='ew') 
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=5, columnspan=8, sticky='ew') 
@@ -134,7 +136,11 @@ def init():
     # posix_label.grid(row=1, column=2)
     # sysv_label.grid(row=1, column=7)
     root.mainloop()
+pro = subprocess.Popen('sudo ./IPC_EXE 5 0', shell=True, preexec_fn=os.setsid)
 
+def abort():
+    print("Aborting")
+    os.killpg(os.getpgid(pro.pid), signal.SIGTERM)
 
 def setup_map_checkboxes():
     native_posix_semaphore_button = Checkbutton(picker_frame,  var = my_map['native']['posix']['semaphore'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 4, column = 5)
@@ -153,9 +159,10 @@ def setup_map_checkboxes():
 
 def update_graph(command):
     print(command)
-    #subprocess.call([command], shell = True, timeout=1)    
-    subprocess.call(['python3 create_graph.py'], shell = True)   
-    draw_updated()
+    pro = subprocess.Popen('python3 test.py', shell=True, preexec_fn=os.setsid)
+    #pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
+    #subprocess.run(['python3 create_graph.py'], shell = True)   
+    #draw_updated()
 def execute():
     #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 0 ' + str(iteration_count))
