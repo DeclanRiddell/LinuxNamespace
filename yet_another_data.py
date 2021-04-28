@@ -17,7 +17,7 @@ sprint_data = pd.read_csv("UserCode/Vincent/sprint_speed.csv")
 
 #def graph():
 #fig = plt.figure()
-fig = sns.lmplot(x="sprint_speed", y="age", col = "position", data=sprint_data)
+fig = sns.lmplot(x="Time to execute (ms)", y="", col = "position", data=sprint_data)
 #fig.set_size_inches(8, 6)
 plt.savefig('test_pic.png', dpi = 100)
 #image1 = Image.open()

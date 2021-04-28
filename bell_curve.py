@@ -26,4 +26,4 @@ ax.set_title(r'Histogram of IPC Times: $\mu=100$, $\sigma=15$')
 # Tweak spacing to prevent clipping of ylabel
 fig.tight_layout()
 fig.savefig("Resources/bell_curve.png")
-plt.show()
+#plt.show()

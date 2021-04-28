@@ -10,4 +10,4 @@ ax.set_ylabel = "Time"
 plt.savefig('Resources/bar_graph.png')#, dpi = 400)
 
 
-plt.show()
+#plt.show()

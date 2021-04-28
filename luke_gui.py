@@ -4,7 +4,7 @@ import subprocess
 from PIL import ImageTk, Image
 import os, signal
 
-c_width = 1080; c_height = 480;
+c_width = 1080; c_height = 720;
 root = Tk(className="Linux IPC Metrics")
 canvas = Canvas(root, width = c_width, height = c_height)
 canvas.pack()
@@ -60,16 +60,22 @@ def change_size_callback(event):
     c_height = event.height
 
 
-bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
-hist_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
-panel = Label(matplot_frame, image = bar_img).grid(row= 0, column = 0)
+img_size = 350
+bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+panel_bar = Label(matplot_frame, image = bar_img).grid(row= 0, column = 0)
+panel_hist = Label(matplot_frame, image = hist_img).grid(row= 1, column = 0)
 def draw_updated():
-    img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
-    panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
+    img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+    img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
+    panel_bar = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
     try:
-        panel.image=img2
+        panel_hist.image=img2
+        panel_bar.image= img3
     except:
-        panel.image=img2
+        panel_hist.image=img2
+        panel_bar.image= img3
 
 
 
@@ -162,10 +168,10 @@ def setup_map_checkboxes():
 
 def update_graph(command):
     print(command)
-    pro = subprocess.Popen('python3 test.py', shell=True, preexec_fn=os.setsid)
-    #pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
-    #subprocess.run(['python3 create_graph.py'], shell = True)   
-    #draw_updated()
+    pro = subprocess.Popen(command + " -A", shell=True, preexec_fn=os.setsid)    
+    subprocess.run(['python3 create_graph.py'], shell = True)   
+    subprocess.run(['python3 bell_curve.py'], shell = True)   
+    draw_updated()
 def execute():
     #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 0 ' + str(iteration_count))
