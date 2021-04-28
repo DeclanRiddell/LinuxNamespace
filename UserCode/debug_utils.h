@@ -40,6 +40,6 @@
 #endif
 #define DBG_WRAP_DRIVER(x) DEBUG("=\tStarting '%s'", #x); x; UNLOAD_LOG("=\tEnd of '%s'", #x)
 
-#define ITERATION_COUNT 1024
+//static int iteration_count = 1024;
 #define __msg "Hello!"
 #endif

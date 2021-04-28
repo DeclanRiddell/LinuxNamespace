@@ -11,7 +11,7 @@
 #include <debug_utils.h>
 
 
-int POSIX_shared_memory_execute();
+int POSIX_shared_memory_execute(int iteration_count);
 int posix_append_results();
 void posix_results();
 

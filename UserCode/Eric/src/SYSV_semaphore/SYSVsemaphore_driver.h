@@ -10,7 +10,7 @@
 #include <debug_utils.h>
 #include <math.h>
 
-int SYS_V_semaphore_execute();
+int SYS_V_semaphore_execute(int);
 
 double SYSVmin, SYSVmax, SYSVsum, SYSVmean, SYSVvariance, SYSVstandard_deviation;
 

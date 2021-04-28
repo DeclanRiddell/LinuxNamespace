@@ -1,6 +1,5 @@
 #include "Psemaphore.h"
 
-
 //This process grabs the semaphore, then releases it and prints the time it took to do so
 void* thread(void* arg)
 { 
@@ -8,7 +7,7 @@ void* thread(void* arg)
     double loopTime = 0;
 
     //loop for 3000ms = 3s
-    while(count < ITERATION_COUNT)
+    while(count < p_iteration_count)
     {
         double elapsedTime = 0;
         //start timer
@@ -33,7 +32,8 @@ void* thread(void* arg)
         if(elapsedTime <= MIN_TIME_EXE) elapsedTime = MIN_TIME_EXE;
         loopTime+= elapsedTime;
 
-        times[(count - 1)%ITERATION_COUNT] = elapsedTime; //Add the elapsed time to the array
+        //times[(count - 1)%iteration_count] = elapsedTime; //Add the elapsed time to the array
+        avg_time += elapsedTime;
 
     }
     

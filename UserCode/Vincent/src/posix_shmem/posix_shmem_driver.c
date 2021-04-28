@@ -4,11 +4,11 @@
  * This program is used to demonstrate Shared Memory using POSIX API
  */
 
-int POSIX_shared_memory_execute(){
+int POSIX_shared_memory_execute(int iteration_count){
 
 
     gettimeofday(&startPosix, NULL);
-    while(posixCounter < ITERATION_COUNT){
+    while(posixCounter < iteration_count){
         posixCounter++;
         
         //Create pthread and send the message

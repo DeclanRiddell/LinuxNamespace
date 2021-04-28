@@ -2,7 +2,7 @@
 
 
 
-int SYS_V_semaphore_execute()
+int SYS_V_semaphore_execute(int iteration_count)
 {
     //This struct will be used as a paramter in semop for grabbing the semaphore
     lock.sem_num = 0;
@@ -83,7 +83,7 @@ int SYS_V_semaphore_execute()
     LOG("\n");
     LOG("SYSV Semaphore findings\n");
     LOG("-----------------------------\n");
-    LOG("Number of Iterations: %d\n", SYSVcount);
+    LOG("Number of Iterations: %d\n", iteration_count);
     LOG("Average time for System Calls: %f\n", SYSVmean);
     LOG("Minumum system calls time: %f\n", SYSVmin < MIN_TIME_EXE ? MIN_TIME_EXE : SYSVmin);
     LOG("Maximum system calls time: %f\n", SYSVmax);

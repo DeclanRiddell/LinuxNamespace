@@ -14,6 +14,6 @@
 
 //Executes message queue
 char* inc_msg;
-int POSIX_message_queue_execute();
+int POSIX_message_queue_execute(int);
 
 #endif

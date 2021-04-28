@@ -26,24 +26,24 @@
 #define EXECUTE_ALEX_S      10
 #define EXECUTE_VINCENT_S   11
 #define EXECUTE_DECLAN_S    12
-
+int iteration_count;
 
 //AlexLib execution
 void execute_alex_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute());}
-    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute());}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute(iteration_count));}
+    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute(iteration_count));}
 }
 
 //EricLib execution
 void execute_eric_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute());}
-    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute());}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute(iteration_count));}
+    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute(iteration_count));}
 }
 
 //VincentLib execution
 void execute_vincent_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute());}
-    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute());}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute(iteration_count));}
+    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(iteration_count));}
 }
 
 
@@ -125,8 +125,11 @@ int sup(){
 #define STACK_SIZE 65536
 void* mem;
 int driver(int argc, char* argv[]){
+    LOG("Starting");
     execution_order = atoi(argv[1]);
     int run_namespace = atoi(argv[2]);
+    iteration_count = atoi(argv[3]);
+    LOG("Iteration count = %d", iteration_count);
     LOG("run_namespace ? %d", run_namespace );
     if(!run_namespace) return run_IPCS();
     LOG("Running namespace");

@@ -7,12 +7,12 @@
  * This program is used to demonstrate Shared Memory using System V
  */
 
-int SYS_V_shared_memory_execute(){  
+int SYS_V_shared_memory_execute(int iteration_count){  
 
 
     
     gettimeofday(&start,NULL); //starts timer
-    while(counterSYSV < ITERATION_COUNT){
+    while(counterSYSV < iteration_count){
         counterSYSV++;
 
         //Create a pthread and run the send function with the message

@@ -9,19 +9,19 @@
 
 
 //Creates threads for the message send and message receive operations and then
-int POSIX_message_queue_execute()
+int POSIX_message_queue_execute(int iteration_count)
 {
    LOG("Starting POSIX msg queue\n");
 
     int index = 0;
     clock_t start, end;
     double execution_time;
-    double snd_times[ITERATION_COUNT];
-    double rcv_times[ITERATION_COUNT];
+    double snd_times[iteration_count];
+    double rcv_times[iteration_count];
     double min, max, avg;
     min = max = avg = MIN_POSSIBLE_EXE_TIME;
     
-    while(index < ITERATION_COUNT)
+    while(index < iteration_count)
     {
         pthread_t thread1, thread2;
 
@@ -52,15 +52,15 @@ int POSIX_message_queue_execute()
     } 
 
 
-    avg /= ITERATION_COUNT;
+    avg /= iteration_count;
     double variance, standard_deviation;
     variance = standard_deviation = 0;
-    for(int i = 0; i < ITERATION_COUNT; i++) variance += (rcv_times[i] - avg) * (rcv_times[i] - avg);
-    variance /= ITERATION_COUNT;
+    for(int i = 0; i < iteration_count; i++) variance += (rcv_times[i] - avg) * (rcv_times[i] - avg);
+    variance /= iteration_count;
     standard_deviation = sqrt(variance);
 
-    POSIX_msgq_outputDataFile(snd_times, "POSIX Message Queue Send", ITERATION_COUNT);
-    POSIX_msgq_outputDataFile(rcv_times, "POSIX Message Queue Receive", ITERATION_COUNT);
+    POSIX_msgq_outputDataFile(snd_times, "POSIX Message Queue Send", iteration_count);
+    POSIX_msgq_outputDataFile(rcv_times, "POSIX Message Queue Receive", iteration_count);
     
     LOG("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
     return 0;
