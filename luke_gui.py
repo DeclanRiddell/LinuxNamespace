@@ -47,21 +47,32 @@ def method2():
     posix_label = Label(picker_frame, text="Posix", bg=p_col).pack()
     sysv_label = Label(picker_frame, text="SysV", bg=p_col).pack()
     run_button = Button(picker_frame, text="Run", padx=picker_frame.winfo_width() / 2, pady=5, anchor='c').grid(row=0,column=0,rowspan=10);
+p_col = '#ccccff'
+font_type= 'Arial'
+font_size = 12
+picker_frame = Frame(root, bg=p_col)
+matplot_frame = Frame(root, bg="#e6ffff")
 
 def change_size_callback(event):
     print(event.width,event.height)
     c_width = event.width;
     c_height = event.height
 
-p_col = '#ccccff'
-font_type= 'Arial'
-font_size = 12
-picker_frame = Frame(root, bg=p_col)
-matplot_frame = Frame(root, bg="#e6ffff")
+
+def change_image_callback(event):
+    img2 = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+    panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
+    panel.configure(image=img2)
+    panel.image=img2
+
+
+img = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+panel = Label(matplot_frame, image = img).grid(row= 0, column = 0)
 def init():
     print(canvas['width'])
 
     root.bind('<Configure>',change_size_callback)
+    root.bind('<Return>',change_image_callback)
     picker_w = 0.6; picker_h = 1;
     picker_frame.place(width = c_width * picker_w, relheight=picker_h)
     matplot_frame.place(relwidth = 1.0 , relheight = picker_h, x=c_width * picker_w, )
@@ -109,13 +120,13 @@ def init():
     setup_map_checkboxes()
 
 
-    img = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
-    panel = Label(matplot_frame, image = img).grid(row= 0, column = 0)
+    
     
     # ipc_label.grid(row=0, column=0)
     # semaphore_label.grid(row=2, column=0)
     # message_queue_label.grid(row=3, column=0)
     # shared_memory_label.grid(row=4, column=0)
+
 
     # spacer = 1
     # posix_label.grid(row=1, column=2)
@@ -145,6 +156,7 @@ def execute():
         #subprocess.call(['sudo ./IPC_EXE 5 0 ' + str(iteration_count)], shell = True, timeout=1)    
         subprocess.call(['python3 create_graph.py '], shell = True)   
         matplot_frame.update() 
+        canvas.update()
         #subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['posix']['messagequeue'].get()):
         print("native posix message queue")    
