@@ -8,22 +8,18 @@
 
 
 //Creates threads for the message send and message receive operations and then
-int SYS_V_message_queue_execute(int argc, char* argv[])
+int SYS_V_message_queue_execute(int iteration_count)
 {
-    inc_msg = argv[1];
-    if(argc < 2){
-        printf("This program requires a message in quotes with a max size of 1024 bytes\n");
-        exit(1);
-    }
+    inc_msg = __msg;
 
     int index = 0;
     clock_t start, end;
     double execution_time;
-    double snd_times[ITERATION_COUNT];
-    double rcv_times[ITERATION_COUNT];
+    double snd_times[iteration_count];
+    double rcv_times[iteration_count];
     double min, max, avg;
     min = max = avg = MIN_POSSIBLE_EXE_TIME;
-    while(index < ITERATION_COUNT)
+    while(index < iteration_count)
     {
         pthread_t thread1, thread2;
         start = clock();
@@ -31,7 +27,6 @@ int SYS_V_message_queue_execute(int argc, char* argv[])
         pthread_join(thread1,NULL);
         end = clock();
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
-        printf("Message Send executed in %f seconds\n", execution_time);
         snd_times[index] = ((double)(end - start))/CLOCKS_PER_SEC;
         
         //create pthread for receive operation
@@ -41,25 +36,23 @@ int SYS_V_message_queue_execute(int argc, char* argv[])
         end = clock();
         execution_time = ((double)(end - start))/CLOCKS_PER_SEC;
         execution_time = MIN_POSSIBLE_EXE_TIME > execution_time ? MIN_POSSIBLE_EXE_TIME : execution_time;
-        printf("Message Receive executed in %f seconds\n", execution_time);
         rcv_times[index] = execution_time;
         min = execution_time < min ? execution_time : min;
         max = execution_time > max ? execution_time : max;
         avg += execution_time;
 
-        printf("Iterated %d times\n", index);
         index++;
     }       
-    avg /= ITERATION_COUNT;
+    avg /= iteration_count;
     double variance, standard_deviation;
     variance = standard_deviation = 0;
-    for(int i = 0; i < ITERATION_COUNT; i++) variance += (rcv_times[i] - avg) * (rcv_times[i] - avg);
-    variance /= ITERATION_COUNT;
+    for(int i = 0; i < iteration_count; i++) variance += (rcv_times[i] - avg) * (rcv_times[i] - avg);
+    variance /= iteration_count;
     standard_deviation = sqrt(variance);
 
-    SYSV_msgq_outputDataFile(snd_times, "System V Message Queue Send", ITERATION_COUNT);
-    SYSV_msgq_outputDataFile(rcv_times, "System V Message Queue Receive", ITERATION_COUNT);
+    SYSV_msgq_outputDataFile(snd_times, "System V Message Queue Send", iteration_count);
+    SYSV_msgq_outputDataFile(rcv_times, "System V Message Queue Receive", iteration_count);
 
-    printf("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
+    LOG("Iterations:\t\t%d,SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", iteration_count, min, max, avg, variance, standard_deviation);
     return 0;
 }

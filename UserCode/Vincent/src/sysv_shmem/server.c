@@ -19,8 +19,8 @@ void * send(void * message){
     }
 
     if(sizeof(message) > SHM_SIZE){
-        printf("The message entered is too large\n");
-        printf("The size of message cannot be longer than 1024 characters\n");
+       LOG("The message entered is too large\n");
+       LOG("The size of message cannot be longer than 1024 characters\n");
         exit(1);
     }
 
@@ -57,6 +57,9 @@ void * send(void * message){
     }
     //Set the min and max values for iterations beyond the first
     if(writeDelta < shortestServer){
+        if(writeDelta < 0){
+            writeDelta = 0.000010;
+        }
         shortestServer = writeDelta;
     }
     if(writeDelta > longestServer){

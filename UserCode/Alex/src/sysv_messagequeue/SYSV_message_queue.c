@@ -21,8 +21,6 @@ void * sysv_msgq_rcv()
     
     msgrcv(qid,&msg, sizeof(msg.text), msg.msgtype, IPC_NOWAIT);
 
-    printf("Data received: %s\n", msg.text);
-    
     msgctl(qid, IPC_RMID, NULL);
 }
 
@@ -38,9 +36,9 @@ void * sysv_msgq_send()
 
     msg.msgtype = 1;
     strcpy(msg.text, message);
-    printf("cur message: '%s'\nmsg is: '%s'\n", message, msg.text);
 
     int id = msgsnd(msgqid, &msg, sizeof(msg.text), IPC_NOWAIT);
-    if(id != 0)
-        printf("Error: %d, %d=%s\n", id, errno, strerror(errno));
+    if(id != 0){
+       ERROR("Error: %d, %d=%s\n", id, errno, strerror(errno));
+    }
 }

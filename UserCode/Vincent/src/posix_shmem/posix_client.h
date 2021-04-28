@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/time.h>
+#include <debug_utils.h>
 
 #define SHM_SIZE 1024
 

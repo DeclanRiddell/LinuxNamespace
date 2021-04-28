@@ -3,7 +3,7 @@
 
 #include <unistd.h>
 #include "POSIX_message_queue.h"
-
+#include <debug_utils.h>
 
 void POSIX_msgq_outputDataFile(double times[], char methodName[], int iterations);
 

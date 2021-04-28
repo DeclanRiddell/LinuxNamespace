@@ -1,6 +1,5 @@
 #include "Psemaphore.h"
 
-
 //This process grabs the semaphore, then releases it and prints the time it took to do so
 void* thread(void* arg)
 { 
@@ -8,37 +7,22 @@ void* thread(void* arg)
     double loopTime = 0;
 
     //loop for 3000ms = 3s
-    while(count < SIZE_TIMES)
+    while(count < p_iteration_count)
     {
         double elapsedTime = 0;
         //start timer
         gettimeofday(&t1, NULL);
         sem_t semaphore;
         sem_init(&semaphore, 0, 1);
-        #ifdef DEBUG
-        printf("Running %d times\n", count);
-        #endif
         //wait grabs hold of semaphore
         sem_wait(&semaphore);
-        #ifdef DEBUG
-        printf("\nGrabbed Semaphore\n");
-        #endif
 
 
 
         //release semaphore
-        #ifdef DEBUG
-        printf("\nReleasing Semaphore\n");
-        #endif
         sem_post(&semaphore);
         
-        #ifdef DEBUG
-        printf("\Destroying Semaphore\n");
-        #endif
         sem_destroy(&semaphore);
-        #ifdef DEBUG
-        printf("Destroyed\n");
-        #endif
         //stop timer
         gettimeofday(&t2, NULL);
         count++;
@@ -48,10 +32,8 @@ void* thread(void* arg)
         if(elapsedTime <= MIN_TIME_EXE) elapsedTime = MIN_TIME_EXE;
         loopTime+= elapsedTime;
 
-        times[(count - 1)%SIZE_TIMES] = elapsedTime; //Add the elapsed time to the array
-        #ifdef DEBUG
-        printf("%d : %f\n", count, elapsedTime);
-        #endif
+        //times[(count - 1)%iteration_count] = elapsedTime; //Add the elapsed time to the array
+        avg_time += elapsedTime;
 
     }
     

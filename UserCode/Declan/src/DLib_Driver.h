@@ -2,7 +2,8 @@
 #define DEC_H
 
 #include <stdio.h>
+#include <debug_utils.h>
 
-void execute_declan(int argc, char* argv[]);
+void execute_declan();
 
 #endif

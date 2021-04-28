@@ -1,12 +1,12 @@
 #include "semaphore_driver.h"
 
 
-int POSIX_semaphore_execute(int argc, char* argv[])
+int POSIX_semaphore_execute(int iteration_count)
 {
     //create the semaphore
     pthread_t thread1, thread2;
     
-
+    p_iteration_count = iteration_count;
     //spawn two processes with pthreads that will use the semaphore, both threads will run the thread function
     
     //thread1
@@ -24,47 +24,48 @@ int POSIX_semaphore_execute(int argc, char* argv[])
     //sem_destroy(&semaphore);
    
     
-    max = times[0];
-    min = times[0];
-    sum = 0;
-    variance = 0;
+//     max = times[0];
+//     min = times[0];
+//     sum = 0;
+//     variance = 0;
 
-    //This loops finds the max, min, and sum of the times
-    for (int i = 0; i < count; i++)
-    {
-        if (times[i] < min) 
-        {
-            min = times[i];
-        }
+//     //This loops finds the max, min, and sum of the times
+//     for (int i = 0; i < count; i++)
+//     {
+//         if (times[i] < min) 
+//         {
+//             min = times[i];
+//         }
 
-        if(times[i] > max)
-        {
-            max = times[i];
-        }
+//         if(times[i] > max)
+//         {
+//             max = times[i];
+//         }
 
-        sum += times[i];
-    }
+//         sum += times[i];
+//     }
 
-    mean = sum/count;
+//     mean = sum/count;
 
     
-    //calculate variance
-    for (int i = 0; i < count; i++)
-    {
-        variance += (times[i] - mean) * (times[i] - mean);
-    }
-    variance = variance / count;
+//     //calculate variance
+//     for (int i = 0; i < count; i++)
+//     {
+//         variance += (times[i] - mean) * (times[i] - mean);
+//     }
+//     variance = variance / count;
 
-    standard_deviation = sqrt(variance);
+//     standard_deviation = sqrt(variance);
 
-    printf("Posix Semaphore Stats:\n");
-    printf("Number of Iterations: %d\n", count);
-    printf("Average wait()/post() Time: %f\n", mean);
-    printf("Minimum wait()/post() Time: %f\n", min < MIN_TIME_EXE ? MIN_TIME_EXE : min);
-    printf("Maximum wait()/post() Time: %f\n", max);
-    printf("Variance of wait()/post() Times: %f\n", variance);
-    printf("Standard Deviation of wait()/post() Times: %f\n", standard_deviation);
-
+//    LOG("Posix Semaphore Stats:");
+//    LOG("Number of Iterations: %d", count);
+//    LOG("Average wait()/post() Time: %f", mean);
+//    LOG("Minimum wait()/post() Time: %f", min < MIN_TIME_EXE ? MIN_TIME_EXE : min);
+//    LOG("Maximum wait()/post() Time: %f", max);
+//    LOG("Variance of wait()/post() Times: %f", variance);
+//    LOG("Standard Deviation of wait()/post() Times: %f", standard_deviation);
+    avg_time = avg_time / (float)iteration_count;
+    LOG("Average time is %f over %d iterations", avg_time, iteration_count);
 
 
     

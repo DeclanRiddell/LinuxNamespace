@@ -11,8 +11,8 @@ void * posix_send(void * msg){
     serverCountPosix++;
 
     if(sizeof(msg) > SHM_SIZE){
-        printf("The message entered is too large (Posix)\n");
-        printf("The size of message cannot be longer than 1024 characters\n");
+       LOG("The message entered is too large (Posix)\n");
+       LOG("The size of message cannot be longer than 1024 characters\n");
         exit(1);
     }
 
@@ -50,6 +50,9 @@ void * posix_send(void * msg){
     }
     //Set the min and max values for iterations beyond the first
     if(writeDeltaPosix < shortestServerPosix){
+        if(writeDeltaPosix < 0){
+            writeDeltaPosix = 0.000010;
+        }
         shortestServerPosix = writeDeltaPosix;
     }
     if(writeDeltaPosix > longestServerPosix){

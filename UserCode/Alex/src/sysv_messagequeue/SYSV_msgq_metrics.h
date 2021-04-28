@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include "SYSV_message_queue.h"
+#include <debug_utils.h>
 
 
 void SYSV_msgq_outputDataFile(double times[], char methodName[], int iterations);

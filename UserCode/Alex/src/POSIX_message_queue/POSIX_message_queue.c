@@ -7,7 +7,6 @@ void * posix_message_queue_send(void * arg)
     char text[1024];
     char* message = inc_msg;
     strcpy(text, message);
-    printf("cur message: '%s'\nmsg is: '%s'\n", message, text);
     mqdes = mq_open(QUEUE_NAME, O_RDWR|O_CREAT, S_IRUSR | S_IWUSR, NULL);
 
     if(mqdes == -1)
@@ -23,7 +22,6 @@ void * posix_message_queue_send(void * arg)
     }
     mq_close(mqdes);
 
-    printf("end send");
     
 }
 
@@ -41,7 +39,6 @@ void * posix_message_queue_receive(void * arg)
     
     mq_receive(mqdes, message, 1025, &prio);
 
-    printf("Message received: %s\n", message);
 
     mq_close(mqdes);
     mq_unlink(QUEUE_NAME);

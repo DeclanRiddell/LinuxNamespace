@@ -2,7 +2,7 @@
 
 
 
-int SYS_V_semaphore_execute(int argc, char* argv[])
+int SYS_V_semaphore_execute(int iteration_count)
 {
     //This struct will be used as a paramter in semop for grabbing the semaphore
     lock.sem_num = 0;
@@ -16,7 +16,7 @@ int SYS_V_semaphore_execute(int argc, char* argv[])
     unlock.sem_flg = 0;
     
     int id;
-    if ( (semaphore = semget( (key_t) 22345, 1, 0666 | IPC_CREAT) == -1)) //creates a semaphore set with one semaphore in it
+    if ((semaphore = semget( (key_t) 22345, 1, 0666 | IPC_CREAT)) == -1) //creates a semaphore set with one semaphore in it
      {
          perror("Error: semget");
          exit(1);
@@ -25,7 +25,7 @@ int SYS_V_semaphore_execute(int argc, char* argv[])
      if ( (id = semop(semaphore, &unlock, 1)) == -1)     //Unlock semaphore because it is initially locked upon creation
      {
          perror("Error: Unlock in main");
-         printf("Error code %d for semid %d\t %d=%s\n", id, unlock.sem_num, errno, strerror(errno));
+        LOG("Error code %d for semid %d\t %d=%s\n", id, unlock.sem_num, errno, strerror(errno));
          exit(1);
      }
 
@@ -43,7 +43,56 @@ int SYS_V_semaphore_execute(int argc, char* argv[])
     }
     
     
-    printf("semaphore removed\n");
+   LOG("semaphore removed\n");
+
+   sleep(2); //ensure threads have time to finish execution
+
+   SYSVmax = SYSVtimes[0];
+   SYSVmin = SYSVtimes[0];
+   SYSVsum = 0;
+   SYSVvariance = 0;
+
+   //Loop to find the max, min, and sum of the times
+   for(int i = 0; i < SYSVcount; i++)
+   {
+       if(SYSVtimes[i] < SYSVmin)
+       {
+           SYSVmin = SYSVtimes[i];
+       }
+       if(SYSVtimes[i] > SYSVmax)
+       {
+           SYSVmax = SYSVtimes[i];
+       }
+
+       SYSVsum += SYSVtimes[i];
+   }
+
+   SYSVmean = SYSVsum/SYSVcount;
+
+   //Loop to calculate variance
+   for (int i = 0; i < SYSVcount; i++)
+   {
+       SYSVvariance += (SYSVtimes[i] - SYSVmean) * (SYSVtimes[i] - SYSVmean);
+   }
+
+   SYSVvariance = SYSVvariance / SYSVcount;
+
+   SYSVstandard_deviation = sqrt(SYSVvariance);
+
+
+    LOG("\n");
+    LOG("SYSV Semaphore findings\n");
+    LOG("-----------------------------\n");
+    LOG("Number of Iterations: %d\n", iteration_count);
+    LOG("Average time for System Calls: %f\n", SYSVmean);
+    LOG("Minumum system calls time: %f\n", SYSVmin < MIN_TIME_EXE ? MIN_TIME_EXE : SYSVmin);
+    LOG("Maximum system calls time: %f\n", SYSVmax);
+    LOG("Varaince in system call times: %f\n", SYSVvariance);
+    LOG("Standard Deviation of system call times: %f\n", SYSVstandard_deviation);
+
+
+   
+   
 
 
     return 0;

@@ -9,6 +9,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <mqueue.h>
+#include <debug_utils.h>
 
 #include "POSIX_message_queue_driver.h"
 

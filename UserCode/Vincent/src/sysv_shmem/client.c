@@ -47,6 +47,9 @@ void * receive(){
     }
     //Set min and max for iterations beyond 1
     if(readDelta < shortestClient){
+        if(readDelta < 0){
+            readDelta = 0.000010;
+        }
         shortestClient = readDelta;
     }
     if(readDelta > longestClient){
@@ -66,7 +69,7 @@ void * receive(){
 
 //Reads the data associated from the shared memory
 void print_msg(){
-    printf("The data read from memory is: %s\n", shm);
+   LOG("The data read from memory is: %s\n", shm);
 }
 
 // Removes IPC

@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "SYSV_message_queue_driver.h"
+#include <debug_utils.h>
 
 //Message buffer for message being sent and received
 struct sysv_msgbuf{
