@@ -59,8 +59,12 @@ def change_size_callback(event):
     c_width = event.width;
     c_height = event.height
 
+
+bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+hist_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+panel = Label(matplot_frame, image = bar_img).grid(row= 0, column = 0)
 def draw_updated():
-    img2 = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
+    img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((200, 200), Image.ANTIALIAS))
     panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
     try:
         panel.image=img2
@@ -68,8 +72,7 @@ def draw_updated():
         panel.image=img2
 
 
-img = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
-panel = Label(matplot_frame, image = img).grid(row= 0, column = 0)
+
 def init():
     print(canvas['width'])
 
