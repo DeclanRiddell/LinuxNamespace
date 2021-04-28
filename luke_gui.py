@@ -59,7 +59,7 @@ def change_size_callback(event):
     c_height = event.height
 
 
-def change_image_callback(event):
+def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
     panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
     panel.configure(image=img2)
@@ -72,7 +72,7 @@ def init():
     print(canvas['width'])
 
     root.bind('<Configure>',change_size_callback)
-    root.bind('<Return>',change_image_callback)
+    #root.bind('<Return>',change_image_callback)
     picker_w = 0.6; picker_h = 1;
     picker_frame.place(width = c_width * picker_w, relheight=picker_h)
     matplot_frame.place(relwidth = 1.0 , relheight = picker_h, x=c_width * picker_w, )
@@ -157,6 +157,7 @@ def execute():
         subprocess.call(['python3 create_graph.py '], shell = True)   
         matplot_frame.update() 
         canvas.update()
+        draw_updated()
         #subprocess.run(['sudo make eric'], shell = True)    
     if(my_map['native']['posix']['messagequeue'].get()):
         print("native posix message queue")    
