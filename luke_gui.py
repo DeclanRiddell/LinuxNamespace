@@ -62,8 +62,10 @@ def change_size_callback(event):
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
     panel = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
-    panel.configure(image=img2)
-    panel.image=img2
+    try:
+        panel.image=img2
+    except:
+        panel.image=img2
 
 
 img = ImageTk.PhotoImage(Image.open('bar_graph.png').resize((200, 200), Image.ANTIALIAS))
@@ -149,55 +151,33 @@ def setup_map_checkboxes():
     namespace_sysv_messagequeue_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['messagequeue'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 6, column = 3)
     namespace_sysv_sharedmem_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['sharedmemory'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 8, column = 3)
 
+def update_graph(command):
+    print(command)
+    #subprocess.call([command], shell = True, timeout=1)    
+    subprocess.call(['python3 create_graph.py'], shell = True)   
+    draw_updated()
 def execute():
-        #Native POSIX IPCs
-    if(my_map['native']['posix']['semaphore'].get()):
-        print("native posix semaphore")
-        #subprocess.call(['sudo ./IPC_EXE 5 0 ' + str(iteration_count)], shell = True, timeout=1)    
-        subprocess.call(['python3 create_graph.py '], shell = True)   
-        matplot_frame.update() 
-        canvas.update()
-        draw_updated()
-        #subprocess.run(['sudo make eric'], shell = True)    
-    if(my_map['native']['posix']['messagequeue'].get()):
-        print("native posix message queue")    
-        #subprocess.run(['sudo make alex'], shell = True)    
-    if(my_map['native']['posix']['sharedmemory'].get()):
-        print("native posix shared memory")    
-        #subprocess.run(['sudo make vincent'], shell = True)    
+    #Native POSIX IPCs
+    if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 6 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 7 0 ' + str(iteration_count))
 
-#Namespace POSIX IPCs
-    if(my_map['namespace']['posix']['semaphore'].get()):
-        print("namespace posix semaphore")    
-        #subprocess.run(['sudo make eric_namespace'], shell = True)    
-    if(my_map['namespace']['posix']['messagequeue'].get()):
-        print("namespace posix message queue")    
-        #subprocess.run(['sudo make alex_namespace'], shell = True)    
-    if(my_map['namespace']['posix']['sharedmemory'].get()):
-        print("namespace posix shared memory")    
-        #subprocess.run(['sudo make vincent_namespace'], shell = True)    
+    #Native SysV IPCs
+    if(my_map['native']['sysv']['semaphore'].get()): update_graph('sudo ./IPC_EXE 9 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 10 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 11 0 ' + str(iteration_count))
 
-#Native SYSV IPCs
-    if(my_map['native']['sysv']['semaphore'].get()):
-        print("native sysv semaphore")    
-        #subprocess.run(['sudo make eric'], shell = True)    
-    if(my_map['native']['sysv']['messagequeue'].get()):
-        print("native sysv message queue")    
-        #subprocess.run(['sudo make alex'], shell = True)    
-    if(my_map['native']['sysv']['sharedmemory'].get()):
-        print("native sysv shared memory")  
-        #subprocess.run(['sudo make vincent'], shell = True)    
-  
-#Namespace SYSV IPCs
-    if(my_map['namespace']['sysv']['semaphore'].get()):
-        print("namespace sysv semaphore")    
-        #subprocess.run(['sudo make eric_namespace'], shell = True)    
-    if(my_map['namespace']['sysv']['messagequeue'].get()):
-        print("namespace sysv message queue")    
-        #subprocess.run(['sudo make alex_namespace'], shell = True)    
-    if(my_map['namespace']['sysv']['sharedmemory'].get()):
-        print("namespace sysv shared memory")   
-        #subprocess.run(['sudo make vincent_namespace'], shell = True)
+    #Namespace POSIX IPCs
+    if(my_map['namespace']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 6 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 7 1 ' + str(iteration_count))
+
+    #Namespace SysV IPCs
+    if(my_map['namespace']['sysv']['semaphore'].get()): update_graph('sudo ./IPC_EXE 9 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 10 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 11 1 ' + str(iteration_count))
+
+    
 
 if __name__ == '__main__':
     init()
