@@ -93,15 +93,23 @@ panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am,
 panel_hist = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = 50)
 panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50)
 iteration_argument = StringVar()
+loop_argument = StringVar()
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
     img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = am)
-    panel_bar = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = am)
-    panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50)
+    panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50).image = img2
+    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = am).image = img2
+    panel_bar = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = am).image = img2
+    panel_xd.image =img4
     panel_hist.image=img2
     panel_bar.image= img3
+    # if(panel_xd != None):
+    #     panel_xd.image =img4
+    # if(panel_hist != None):
+    #     panel_hist.image=img2
+    # if(panel_bar != None):
+    #     panel_bar.image= img3
     count = 0
     matplot_frame.update()
 
@@ -112,6 +120,9 @@ def init():
     print(canvas['width'])
 
     root.bind('<Configure>',change_size_callback)
+    root.photo1 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+    root.photo2 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+    root.photo3 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     #root.bind('<Return>',change_image_callback)
     picker_w = 0.6; picker_h = 1;
     ypos = (c_height - (c_height / 3)) * picker_h
@@ -128,7 +139,9 @@ def init():
     Button(picker_frame, text="Abort", command = abort, anchor='c', padx=15, bg='red').grid(row=10,column=1, columnspan=1);
     rando = "" + str(iteration_count)
     iteration_label = Label(picker_frame, text="Iterations:", bg=p_col,font=(font_type, font_size)).grid(row=11, column=0)
+    loop_label = Label(picker_frame, text="Loop amount:", bg=p_col,font=(font_type, font_size)).grid(row=12, column=0)
     Entry(picker_frame, width = 10, textvariable = iteration_argument).grid(row = 11, column = 1)
+    Entry(picker_frame, width = 10, textvariable = loop_argument).grid(row = 12, column = 1)
     #Label(picker_frame, text="Namespace", bg=p_col).grid(row=0, column=0)
     offset = 2
     namespace_label = Label(picker_frame, text="Namespace",font=(font_type, font_size), bg=p_col).grid(row=0+(int)(offset/2), column=2)
@@ -213,7 +226,9 @@ def sub_p(command):
 
 def update_graph(command):
     print(command)
-    sub_p(command)
+    loop_count = int(loop_argument.get())
+    for i in range(loop_count):
+        sub_p(command)
     create_graph()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
