@@ -61,21 +61,22 @@ def change_size_callback(event):
 
 
 img_size = 350
-bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
-panel_bar = Label(matplot_frame, image = bar_img).grid(row= 0, column = 0)
-panel_hist = Label(matplot_frame, image = hist_img).grid(row= 1, column = 0)
+#bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+#hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
+panel_hist = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
     panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
     panel_bar = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
-    try:
-        panel_hist.image=img2
-        panel_bar.image= img3
-    except:
-        panel_hist.image=img2
-        panel_bar.image= img3
+    panel_hist.image=img2
+    panel_bar.image= img3
+    count = 0
+    matplot_frame.update()
+
 
 
 
@@ -181,9 +182,10 @@ def update_graph(command):
     print(command)
     sub_p(command)
     #pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
-    #subprocess.run(['python3 create_graph.py'], shell = True)   
-    #subprocess.run(['python3 bell_curve.py'], shell = True)   
-    #draw_updated()
+    sub_p('sudo python3 create_graph.py')   
+    sub_p('sudo python3 bell_curve.py')   
+    draw_updated()
+    canvas.update()
 def execute():
 
     #Native POSIX IPCs
