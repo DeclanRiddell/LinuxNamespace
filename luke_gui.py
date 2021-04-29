@@ -3,8 +3,6 @@ import tkinter.ttk
 import subprocess
 from PIL import ImageTk, Image
 import os, signal
-import numpy as np
-import matplotlib.pyplot as plt
 import random
 
 c_width = 1080; c_height = 720;
@@ -178,17 +176,17 @@ def setup_map_checkboxes():
 
 
 def sub_p(command):
-    pro = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True, preexec_fn=os.setsid)  
+    pro = subprocess.Popen(command, stdout=subprocess.PIPE, env=os.environ, shell=True, preexec_fn=os.setsid)  
     processes.append(pro)
     #proc_stdout = pro.communicate()[0].strip()
 
 def update_graph(command):
     print(command)
     sub_p(command)
-    sub_p('sudo python3 create_graph.py')   
-    sub_p('sudo python3 bell_curve.py')   
-    draw_updated()
-    canvas.update()
+    #sub_p('sudo python3 create_graph.py')   
+    #sub_p('sudo python3 bell_curve.py')   
+    #draw_updated()
+    #canvas.update()
 def execute():
     iteration_count = int(iteration_argument.get())
     #Native POSIX IPCs
