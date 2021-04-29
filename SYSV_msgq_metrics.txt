@@ -1,0 +1,60 @@
+Operation System V Message Queue Send:
+	444 Iterations: 
+	Average Access Time: 0.000016
+	Minimum Access Time: 0.000013
+	Maximum Access Time: 0.000107
+
+Operation System V Message Queue Receive:
+	444 Iterations: 
+	Average Access Time: 0.000019
+	Minimum Access Time: 0.000013
+	Maximum Access Time: 0.001294
+
+Operation System V Message Queue Send:
+	444 Iterations: 
+	Average Access Time: 0.000016
+	Minimum Access Time: 0.000013
+	Maximum Access Time: 0.000070
+
+Operation System V Message Queue Receive:
+	444 Iterations: 
+	Average Access Time: 0.000016
+	Minimum Access Time: 0.000013
+	Maximum Access Time: 0.000408
+
+Operation System V Message Queue Send:
+	444 Iterations: 
+	Average Access Time: 0.000021
+	Minimum Access Time: 0.000014
+	Maximum Access Time: 0.001470
+
+Operation System V Message Queue Receive:
+	444 Iterations: 
+	Average Access Time: 0.000018
+	Minimum Access Time: 0.000014
+	Maximum Access Time: 0.000232
+
+Operation System V Message Queue Send:
+	444 Iterations: 
+	Average Access Time: 0.000023
+	Minimum Access Time: 0.000014
+	Maximum Access Time: 0.001513
+
+Operation System V Message Queue Receive:
+	444 Iterations: 
+	Average Access Time: 0.000019
+	Minimum Access Time: 0.000013
+	Maximum Access Time: 0.000469
+
+Operation System V Message Queue Send:
+	444 Iterations: 
+	Average Access Time: 0.000028
+	Minimum Access Time: 0.000014
+	Maximum Access Time: 0.002138
+
+Operation System V Message Queue Receive:
+	444 Iterations: 
+	Average Access Time: 0.000025
+	Minimum Access Time: 0.000014
+	Maximum Access Time: 0.001218
+

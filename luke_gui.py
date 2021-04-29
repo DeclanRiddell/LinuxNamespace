@@ -3,6 +3,9 @@ import tkinter.ttk
 import subprocess
 from PIL import ImageTk, Image
 import os, signal
+import numpy as np
+import matplotlib.pyplot as plt
+import random
 
 c_width = 1080; c_height = 720;
 root = Tk(className="Linux IPC Metrics")
@@ -67,6 +70,7 @@ img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size
 img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
 panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
 panel_hist = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
+iteration_argument = StringVar()
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
@@ -98,7 +102,7 @@ def init():
     Button(picker_frame, text="Abort", command = abort, anchor='c', padx=15, bg='red').grid(row=10,column=1, columnspan=1);
     rando = "" + str(iteration_count)
     iteration_label = Label(picker_frame, text="Iterations:", bg=p_col,font=(font_type, font_size)).grid(row=11, column=0)
-    iteration_argument = Entry(picker_frame, width = 10, textvariable = rando).grid(row = 11, column = 1)
+    Entry(picker_frame, width = 10, textvariable = iteration_argument).grid(row = 11, column = 1)
     #Label(picker_frame, text="Namespace", bg=p_col).grid(row=0, column=0)
     offset = 2
     namespace_label = Label(picker_frame, text="Namespace",font=(font_type, font_size), bg=p_col).grid(row=0+(int)(offset/2), column=2)
@@ -181,13 +185,12 @@ def sub_p(command):
 def update_graph(command):
     print(command)
     sub_p(command)
-    #pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
     sub_p('sudo python3 create_graph.py')   
     sub_p('sudo python3 bell_curve.py')   
     draw_updated()
     canvas.update()
 def execute():
-
+    iteration_count = int(iteration_argument.get())
     #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count))
     if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 0 ' + str(iteration_count))
