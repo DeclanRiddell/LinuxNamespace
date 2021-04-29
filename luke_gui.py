@@ -147,11 +147,13 @@ def init():
     root.mainloop()
 
 driver = 'build/LNDriver/LNDriver'
-pro = subprocess.Popen('sudo ' +  driver + ' 5 0', shell=True, preexec_fn=os.setsid)
-
+#pro = subprocess.Popen('sudo ' +  driver + ' 5 0', shell=True, preexec_fn=os.setsid)
+processes = []
 def abort():
     print("Aborting")
-    os.killpg(os.getpgid(pro.pid), signal.SIGTERM)
+    if(len(processes) != 0):
+        for i in processes:
+            os.killpg(os.getpgid(i.pid), signal.SIGTERM)
 
 def setup_map_checkboxes():
     native_posix_semaphore_button = Checkbutton(picker_frame,  var = my_map['native']['posix']['semaphore'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 4, column = 5)
@@ -168,15 +170,22 @@ def setup_map_checkboxes():
     namespace_sysv_messagequeue_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['messagequeue'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 6, column = 3)
     namespace_sysv_sharedmem_button = Checkbutton(picker_frame, var = my_map['namespace']['sysv']['sharedmemory'], bg=p_col, onvalue = 1, offvalue = 0).grid(row = 8, column = 3)
 
+
+
+def sub_p(command):
+    pro = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True, preexec_fn=os.setsid)  
+    processes.append(pro)
+    #proc_stdout = pro.communicate()[0].strip()
+
 def update_graph(command):
     print(command)
-    pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
-    subprocess.run(['python3 create_graph.py'], shell = True)   
-    subprocess.run(['python3 bell_curve.py'], shell = True)   
-    draw_updated()
+    sub_p(command)
+    #pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
+    #subprocess.run(['python3 create_graph.py'], shell = True)   
+    #subprocess.run(['python3 bell_curve.py'], shell = True)   
+    #draw_updated()
 def execute():
 
-    update_graph(['sudo ' +  driver + ' 7 0 ' + str(iteration_count), 'sudo ' +  driver + ' 11 0 ' + str(iteration_count)])
     #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count))
     if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 0 ' + str(iteration_count))
