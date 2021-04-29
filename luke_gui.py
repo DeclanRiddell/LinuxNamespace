@@ -4,7 +4,8 @@ import subprocess
 from PIL import ImageTk, Image
 import os, signal
 import random
-
+#import numpy as np
+import matplotlib.pyplot as plt
 c_width = 1080; c_height = 720;
 root = Tk(className="Linux IPC Metrics")
 canvas = Canvas(root, width = c_width, height = c_height)
@@ -36,7 +37,15 @@ my_map = {"native" :
         }
 
 
-
+def create_graph():
+    fig = plt.figure()
+    ax = fig.add_axes([0, 0, 1, 1])
+    types = ['POSIX Semaphore','SysV Semaphore','POSIX Shared Memory','SysV Shared Memory', 'POSIX Message queue']
+    times = [random.uniform(0,1), random.uniform(0,1), random.uniform(0,1), random.uniform(0,1), random.uniform(0,1)]
+    ax.bar(types, times)
+    ax.set_xlabel = "IPCS"
+    ax.set_ylabel = "Time"
+    plt.savefig('Resources/bar_graph.png')#, dpi = 400)
 
 def method2():
     distro_label = Label(picker_frame, text="Namespace\t\tNative", bg=p_col).pack()
@@ -183,10 +192,11 @@ def sub_p(command):
 def update_graph(command):
     print(command)
     sub_p(command)
+    create_graph()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
-    #draw_updated()
-    #canvas.update()
+    draw_updated()
+    canvas.update()
 def execute():
     iteration_count = int(iteration_argument.get())
     #Native POSIX IPCs
