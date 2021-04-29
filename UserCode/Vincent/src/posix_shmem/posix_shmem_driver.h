@@ -9,11 +9,13 @@
 #include "posix_client.h"
 #include "posix_server.h"
 #include <debug_utils.h>
+#include <mysql/mysql.h>
 
 
 int POSIX_shared_memory_execute(int iteration_count);
 int posix_append_results();
 void posix_results();
+void db();
 
 struct timeval startPosix, endPosix;
 float elapsedTimePosix;

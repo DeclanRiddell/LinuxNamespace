@@ -83,26 +83,45 @@ int posix_append_results(){
  *
  *
  */
-#include <mysql/mysql.h>
-#include <stdio.h>
+
 void db() {
-	MYSQL *conn;
-	MYSQL_RES *res;
-	MYSQL_ROW row;
+    int count = 0;
+    if(mysql_library_init(-1, NULL, NULL)){
+        fprintf(stderr, "MYSQL INIT FAILED\n");
+    }
+	MYSQL *conn = NULL;
+	MYSQL_RES *res = NULL;
+	MYSQL_ROW row = NULL;
 	
-	char *server = "localhost";
-	char *user = "namespace";
-	char *password = "password"; /* set me first */
-	char *database = "sys";
-	
+	const char *server = "localhost";
+	const char *user = "namespace";
+	const char *password = "password"; /* set me first */
+	const char *database = "sys";
+    int* c = NULL;
+	if( conn == NULL) printf("NULL LMAO\n");
+    printf("%p\n", conn);
 	conn = mysql_init(NULL);
-	
+    conn->db = database;
+    conn->user = user;
+    conn->passwd = password;
+    printf("db: %s\n", conn->db);
+    fprintf(stderr, "%s\n", mysql_error(conn));
+    printf("%p\n", conn);
+	if(conn == NULL) printf("NULL LMAO\n");
+    printf("Version, %s\n", mysql_get_client_info());
+	LOG("%d", count++);
+    LOG("%s, %s, %s, %s", server, user, password, database);
 	/* Connect to database */
-	if (!mysql_real_connect(conn, server, user, password, 
-                                      database, 0, NULL, 0)) {
-		fprintf(stderr, "%s\n", mysql_error(conn));
-		exit(1);
-	}
+    mysql_real_connect(conn, server, user, password, database, 0, "", 0);
+	if(conn == ((void*) 0) || conn == NULL) printf("NULL LMAO\n");
+
+	// if (!mysql_real_connect(conn, server, user, password, 
+    //                                   database, 0, 0, 0)) {
+	// LOG("%d", count++);
+	// 	fprintf(stderr, "%s\n", mysql_error(conn));
+	// 	exit(1);
+	// }
+	LOG("%d", count++);
 	
 	/* send SQL query */
 	if (mysql_query(conn, "call sys.addSharedMemory(.0021, .8762)")) {
@@ -110,16 +129,16 @@ void db() {
 		exit(1);
 	}
    
-//	res = mysql_use_result(conn);
+	res = mysql_use_result(conn);
 	
 	/* output table name */
-//	printf("MySQL Tables in mysql database:\n");
+	printf("MySQL Tables in mysql database:\n");
    
-//	while ((row = mysql_fetch_row(res)) != NULL)
-//		printf("%s \n", row[0]);
+	while ((row = mysql_fetch_row(res)) != NULL)
+		printf("%s \n", row[0]);
    
-//	/* close connection */
-//	mysql_free_result(res);
+	/* close connection */
+	mysql_free_result(res);
 	mysql_close(conn);
 }
 
