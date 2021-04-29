@@ -6,11 +6,14 @@ import os, signal
 import random
 #import numpy as np
 import matplotlib.pyplot as plt
-c_width = 1080; c_height = 720;
-root = Tk(className="Linux IPC Metrics")
+import seaborn as sns
+import pandas as pd
+c_width = 1120; c_height = 720;
+root = Tk(className="- ASRC Linux Namespace Performance Project -")
 canvas = Canvas(root, width = c_width, height = c_height)
 canvas.pack()
 iteration_count = 444;
+
 
 my_map = {"native" : 
                     {"sysv" :  
@@ -47,6 +50,15 @@ def create_graph():
     ax.set_ylabel = "Time"
     plt.savefig('Resources/bar_graph.png')#, dpi = 400)
 
+
+    sns.set(style = "ticks", color_codes = True)
+
+    ipc_data = pd.read_csv("data.csv")
+    fig = sns.catplot(x = "AVG_TIME", y = "IPC", data = ipc_data, kind = "strip", hue = "ENVIRONMENT")
+    plt.savefig('test_pic.png', dpi = 100)
+    #plt.show()
+    plt.savefig('Resources/xd_graph.png')
+
 def method2():
     distro_label = Label(picker_frame, text="Namespace\t\tNative", bg=p_col).pack()
     namespace_lib_label = Label(picker_frame, text="POSIX\t\tSysv\tPOSIX\t\tSysv", bg=p_col).pack()
@@ -63,9 +75,9 @@ font_type= 'Arial'
 font_size = 12
 picker_frame = Frame(root, bg=p_col)
 matplot_frame = Frame(root, bg="#e6ffff")
-
+log_frame = Frame(root, bg = 'lightgray')
+log = []
 def change_size_callback(event):
-    print(event.width,event.height)
     c_width = event.width;
     c_height = event.height
 
@@ -75,14 +87,19 @@ img_size = 350
 #hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
 img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
-panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
-panel_hist = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
+img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+am = 10
+panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = 50)
+panel_hist = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = 50)
+panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50)
 iteration_argument = StringVar()
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
-    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0)
-    panel_bar = Label(matplot_frame, image = img3).grid(row= 1, column = 0)
+    img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = am)
+    panel_bar = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = am)
+    panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50)
     panel_hist.image=img2
     panel_bar.image= img3
     count = 0
@@ -97,10 +114,12 @@ def init():
     root.bind('<Configure>',change_size_callback)
     #root.bind('<Return>',change_image_callback)
     picker_w = 0.6; picker_h = 1;
-    picker_frame.place(width = c_width * picker_w, relheight=picker_h)
-    matplot_frame.place(relwidth = 1.0 , relheight = picker_h, x=c_width * picker_w, )
+    ypos = (c_height - (c_height / 3)) * picker_h
+    picker_frame.place(width = c_width * picker_w, relheight=picker_h-0.1, y = ypos )
+    matplot_frame.place(relwidth = 1.0 , height= ypos, x=0)
+    log_frame.place(relwidth = 1.0 - picker_w, height =ypos, y = ypos, x= c_width * picker_w)
     root.update()
-
+    Label(log_frame, text="Log", bg="lightgray", font=(font_type, font_size)).pack()
 
 
    
@@ -143,6 +162,9 @@ def init():
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=7, columnspan=8, sticky='ew') 
     tkinter.ttk.Separator(picker_frame, orient=HORIZONTAL).grid(column=1, row=9, columnspan=8, sticky='ew') 
     setup_map_checkboxes()
+
+
+
 
 
     
@@ -219,7 +241,12 @@ def execute():
     if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 1 ' + str(iteration_count))
     if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 1 ' + str(iteration_count))
 
-    
+    update_log()
+
+def update_log():
+    label = Label(log_frame, text="Native", bg="lightgrey").pack()
+    for i in log:
+        print(i)
 
 if __name__ == '__main__':
     init()

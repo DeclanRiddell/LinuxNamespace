@@ -1,203 +1,22 @@
-IPC, LIBRARY, ENVIRONMENT, AVG_TIME, ITERATIONS
-message_queue, sysv, native, 0.000020, 400
-message_queue, posix, native, 0.000018, 400
-semaphore, posix, native, 0.001883, 300
-semaphore, sysv, native, 0.001699, 300
-message_queue, posix, namespace, 0.000018, 200
-message_queue, sysv, namespace, 0.000015, 200
-semaphore, sysv, namespace, 0.002061, 300
-semaphore, posix, namespace, 0.000246, 300
-shared_memory, posix, native, 0.004238, 300
-shared_memory, sysv, native, 0.004217, 3340
-shared_memory, sysv, namespace, 0.006041, 4240
-shared_memory, posix, namespace, 0.004709, 10240
-message_queue, posix, native, 0.000020, 444
-semaphore, posix, native, 0.000187, 444
-shared_memory, sysv, native, 0.003840, 444
-shared_memory, posix, native, 0.004813, 444
-shared_memory, posix, native, 0.004181, 444
-shared_memory, sysv, native, 0.003914, 444
-shared_memory, posix, native, 0.004450, 444
-shared_memory, posix, native, 0.004289, 444
-semaphore, posix, native, 0.000189, 444
-shared_memory, posix, native, 0.016311, 444
-shared_memory, posix, native, 0.004161, 444
-shared_memory, posix, native, 0.018973, 444
-shared_memory, posix, native, 0.005615, 444
-shared_memory, posix, native, 0.004222, 444
-shared_memory, posix, native, 0.018693, 444
-shared_memory, posix, native, 0.009788, 444
-shared_memory, posix, native, 0.009815, 444
-shared_memory, posix, native, 0.009168, 444
-semaphore, posix, native, 0.000193, 444
-semaphore, sysv, native, 0.002248, 444
-shared_memory, posix, native, 0.013857, 444
-semaphore, posix, native, 0.000182, 444
-shared_memory, posix, native, 0.004145, 444
-semaphore, posix, native, 0.000178, 444
-shared_memory, posix, native, 0.004267, 444
-message_queue, sysv, native, 0.000016, 444
-shared_memory, sysv, native, 0.003773, 444
-shared_memory, posix, native, 0.004061, 444
-semaphore, posix, native, 0.000191, 444
-shared_memory, posix, native, 0.004653, 444
-message_queue, sysv, native, 0.000016, 444
-shared_memory, sysv, native, 0.009213, 444
-shared_memory, posix, native, 0.004167, 444
-shared_memory, sysv, native, 0.003827, 444
-shared_memory, posix, native, 0.006776, 444
-shared_memory, sysv, native, 0.006384, 444
-shared_memory, posix, native, 0.004250, 444
-message_queue, sysv, native, 0.000021, 444
-semaphore, posix, native, 0.000198, 444
-shared_memory, posix, native, 0.005034, 444
-semaphore, posix, native, 0.000180, 444
-message_queue, sysv, native, 0.000025, 444
-message_queue, posix, native, 0.000035, 444
-shared_memory, sysv, native, 0.005160, 444
-shared_memory, posix, native, 0.005168, 444
-message_queue, sysv, native, 0.000026, 444
-shared_memory, sysv, native, 0.005033, 444
-message_queue, posix, native, 0.000027, 444
-shared_memory, posix, native, 0.006508, 444
-shared_memory, posix, native, 0.004986, 444
-shared_memory, posix, native, 0.004327, 444
-shared_memory, sysv, native, 0.004222, 444
-shared_memory, sysv, native, 0.003882, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000018, 444
-message_queue, posix, native, 0.000018, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000021, 444
-message_queue, posix, native, 0.000019, 444
-message_queue, posix, native, 0.000020, 444
-message_queue, posix, native, 0.000017, 444
-shared_memory, posix, native, 0.004315, 444
-shared_memory, posix, native, 0.004325, 444
-shared_memory, sysv, native, 0.003887, 444
-shared_memory, posix, native, 0.004288, 444
-shared_memory, posix, native, 0.004019, 444
-shared_memory, posix, native, 0.004202, 444
-shared_memory, posix, native, 0.005008, 444
-shared_memory, sysv, native, 0.004480, 444
-semaphore, posix, native, 0.000180, 444
-shared_memory, posix, native, 0.004188, 444
-shared_memory, posix, native, 0.004341, 444
-shared_memory, posix, native, 0.019616, 444
-shared_memory, posix, native, 0.013613, 444
-semaphore, posix, native, 0.000202, 444
-message_queue, posix, native, 0.000023, 444
-shared_memory, posix, native, 0.013409, 444
-shared_memory, posix, native, 0.004518, 444
-shared_memory, posix, native, 0.004227, 444
-shared_memory, posix, native, 0.007801, 444
-shared_memory, posix, native, 0.004159, 444
-shared_memory, posix, native, 0.006432, 444
-shared_memory, posix, native, 0.004604, 444
-shared_memory, posix, native, 0.007084, 444
-shared_memory, sysv, native, 0.007075, 444
-shared_memory, posix, native, 0.004857, 444
-shared_memory, sysv, native, 0.019694, 444
-shared_memory, posix, native, 0.004369, 444
-shared_memory, sysv, native, 0.004125, 444
-shared_memory, posix, native, 0.016645, 444
-shared_memory, sysv, native, 0.004895, 444
-shared_memory, posix, native, 0.004322, 444
-shared_memory, posix, native, 0.004541, 444
-semaphore, posix, native, 0.000171, 444
-semaphore, posix, native, 0.000189, 444
-semaphore, posix, native, 0.000158, 444
-shared_memory, posix, native, 0.016519, 444
-message_queue, posix, native, 0.000021, 444
-shared_memory, posix, native, 0.025177, 444
-message_queue, posix, native, 0.000017, 444
-shared_memory, posix, native, 0.005291, 444
-message_queue, posix, native, 0.000024, 444
-shared_memory, posix, native, 0.004408, 444
-message_queue, posix, native, 0.000022, 444
-message_queue, posix, native, 0.000022, 444
-shared_memory, posix, native, 0.004551, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000018, 444
-shared_memory, posix, native, 0.009911, 444
-message_queue, posix, native, 0.000018, 444
-message_queue, posix, native, 0.000018, 444
-message_queue, posix, native, 0.000021, 444
-message_queue, posix, native, 0.000018, 444
-shared_memory, posix, native, 0.005050, 444
-message_queue, posix, native, 0.000017, 444
-message_queue, posix, native, 0.000020, 444
-shared_memory, posix, native, 0.005556, 444
-shared_memory, posix, native, 0.004967, 444
-shared_memory, posix, native, 0.004512, 444
-semaphore, sysv, native, 0.001590, 444
-shared_memory, posix, native, 0.004854, 444
-shared_memory, posix, native, 0.004455, 444
-shared_memory, posix, native, 0.004386, 444
-shared_memory, posix, native, 0.004588, 444
-semaphore, sysv, native, 0.004663, 444
-shared_memory, posix, native, 0.004288, 444
-shared_memory, posix, native, 0.004454, 444
-shared_memory, sysv, native, 0.004100, 444
-shared_memory, posix, native, 0.004400, 444
-shared_memory, sysv, native, 0.004207, 444
-shared_memory, posix, native, 0.022141, 444
-shared_memory, sysv, native, 0.003881, 444
-shared_memory, posix, native, 0.004180, 444
-shared_memory, posix, native, 0.004331, 444
-shared_memory, posix, native, 0.004301, 444
-shared_memory, posix, native, 0.004369, 444
-shared_memory, posix, native, 0.004177, 444
-shared_memory, posix, native, 0.004454, 444
-shared_memory, posix, native, 0.004268, 444
-shared_memory, posix, native, 0.004072, 444
-message_queue, sysv, native, 0.000016, 444
-semaphore, posix, native, 0.000173, 444
-semaphore, sysv, namespace, 0.001837, 500
-shared_memory, posix, native, 0.003929, 14
-shared_memory, posix, native, 0.004167, 123
-shared_memory, posix, native, 0.004057, 123
-shared_memory, sysv, namespace, 0.017000, 1
-shared_memory, posix, native, 0.005000, 1
-shared_memory, posix, native, 0.006000, 1
-shared_memory, posix, native, 0.004161, 31
-shared_memory, sysv, native, 0.004071, 21
-shared_memory, posix, native, 0.004143, 21
-shared_memory, sysv, native, 0.003976, 21
-shared_memory, posix, native, 0.004619, 21
-shared_memory, sysv, native, 0.003976, 21
-shared_memory, posix, native, 0.004524, 21
-shared_memory, posix, native, 0.004262, 21
-shared_memory, sysv, native, 0.003571, 21
-shared_memory, sysv, native, 0.003476, 21
-shared_memory, posix, native, 0.004190, 21
-shared_memory, posix, native, 0.004048, 21
-shared_memory, sysv, native, 0.003810, 21
-shared_memory, posix, native, 0.004038, 13
-shared_memory, sysv, namespace, 0.005615, 13
-shared_memory, posix, native, 0.004430, 44444
-shared_memory, posix, native, 0.004125, 4
-shared_memory, posix, native, 0.004375, 4
-semaphore, posix, native, 0.019230, 4
-shared_memory, posix, native, 0.004375, 4
-shared_memory, posix, native, 0.004375, 4
-shared_memory, posix, native, 0.004250, 4
-shared_memory, posix, native, 0.004250, 4
-shared_memory, posix, native, 0.004500, 4
-shared_memory, posix, native, 0.005500, 1
-shared_memory, posix, native, 0.006500, 1
-shared_memory, posix, native, 0.005000, 1
-shared_memory, posix, native, 0.011500, 1
-shared_memory, posix, native, 0.006000, 1
-shared_memory, posix, native, 0.006500, 1
-shared_memory, posix, native, 0.010500, 1
-shared_memory, posix, native, 0.010500, 1
-shared_memory, posix, native, 0.006500, 1
-shared_memory, posix, native, 0.004042, 12
-shared_memory, posix, native, 0.004375, 12
-shared_memory, posix, native, 0.003958, 12
-shared_memory, posix, native, 0.004708, 12
-shared_memory, posix, native, 0.003917, 12
+IPC,LIBRARY,ENVIRONMENT,AVG_TIME,ITERATIONS
+shared_memory,posix,native,0.004485,1000
+shared_memory,sysv,native,0.003946,1000
+shared_memory,posix,native,0.004189,1000
+shared_memory,sysv,native,0.003944,1000
+shared_memory,posix,native,0.007000,1
+message_queue,posix,native,0.000021,12
+message_queue,posix,native,0.000019,12
+message_queue,posix,native,0.000018,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000023,321
+semaphore,posix,native,0.000302,321
+semaphore,posix,native,0.000277,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000022,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000018,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000017,321
+message_queue,posix,native,0.000017,321

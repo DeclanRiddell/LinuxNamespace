@@ -1,0 +1,12 @@
+Operation POSIX Message Queue Send:
+	1 Iterations: 
+	Average Access Time: 0.000093
+	Minimum Access Time: 0.000093
+	Maximum Access Time: 0.000093
+
+Operation POSIX Message Queue Receive:
+	1 Iterations: 
+	Average Access Time: 0.000056
+	Minimum Access Time: 0.000056
+	Maximum Access Time: 0.000056
+
