@@ -9,7 +9,7 @@
 #include <math.h>
 #include <debug_utils.h>
 
-int POSIX_semaphore_execute();
+int POSIX_semaphore_execute(int, int);
 
 double min, max, sum, mean, variance, standard_deviation; 
 

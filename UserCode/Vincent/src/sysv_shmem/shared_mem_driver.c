@@ -7,7 +7,7 @@
  * This program is used to demonstrate Shared Memory using System V
  */
 
-int SYS_V_shared_memory_execute(int iteration_count){  
+int SYS_V_shared_memory_execute(int iteration_count, int native){  
 
 
     
@@ -33,7 +33,8 @@ int SYS_V_shared_memory_execute(int iteration_count){
 
     //print results, append results to file, clean the ipc off of the ipcs list
     results();
-    append_results(__msg);
+    if(native == 0)write_to_file_("shared_memory", "sysv", "native", (averageClient + averageServer) / 2.0, iteration_count);
+    else write_to_file_("shared_memory", "sysv", "namespace", (averageClient + averageServer) / 2.0, iteration_count);
     clean_ipc();
 
     return 0;

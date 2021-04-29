@@ -4,7 +4,7 @@
  * This program is used to demonstrate Shared Memory using POSIX API
  */
 
-int POSIX_shared_memory_execute(int iteration_count){
+int POSIX_shared_memory_execute(int iteration_count, int native){
 
 
     gettimeofday(&startPosix, NULL);
@@ -30,7 +30,10 @@ int POSIX_shared_memory_execute(int iteration_count){
     
     //Print results and append results to file
     posix_results();
-    posix_append_results(__msg);
+    double avg = (averageClientPosix + averageServerPosix) / 2.0;
+    if(native == 0)write_to_file_("shared_memory", "posix", "native", avg, iteration_count);
+    else write_to_file_("shared_memory", "posix", "namespace", avg, iteration_count);
+    //posix_append_results(__msg);
 
     return 0;
 }
@@ -67,8 +70,11 @@ void posix_results(){
 int posix_append_results(){
     
     FILE *store_results;
-    store_results = fopen("../UserCode/Vincent/src/posix_shmem/SHM_POSIX_Output.txt", "a");
-    fprintf(store_results,"%f\n", averageClientPosix);
+    store_results = fopen(DATA_LOC, "a");
+    char* environment1 = "namepsace";
+    char* environment2 = "native";
+
+    fprintf(store_results,"shared_memory, posix, \n", averageClientPosix);
     fprintf(store_results,"%f\n", averageServerPosix);
     fprintf(store_results, "\n");
 

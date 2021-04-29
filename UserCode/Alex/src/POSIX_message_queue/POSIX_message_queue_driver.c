@@ -9,7 +9,7 @@
 
 
 //Creates threads for the message send and message receive operations and then
-int POSIX_message_queue_execute(int iteration_count)
+int POSIX_message_queue_execute(int iteration_count, int native)
 {
    LOG("Starting POSIX msg queue\n");
 
@@ -57,11 +57,12 @@ int POSIX_message_queue_execute(int iteration_count)
     variance = standard_deviation = 0;
     for(int i = 0; i < iteration_count; i++) variance += (rcv_times[i] - avg) * (rcv_times[i] - avg);
     variance /= iteration_count;
-    standard_deviation = sqrt(variance);
-
-    POSIX_msgq_outputDataFile(snd_times, "POSIX Message Queue Send", iteration_count);
-    POSIX_msgq_outputDataFile(rcv_times, "POSIX Message Queue Receive", iteration_count);
-    
+    //standard_deviation = sqrt(variance);
+    LOG("Writing\n");
+    //if(native == 0)write_to_file_pathed_("data.csv", "message_queue", "sysv", "native", avg, iteration_count);
+    //else write_to_file_pathed_("data.csv", "message_queue", "sysv", "namespace", avg, iteration_count);
+    if(native == 0)write_to_file_("message_queue", "posix", "native", avg, iteration_count);
+    else write_to_file_("message_queue", "posix", "namespace", avg, iteration_count);
     LOG("SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", min, max, avg, variance, standard_deviation);
     return 0;
 }

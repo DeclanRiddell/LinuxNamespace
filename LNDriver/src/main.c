@@ -8,7 +8,6 @@
 
 #include <POSIX_message_queue/POSIX_message_queue_driver.h>
 #include <sysv_messagequeue/SYSV_message_queue_driver.h>
-#include <DLib_Driver.h>
 #include <debug_utils.h>
 #include <stdlib.h>
 
@@ -27,29 +26,29 @@
 #define EXECUTE_VINCENT_S   11
 #define EXECUTE_DECLAN_S    12
 int iteration_count;
+int native = 0;
 
 //AlexLib execution
 void execute_alex_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute(iteration_count));}
-    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute(iteration_count));}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute(iteration_count, native));}
+    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute(iteration_count, native));}
 }
 
 //EricLib execution
 void execute_eric_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute(iteration_count));}
-    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute(iteration_count));}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute(iteration_count, native));}
+    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute(iteration_count, native));}
 }
 
 //VincentLib execution
 void execute_vincent_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute(iteration_count));}
-    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(iteration_count));}
+    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute(iteration_count, native));}
+    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(iteration_count, native));}
 }
 
 
 //DeclanLib execution
 void execute_declan_lib(short posix){
-    DBG_WRAP_DRIVER(execute_declan());
 }
 int execution_order = 0;
 
@@ -128,8 +127,9 @@ int driver(int argc, char* argv[]){
     LOG("Starting");
     execution_order = atoi(argv[1]);
     int run_namespace = atoi(argv[2]);
+    native = run_namespace ? 1 : 0;
     iteration_count = atoi(argv[3]);
-    LOG("Iteration count = %d", iteration_count);
+    LOG("Iteration count = %d", iteration_count, native);
     LOG("run_namespace ? %d", run_namespace );
     if(!run_namespace) return run_IPCS();
     LOG("Running namespace");

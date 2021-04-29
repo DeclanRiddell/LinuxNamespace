@@ -3,19 +3,8 @@
 #include <sys/ipc.h>
 #include "POSIX_msgq_metrics.h"
 
-void POSIX_msgq_outputDataFile(double times[], char methodName[], int iterations)
+void POSIX_msgq_outputDataFile(double avg, char methodName[], int iterations, int native)
 {
-    FILE *metrics;
-
-    metrics = fopen("./POSIX_msgq_metrics.txt", "a");
-
-    fprintf(metrics, "Operation %s:\n", methodName);
-    fprintf(metrics,"\t%d Iterations: \n", iterations);
-    fprintf(metrics,"\tAverage Access Time: %f\n", POSIX_msgq_averageTime(times,iterations));
-    fprintf(metrics,"\tMinimum Access Time: %f\n", POSIX_msgq_minimum(times,iterations));
-    fprintf(metrics,"\tMaximum Access Time: %f\n\n", POSIX_msgq_maximum(times,iterations));
-
-    fclose(metrics);
 }
 
 double POSIX_msgq_averageTime(double times[], int iterations)

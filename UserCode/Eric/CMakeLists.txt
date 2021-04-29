@@ -16,6 +16,7 @@ add_library(
 
 
     ../debug_utils.h
+    ../debug_utils.c
 
 )
 target_compile_options(EricLib PRIVATE -pthread)

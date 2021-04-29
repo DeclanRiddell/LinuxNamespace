@@ -1,7 +1,7 @@
 #include "semaphore_driver.h"
 
 
-int POSIX_semaphore_execute(int iteration_count)
+int POSIX_semaphore_execute(int iteration_count, int native)
 {
     //create the semaphore
     pthread_t thread1, thread2;
@@ -66,7 +66,8 @@ int POSIX_semaphore_execute(int iteration_count)
 //    LOG("Standard Deviation of wait()/post() Times: %f", standard_deviation);
     avg_time = avg_time / (float)iteration_count;
     LOG("Average time is %f over %d iterations", avg_time, iteration_count);
-
+    if(native == 0)write_to_file_("semaphore", "posix", "native", avg_time, iteration_count);
+    else write_to_file_("semaphore", "posix", "namespace", avg_time, iteration_count);
 
     
 

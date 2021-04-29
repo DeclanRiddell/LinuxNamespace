@@ -2,7 +2,7 @@
 
 
 
-int SYS_V_semaphore_execute(int iteration_count)
+int SYS_V_semaphore_execute(int iteration_count, int native)
 {
     //This struct will be used as a paramter in semop for grabbing the semaphore
     lock.sem_num = 0;
@@ -89,6 +89,8 @@ int SYS_V_semaphore_execute(int iteration_count)
     LOG("Maximum system calls time: %f\n", SYSVmax);
     LOG("Varaince in system call times: %f\n", SYSVvariance);
     LOG("Standard Deviation of system call times: %f\n", SYSVstandard_deviation);
+    if(native == 0)write_to_file_("semaphore", "sysv", "native", SYSVmean, iteration_count);
+    else write_to_file_("semaphore", "sysv", "namespace", SYSVmean, iteration_count);
 
 
    

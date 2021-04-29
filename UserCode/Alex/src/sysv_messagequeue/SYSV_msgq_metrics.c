@@ -3,17 +3,11 @@
 #include <sys/ipc.h>
 #include "SYSV_msgq_metrics.h"
 
-void SYSV_msgq_outputDataFile(double times[], char methodName[], int iterations)
+void SYSV_msgq_outputDataFile(double avg, char methodName[], int iterations)
 {
     FILE *metrics;
 
-    metrics = fopen("./SYSV_msgq_metrics.txt", "a");
-
-    fprintf(metrics, "Operation %s:\n", methodName);
-    fprintf(metrics,"\t%d Iterations: \n", iterations);
-    fprintf(metrics,"\tAverage Access Time: %f\n", SYSV_msgq_averageTime(times,iterations));
-    fprintf(metrics,"\tMinimum Access Time: %f\n", SYSV_msgq_minimum(times,iterations));
-    fprintf(metrics,"\tMaximum Access Time: %f\n\n", SYSV_msgq_maximum(times,iterations));
+    metrics = fopen(DATA_LOC, "a");
 
     fclose(metrics);
 }

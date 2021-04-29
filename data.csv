@@ -1,0 +1,13 @@
+IPC, LIBRARY, ENVIRONMENT, AVG_TIME, ITERATIONS
+message_queue, sysv, native, 0.000020, 400
+message_queue, posix, native, 0.000018, 400
+semaphore, posix, native, 0.001883, 300
+semaphore, sysv, native, 0.001699, 300
+message_queue, posix, namespace, 0.000018, 200
+message_queue, sysv, namespace, 0.000015, 200
+semaphore, sysv, namespace, 0.002061, 300
+semaphore, posix, namespace, 0.000246, 300
+shared_memory, posix, native, 0.004238, 300
+shared_memory, sysv, native, 0.004217, 3340
+shared_memory, sysv, namespace, 0.006041, 4240
+shared_memory, posix, namespace, 0.004709, 10240

@@ -5,7 +5,7 @@
 #include "POSIX_message_queue.h"
 #include <debug_utils.h>
 
-void POSIX_msgq_outputDataFile(double times[], char methodName[], int iterations);
+void POSIX_msgq_outputDataFile(double avg, char methodName[], int iterations,  int native);
 
 double POSIX_msgq_averageTime(double times[], int iterations);
 

@@ -1,0 +1,6 @@
+mkdir build
+cd build
+cmake ..
+make
+./LNDriver/LNDriver 0 0 111
+./LNDriver/LNDriver 0 1 111

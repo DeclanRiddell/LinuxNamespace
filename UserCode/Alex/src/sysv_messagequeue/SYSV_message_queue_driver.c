@@ -8,7 +8,7 @@
 
 
 //Creates threads for the message send and message receive operations and then
-int SYS_V_message_queue_execute(int iteration_count)
+int SYS_V_message_queue_execute(int iteration_count, int native)
 {
     inc_msg = __msg;
 
@@ -50,9 +50,9 @@ int SYS_V_message_queue_execute(int iteration_count)
     variance /= iteration_count;
     standard_deviation = sqrt(variance);
 
-    SYSV_msgq_outputDataFile(snd_times, "System V Message Queue Send", iteration_count);
-    SYSV_msgq_outputDataFile(rcv_times, "System V Message Queue Receive", iteration_count);
-
+    //SYSV_msgq_outputDataFile(avg, "System V Message Queue Send", iteration_count);
+    if(native == 0)write_to_file_("message_queue", "sysv", "native", avg, iteration_count);
+    else write_to_file_("message_queue", "sysv", "namespace", avg, iteration_count);
     LOG("Iterations:\t\t%d,SysV Metrics\nMinimum:\t\t%f\nMaximum:\t\t%f\nAverage:\t\t%f\nVariance:\t\t%f\nStandard Deviation:\t%f\n", iteration_count, min, max, avg, variance, standard_deviation);
     return 0;
 }
