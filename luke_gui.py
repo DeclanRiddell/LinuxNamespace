@@ -145,7 +145,9 @@ def init():
     # posix_label.grid(row=1, column=2)
     # sysv_label.grid(row=1, column=7)
     root.mainloop()
-pro = subprocess.Popen('sudo ./IPC_EXE 5 0', shell=True, preexec_fn=os.setsid)
+
+driver = 'build/LNDriver/LNDriver'
+pro = subprocess.Popen('sudo ' +  driver + ' 5 0', shell=True, preexec_fn=os.setsid)
 
 def abort():
     print("Aborting")
@@ -168,30 +170,32 @@ def setup_map_checkboxes():
 
 def update_graph(command):
     print(command)
-    pro = subprocess.Popen(command + " -A", shell=True, preexec_fn=os.setsid)    
+    pro = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)    
     subprocess.run(['python3 create_graph.py'], shell = True)   
     subprocess.run(['python3 bell_curve.py'], shell = True)   
     draw_updated()
 def execute():
+
+    update_graph(['sudo ' +  driver + ' 7 0 ' + str(iteration_count), 'sudo ' +  driver + ' 11 0 ' + str(iteration_count)])
     #Native POSIX IPCs
-    if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 0 ' + str(iteration_count))
-    if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 6 0 ' + str(iteration_count))
-    if(my_map['native']['posix']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 7 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 0 ' + str(iteration_count))
 
     #Native SysV IPCs
-    if(my_map['native']['sysv']['semaphore'].get()): update_graph('sudo ./IPC_EXE 9 0 ' + str(iteration_count))
-    if(my_map['native']['sysv']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 10 0 ' + str(iteration_count))
-    if(my_map['native']['sysv']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 11 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 0 ' + str(iteration_count))
 
     #Namespace POSIX IPCs
-    if(my_map['namespace']['posix']['semaphore'].get()): update_graph('sudo ./IPC_EXE 5 1 ' + str(iteration_count))
-    if(my_map['namespace']['posix']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 6 1 ' + str(iteration_count))
-    if(my_map['namespace']['posix']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 7 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 1 ' + str(iteration_count))
 
     #Namespace SysV IPCs
-    if(my_map['namespace']['sysv']['semaphore'].get()): update_graph('sudo ./IPC_EXE 9 1 ' + str(iteration_count))
-    if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ./IPC_EXE 10 1 ' + str(iteration_count))
-    if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ./IPC_EXE 11 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 1 ' + str(iteration_count))
 
     
 

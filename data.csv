@@ -11,3 +11,15 @@ shared_memory, posix, native, 0.004238, 300
 shared_memory, sysv, native, 0.004217, 3340
 shared_memory, sysv, namespace, 0.006041, 4240
 shared_memory, posix, namespace, 0.004709, 10240
+message_queue, posix, native, 0.000020, 444
+semaphore, posix, native, 0.000187, 444
+shared_memory, sysv, native, 0.003840, 444
+shared_memory, posix, native, 0.004813, 444
+shared_memory, posix, native, 0.004181, 444
+shared_memory, sysv, native, 0.003914, 444
+shared_memory, posix, native, 0.004450, 444
+shared_memory, posix, native, 0.004289, 444
+semaphore, posix, native, 0.000189, 444
+shared_memory, posix, native, 0.016311, 444
+shared_memory, posix, native, 0.004161, 444
+shared_memory, posix, native, 0.018973, 444
