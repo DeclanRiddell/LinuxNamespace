@@ -43,7 +43,7 @@
 //static int iteration_count = 1024;
 #define __msg "Hello!"
 #define DATA_LOC "data.csv"
-
+#define MIN_TIME 0.00001
 
 void write_to_file_(char* IPC, char* LIBRARY, char* ENVIRONMENT, double AVG_TIME, int ITERATIONS);
 void write_to_file_pathed_(char* path, char* IPC, char* LIBRARY, char* ENVIRONMENT, double AVG_TIME, int ITERATIONS);

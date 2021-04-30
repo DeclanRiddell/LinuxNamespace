@@ -5,26 +5,26 @@ import pandas
 import numpy as np
 import matplotlib.pyplot as plt
 
-my_map = {"native" : 
+my_map_data = {"native" : 
                     {"sysv" :  
-                            {"message_queue" : 0, 
-                             "shared_memory" : 0, 
-                             "semaphore" : 0}, 
+                            {"message_queue" : [0, 0], 
+                             "shared_memory" : [0, 0], 
+                             "semaphore" : [0, 0]}, 
 
-                    "posix" : {"message_queue" : 0, 
-                               "shared_memory" : 0, 
-                               "semaphore" : 0
+                    "posix" : {"message_queue" : [0, 0], 
+                               "shared_memory" : [0, 0], 
+                               "semaphore" : [0, 0]
                                }
                     }, 
           "namespace" : 
-                    {"sysv" :  {"message_queue" : 0, 
-                                "shared_memory" : 0, 
-                                "semaphore" : 0
+                    {"sysv" :  {"message_queue" : [0, 0], 
+                                "shared_memory" : [0, 0], 
+                                "semaphore" : [0, 0]
                                 }, 
 
-                    "posix" :  {"message_queue" : 0, 
-                                "shared_memory" : 0, 
-                                "semaphore" : 0
+                    "posix" :  {"message_queue" : [0, 0], 
+                                "shared_memory" : [0, 0], 
+                                "semaphore" : [0, 0]
                                 }
                     } 
         }
@@ -39,51 +39,38 @@ count = 0
 
 print(data['IPC'][0])
 while count < len(data):
-    print(count)
-    print(data['ENVIRONMENT'][count], data['LIBRARY'][count], data['IPC'][count])
-    my_map[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]] += data['AVG_TIME'][count]
+    val = my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]][0]
+    c = my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]][1]
+    my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]] = [val + data['AVG_TIME'][count], c + 1]
     count += 1
 
-print(my_map['native']['posix']['shared_memory'] / float(count))
-avg_native_posix_semaphore = my_map['native']['posix']['semaphore'] / float(count)
-avg_native_posix_mq = my_map['native']['posix']['message_queue'] / float(count)
-avg_native_posix_sm = my_map['native']['posix']['shared_memory'] / float(count)
-avg_native_sysv_semaphore = my_map['native']['sysv']['semaphore'] / float(count)
-avg_native_sysv_mq = my_map['native']['sysv']['message_queue'] / float(count)
-avg_native_sysv_sm = my_map['native']['sysv']['shared_memory'] / float(count)
-print(avg_native_posix_semaphore)
-print(avg_native_posix_mq)
-print(avg_native_posix_sm)
-print(avg_native_sysv_semaphore)
-print(avg_native_sysv_mq)
-print(avg_native_sysv_sm)
-
-avg_namespace_posix_semaphore = my_map['namespace']['posix']['semaphore'] / float(count)
-avg_namespace_posix_mq = my_map['namespace']['posix']['message_queue'] / float(count)
-avg_namespace_posix_sm = my_map['namespace']['posix']['shared_memory'] / float(count)
-avg_namespace_sysv_semaphore = my_map['namespace']['sysv']['semaphore'] / float(count)
-avg_namespace_sysv_mq = my_map['namespace']['sysv']['message_queue'] / float(count)
-avg_namespace_sysv_sm = my_map['namespace']['sysv']['shared_memory'] / float(count)
-# data =  [
-#             ['Namespace POSIX', 'Namespace SysV', 'Native POSIX', 'Native SysV'],
-#             [ 'Semaphore',  avg_namespace_posix_semaphore, avg_namespace_sysv_semaphore,   avg_native_posix_semaphore,  avg_native_sysv_semaphore],
-#             ['Message Queue',  avg_namespace_posix_mq, avg_namespace_sysv_mq,   avg_native_posix_mq, avg_native_sysv_mq ],
-#             ['Shared Memory',  avg_namespace_posix_sm, avg_namespace_sysv_sm,   avg_native_posix_sm,  avg_native_sysv_sm],
-#         ]
-
-
+avg_native_posix_semaphore = my_map_data['native']['posix']['semaphore'][0] / float(my_map_data['native']['posix']['semaphore'][1])
+avg_native_posix_mq = my_map_data['native']['posix']['message_queue'][0] / float(my_map_data['native']['posix']['message_queue'][1])
+avg_native_posix_sm = my_map_data['native']['posix']['shared_memory'][0] / float(my_map_data['native']['posix']['shared_memory'][1])
+avg_native_sysv_semaphore = my_map_data['native']['sysv']['semaphore'][0] / float(my_map_data['native']['sysv']['semaphore'][1])
+avg_native_sysv_mq = my_map_data['native']['sysv']['message_queue'][0] / float(my_map_data['native']['sysv']['message_queue'][1])
+avg_native_sysv_sm = my_map_data['native']['sysv']['shared_memory'][0] / float(my_map_data['native']['sysv']['shared_memory'][1])
+avg_namespace_posix_semaphore = my_map_data['namespace']['posix']['semaphore'][0] / float(my_map_data['namespace']['posix']['semaphore'][1])
+avg_namespace_posix_mq = my_map_data['namespace']['posix']['message_queue'][0] / float(my_map_data['namespace']['posix']['message_queue'][1])
+avg_namespace_posix_sm = my_map_data['namespace']['posix']['shared_memory'][0] / float(my_map_data['namespace']['posix']['shared_memory'][1])
+avg_namespace_sysv_semaphore = my_map_data['namespace']['sysv']['semaphore'][0] / float(my_map_data['namespace']['sysv']['semaphore'][1])
+avg_namespace_sysv_mq = my_map_data['namespace']['sysv']['message_queue'][0] / float(my_map_data['namespace']['sysv']['message_queue'][1])
+avg_namespace_sysv_sm = my_map_data['namespace']['sysv']['shared_memory'][0] / float(my_map_data['namespace']['sysv']['shared_memory'][1])
+amount = 1
 data =  [
-             ['Namespace POSIX', 'Namespace SysV', 'Native POSIX', 'Native SysV'],
-             [ 'Semaphore',  1, 2,   3,  4],
-             ['Message Queue',  5, 6,   7, 8 ],
-             ['Shared Memory',  9, 10,   11,  12],
-         ]
+            ['Namespace\nPOSIX', 'Namespace\nSysV', 'Native\nPOSIX', 'Native\nSysV'],
+            [ 'Semaphore',  avg_namespace_posix_semaphore * (float)(amount), avg_namespace_sysv_semaphore * (float)(amount),   avg_native_posix_semaphore * (float)(amount),  avg_native_sysv_semaphore * (float)(amount)],
+            ['Message Queue',  avg_namespace_posix_mq, avg_namespace_sysv_mq * (float)(amount),   avg_native_posix_mq * (float)(amount), avg_native_sysv_mq * (float)(amount) ],
+            ['Shared Memory',  avg_namespace_posix_sm, avg_namespace_sysv_sm * (float)(amount),   avg_native_posix_sm * (float)(amount),  avg_native_sysv_sm * (float)(amount)],
+        ]
+
+
 column_headers = data.pop(0)
 row_headers = [x.pop(0) for x in data]# Table data needs to be non-numeric text. Format the data
 # while I'm at it.
 cell_text = []
 for row in data:
-    cell_text.append([f'{x/1000:1.1f}' for x in row])# Get some lists of color specs for row and column headers
+    cell_text.append(["{0:0.8f}".format(x) for x in row])# Get some lists of color specs for row and column headers
 rcolors = plt.cm.BuPu(np.full(len(row_headers), 0.1))
 ccolors = plt.cm.BuPu(np.full(len(column_headers), 0.1))# Create the figure. Setting a small pad on tight_layout
 # seems to better regulate white space. Sometimes experimenting
@@ -102,7 +89,10 @@ the_table = plt.table(cellText=cell_text,
                       colLabels=column_headers,
                       loc='center')# Scaling is the only influence we have over top and bottom cell padding.
 # Make the rows taller (i.e., make cell y scale larger).
-the_table.scale(1, 1.5)# Hide axes
+the_table.scale(1, 5)# Hide axes
+the_table.auto_set_font_size(False)
+the_table.set_fontsize(12)
+
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)# Hide axes border
@@ -112,10 +102,10 @@ plt.figtext(0.95, 0.05, footer_text, horizontalalignment='right', size=6, weight
 # Without plt.draw() here, the title will center on the axes and not the figure.
 plt.draw()# Create image. plt.savefig ignores figure edge and face colors, so map them.
 fig = plt.gcf()
-plt.show()
-plt.savefig('pyplot-table-demo.png',
+plt.savefig('Resources/table.png',
             #bbox='tight',
             edgecolor=fig.get_edgecolor(),
             facecolor=fig.get_facecolor(),
-            dpi=150
+            dpi=450
             )
+plt.show()

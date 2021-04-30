@@ -4,11 +4,11 @@ import subprocess
 from PIL import ImageTk, Image
 import os, signal
 import random
-#import numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-c_width = 1120; c_height = 720;
+c_width = 1120; c_height = 1000;
 root = Tk(className="- ASRC Linux Namespace Performance Project -")
 canvas = Canvas(root, width = c_width, height = c_height)
 canvas.pack()
@@ -38,6 +38,108 @@ my_map = {"native" :
                                 }
                     } 
         }
+
+my_map_data = {"native" : 
+                    {"sysv" :  
+                            {"message_queue" : [0, 0], 
+                             "shared_memory" : [0, 0], 
+                             "semaphore" : [0, 0]}, 
+
+                    "posix" : {"message_queue" : [0, 0], 
+                               "shared_memory" : [0, 0], 
+                               "semaphore" : [0, 0]
+                               }
+                    }, 
+          "namespace" : 
+                    {"sysv" :  {"message_queue" : [0, 0], 
+                                "shared_memory" : [0, 0], 
+                                "semaphore" : [0, 0]
+                                }, 
+
+                    "posix" :  {"message_queue" : [0, 0], 
+                                "shared_memory" : [0, 0], 
+                                "semaphore" : [0, 0]
+                                }
+                    } 
+        }
+
+def create_table():
+    title_text = 'Average runtimes'
+    footer_text = 'ASRC Federal'
+    fig_background_color = 'skyblue'
+    fig_border = 'steelblue'
+    data = pd.read_csv("data.csv")
+    count = 0
+
+    while count < len(data):
+        val = my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]][0]
+        c = my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]][1]
+        my_map_data[data['ENVIRONMENT'][count]][data['LIBRARY'][count]][data['IPC'][count]] = [val + data['AVG_TIME'][count], c + 1]
+        count += 1
+
+    avg_native_posix_semaphore = my_map_data['native']['posix']['semaphore'][0] / float(my_map_data['native']['posix']['semaphore'][1] + 1)
+    avg_native_posix_mq = my_map_data['native']['posix']['message_queue'][0] / float(my_map_data['native']['posix']['message_queue'][1] + 1)
+    avg_native_posix_sm = my_map_data['native']['posix']['shared_memory'][0] / float(my_map_data['native']['posix']['shared_memory'][1] + 1)
+    avg_native_sysv_semaphore = my_map_data['native']['sysv']['semaphore'][0] / float(my_map_data['native']['sysv']['semaphore'][1] + 1)
+    avg_native_sysv_mq = my_map_data['native']['sysv']['message_queue'][0] / float(my_map_data['native']['sysv']['message_queue'][1] + 1)
+    avg_native_sysv_sm = my_map_data['native']['sysv']['shared_memory'][0] / float(my_map_data['native']['sysv']['shared_memory'][1] + 1)
+    avg_namespace_posix_semaphore = my_map_data['namespace']['posix']['semaphore'][0] / float(my_map_data['namespace']['posix']['semaphore'][1] + 1)
+    avg_namespace_posix_mq = my_map_data['namespace']['posix']['message_queue'][0] / float(my_map_data['namespace']['posix']['message_queue'][1] + 1)
+    avg_namespace_posix_sm = my_map_data['namespace']['posix']['shared_memory'][0] / float(my_map_data['namespace']['posix']['shared_memory'][1] + 1)
+    avg_namespace_sysv_semaphore = my_map_data['namespace']['sysv']['semaphore'][0] / float(my_map_data['namespace']['sysv']['semaphore'][1] + 1)
+    avg_namespace_sysv_mq = my_map_data['namespace']['sysv']['message_queue'][0] / float(my_map_data['namespace']['sysv']['message_queue'][1] + 1)
+    avg_namespace_sysv_sm = my_map_data['namespace']['sysv']['shared_memory'][0] / float(my_map_data['namespace']['sysv']['shared_memory'][1] + 1)
+    amount = 1
+    data =  [
+                ['Namespace\nPOSIX', 'Namespace\nSysV', 'Native\nPOSIX', 'Native\nSysV'],
+                [ 'Semaphore',  avg_namespace_posix_semaphore * (float)(amount), avg_namespace_sysv_semaphore * (float)(amount),   avg_native_posix_semaphore * (float)(amount),  avg_native_sysv_semaphore * (float)(amount)],
+                ['Message Queue',  avg_namespace_posix_mq, avg_namespace_sysv_mq * (float)(amount),   avg_native_posix_mq * (float)(amount), avg_native_sysv_mq * (float)(amount) ],
+                ['Shared Memory',  avg_namespace_posix_sm, avg_namespace_sysv_sm * (float)(amount),   avg_native_posix_sm * (float)(amount),  avg_native_sysv_sm * (float)(amount)],
+            ]
+
+
+    column_headers = data.pop(0)
+    row_headers = [x.pop(0) for x in data]# Table data needs to be non-numeric text. Format the data
+    # while I'm at it.
+    cell_text = []
+    for row in data:
+        cell_text.append(["{0:0.5f}".format(x) for x in row])# Get some lists of color specs for row and column headers
+    rcolors = plt.cm.BuPu(np.full(len(row_headers), 0.1))
+    ccolors = plt.cm.BuPu(np.full(len(column_headers), 0.1))# Create the figure. Setting a small pad on tight_layout
+    # seems to better regulate white space. Sometimes experimenting
+    # with an explicit figsize here can produce better outcome.
+    plt.figure(linewidth=2,
+            edgecolor=fig_border,
+            facecolor=fig_background_color,
+            tight_layout={'pad':1},
+            #figsize=(5,3)
+            )# Add a table at the bottom of the axes
+    the_table = plt.table(cellText=cell_text,
+                        rowLabels=row_headers,
+                        rowColours=rcolors,
+                        rowLoc='right',
+                        colColours=ccolors,
+                        colLabels=column_headers,
+                        loc='center')# Scaling is the only influence we have over top and bottom cell padding.
+    the_table.scale(1, 5)# Hide axes
+    the_table.auto_set_font_size(False)
+    the_table.set_fontsize(12)
+    ax = plt.gca()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)# Hide axes border
+    plt.box(on=None)# Add title
+    plt.suptitle(title_text)# Add footer
+    plt.figtext(0.95, 0.05, footer_text, horizontalalignment='right', size=6, weight='light')# Force the figure to update, so backends center objects correctly within the figure.
+    # Without plt.draw() here, the title will center on the axes and not the figure.
+    plt.draw()# Create image. plt.savefig ignores figure edge and face colors, so map them.
+    fig = plt.gcf()
+    #plt.show()
+    plt.savefig('Resources/table.png',
+                #bbox='tight',
+                edgecolor=fig.get_edgecolor(),
+                facecolor=fig.get_facecolor(),
+                dpi=150
+                )
 
 
 def create_graph():
@@ -84,16 +186,17 @@ font_type= 'Arial'
 font_size = 12
 picker_frame = Frame(root, bg=p_col)
 matplot_frame = Frame(root, bg="#e6ffff")
-log_frame = Frame(root, bg = 'lightgray')
+log_frame = Frame(root, bg = 'green')
 log = []
 def change_size_callback(event):
-    c_width = event.width;
+    c_width = event.width
     c_height = event.height
 
 
 img_size = 350
 #bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 #hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+img1 = ImageTk.PhotoImage(Image.open('Resources/table.png').resize((img_size, img_size), Image.ANTIALIAS))
 img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
 img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
@@ -107,9 +210,14 @@ panel_xd = Label(matplot_frame, image = img4)
 panel_xd.grid(row= 0, column = 2, padx=am, pady = 50)
 panel_hist.grid(row= 0, column = 0, padx=am, pady = am)
 panel_bar.grid(row= 0, column = 1, padx=am, pady = am)
+
+panel_table = Label(log_frame, image = img1)
+panel_table.pack(fill = BOTH, expand = True)
+
 iteration_argument = StringVar()
 loop_argument = StringVar()
 def draw_updated():
+    img1 = ImageTk.PhotoImage(Image.open('Resources/table.png').resize((img_size, img_size), Image.ANTIALIAS))
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
     img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
@@ -124,6 +232,10 @@ def draw_updated():
     panel_xd.image = img4
     panel_hist.image = img3
     panel_bar.image = img2
+
+    panel_table = Label(log_frame, image = img1)
+    panel_table.pack(fill = BOTH)
+    panel_table.image=img1
     # if(panel_xd != None):
     #     panel_xd.image =img4
     # if(panel_hist != None):
@@ -131,6 +243,7 @@ def draw_updated():
     # if(panel_bar != None):
     #     panel_bar.image= img3
     count = 0
+    log_frame.update()
     matplot_frame.update()
 
 
@@ -148,10 +261,10 @@ def init():
     ypos = (c_height - (c_height / 3)) * picker_h
     picker_frame.place(width = c_width * picker_w, relheight=picker_h-0.1, y = ypos )
     matplot_frame.place(relwidth = 1.0 , height= ypos, x=0)
-    log_frame.place(relwidth = 1.0 - picker_w, height =ypos, y = ypos, x= c_width * picker_w)
+    log_frame.place(relwidth = 1.0 - picker_w, height =c_height - ypos, y = ypos, x= c_width * picker_w)
     root.update()
-    Label(log_frame, text="Log", bg="lightgray", font=(font_type, font_size)).pack()
-
+    #Label(log_frame, text="Log", bg="lightgray", font=(font_type, font_size)).pack()
+    update_graph('echo starting')
 
    
     #run_button = Button(picker_frame, text="Run", padx=picker_frame.winfo_width() / 2, pady=5, anchor='c').grid(row=0,column=0,rowspan=10);
@@ -248,13 +361,44 @@ def update_graph(command):
     print(command)
     sub_p(command)
     create_graph()
+    create_table()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
     draw_updated()
     canvas.update()
+    
+msg = StringVar()
+msg.set("")
+error = Label(picker_frame, textvariable=msg, bg=p_col, fg='red')
+error.grid(row=11,column=2, columnspan = 10, rowspan=2, sticky='w')
 def execute():
-    iteration_count = int(iteration_argument.get())
-    loop_count = int(loop_argument.get())
+    msg.set("")
+    f = 0
+    try:
+        iteration_count = int(iteration_argument.get())
+        if(iteration_count <= 0):
+            f+=1
+            msg.set('Please enter a valid positive \ninteger for iteration')
+            iteration_count = 100
+        #msg.set('nips')
+    except:
+        iteration_count = 100 #default
+        msg.set('Please enter a valid positive \ninteger for iteration')
+        f += 1
+    try:
+        loop_count = int(loop_argument.get())
+        if(loop_count <= 0):
+            msg.set('Please enter a valid positive \ninteger for loop')
+            if(f == 1):
+                msg.set('Please enter a valid positive \ninteger for iteration and loop')
+            loop_count = 1
+        
+
+    except:
+        msg.set('Please enter a valid positive \ninteger for the loop')
+        if(f == 1):
+            msg.set('Please enter a valid positive \ninteger for iteration and loop')
+        loop_count = 1 #default
 
     #Native POSIX IPCs
     if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count) + ' ' + str(loop_count))
@@ -279,7 +423,7 @@ def execute():
     update_log()
 
 def update_log():
-    label = Label(log_frame, text="Native", bg="lightgrey").pack()
+    #label = Label(log_frame, text="Native", bg="lightgrey").pack()
     for i in log:
         print(i)
 
