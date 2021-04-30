@@ -54,7 +54,7 @@ def create_graph():
     sns.set(style = "ticks", color_codes = True)
 
     ipc_data = pd.read_csv("data.csv")
-    fig = sns.catplot(x = "AVG_TIME", y = "IPC", data = ipc_data, kind = "strip", hue = "ENVIRONMENT")
+    fig = sns.catplot(x = "AVG_TIME", y = "IPC", data = ipc_data, kind = "strip", hue = "ENVIRONMENT", dodge=True)
     plt.savefig('test_pic.png', dpi = 100)
     #plt.show()
     plt.savefig('Resources/xd_graph.png')
