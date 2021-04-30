@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import csv
 c_width = 1120; c_height = 1000;
 root = Tk(className="- ASRC Linux Namespace Performance Project -")
 canvas = Canvas(root, width = c_width, height = c_height)
@@ -141,6 +142,8 @@ def create_table():
                 dpi=150
                 )
 
+    plt.close('all')
+    plt.clf()
 
 def create_graph():
     fig = plt.figure()
@@ -160,15 +163,44 @@ def create_graph():
     plt.savefig('test_pic.png', dpi = 100)
     #plt.show()
     plt.savefig('Resources/xd_graph.png')
+    plt.cla()
+    plt.clf()
     plt.close()
-
     sns.set(style = "ticks", color_codes = True)
 
     fig = sns.catplot(x = "AVG_TIME", y = "IPC", data = ipc_data, kind = "strip", hue = "LIBRARY", dodge=True)
     plt.savefig('test_pic.png', dpi = 100)
     #plt.show()
     plt.savefig('Resources/bar_graph.png')
+    plt.cla()
+    plt.clf()
     plt.close()
+
+    filename = 'data.csv'
+    search = "message_queue"
+    msgq_list = []
+    msgq_field = ['IPC','LIBRARY','ENVIRONMENT','AVG_TIME','ITERATIONS']
+
+    with open(filename, 'r') as csvfile:
+        datareader = csv.reader(csvfile)
+        for row in datareader:
+            if search in row:
+                msgq_list.append(row)
+
+    with open("msgq.csv",'w') as msgq_file:
+        csvwriter = csv.writer(msgq_file)
+        csvwriter.writerow(msgq_field)
+        csvwriter.writerows(msgq_list)
+
+    msgq_data = pd.read_csv("msgq.csv")
+    if(msgq_data.empty):
+        plt.draw()
+    else:
+        fig = sns.catplot(x = "AVG_TIME", y = "ENVIRONMENT" , data = msgq_data, kind = "strip", hue = "LIBRARY", dodge = True, palette = sns.color_palette(['red', 'blue']))
+        plt.title('Message Queue Graph')
+    plt.savefig('Resources/msgq_graph.png', dpi = 100)
+    plt.cla()
+    plt.clf()
 
 def method2():
     distro_label = Label(picker_frame, text="Namespace\t\tNative", bg=p_col).pack()
@@ -195,10 +227,10 @@ def change_size_callback(event):
 
 img_size = 350
 #bar_img = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-#hist_img = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+#hist_img = ImageTk.PhotoImage(Image.open('Resources/msgq_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 img1 = ImageTk.PhotoImage(Image.open('Resources/table.png').resize((img_size, img_size), Image.ANTIALIAS))
 img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+img3 = ImageTk.PhotoImage(Image.open('Resources/msgq_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 # img2.resize((img_size, img_size), Image.ANTIALIAS)
 # img3.resize((img_size, img_size), Image.ANTIALIAS)
@@ -219,7 +251,7 @@ loop_argument = StringVar()
 def draw_updated():
     img1 = ImageTk.PhotoImage(Image.open('Resources/table.png').resize((img_size, img_size), Image.ANTIALIAS))
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-    img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+    img3 = ImageTk.PhotoImage(Image.open('Resources/msgq_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 
 
@@ -254,7 +286,7 @@ def init():
 
     root.bind('<Configure>',change_size_callback)
     root.photo1 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-    root.photo2 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
+    root.photo2 = ImageTk.PhotoImage(Image.open('Resources/msgq_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     root.photo3 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     #root.bind('<Return>',change_image_callback)
     picker_w = 0.6; picker_h = 1;
