@@ -58,6 +58,7 @@ def create_graph():
     plt.savefig('test_pic.png', dpi = 100)
     #plt.show()
     plt.savefig('Resources/xd_graph.png')
+    plt.close()
 
     sns.set(style = "ticks", color_codes = True)
 
@@ -65,6 +66,7 @@ def create_graph():
     plt.savefig('test_pic.png', dpi = 100)
     #plt.show()
     plt.savefig('Resources/bar_graph.png')
+    plt.close()
 
 def method2():
     distro_label = Label(picker_frame, text="Namespace\t\tNative", bg=p_col).pack()
@@ -95,22 +97,33 @@ img_size = 350
 img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
 img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
 img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
+# img2.resize((img_size, img_size), Image.ANTIALIAS)
+# img3.resize((img_size, img_size), Image.ANTIALIAS)
+# img4.resize((img_size, img_size), Image.ANTIALIAS)
 am = 10
-panel_bar = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = 50)
-panel_hist = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = 50)
-panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50)
+panel_bar = Label(matplot_frame, image = img2)
+panel_hist = Label(matplot_frame, image = img3)
+panel_xd = Label(matplot_frame, image = img4)
+panel_xd.grid(row= 0, column = 2, padx=am, pady = 50)
+panel_hist.grid(row= 0, column = 0, padx=am, pady = am)
+panel_bar.grid(row= 0, column = 1, padx=am, pady = am)
 iteration_argument = StringVar()
 loop_argument = StringVar()
 def draw_updated():
     img2 = ImageTk.PhotoImage(Image.open('Resources/bar_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
     img3 = ImageTk.PhotoImage(Image.open('Resources/bell_curve.png').resize((img_size, img_size), Image.ANTIALIAS))
     img4 = ImageTk.PhotoImage(Image.open('Resources/xd_graph.png').resize((img_size, img_size), Image.ANTIALIAS))
-    panel_xd = Label(matplot_frame, image = img4).grid(row= 0, column = 2, padx=am, pady = 50).image = img2
-    panel_hist = Label(matplot_frame, image = img2).grid(row= 0, column = 0, padx=am, pady = am).image = img2
-    panel_bar = Label(matplot_frame, image = img3).grid(row= 0, column = 1, padx=am, pady = am).image = img2
-    panel_xd.image =img4
-    panel_hist.image=img2
-    panel_bar.image= img3
+
+
+    panel_xd = Label(matplot_frame, image = img4)
+    panel_hist = Label(matplot_frame, image = img3)
+    panel_bar = Label(matplot_frame, image = img2)
+    panel_xd.grid(row= 0, column = 2, padx=am, pady = 50)
+    panel_hist.grid(row= 0, column = 0, padx=am, pady = am)
+    panel_bar.grid(row= 0, column = 1, padx=am, pady = am)
+    panel_xd.image = img4
+    panel_hist.image = img3
+    panel_bar.image = img2
     # if(panel_xd != None):
     #     panel_xd.image =img4
     # if(panel_hist != None):
@@ -237,7 +250,7 @@ def update_graph(command):
     create_graph()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
-    #draw_updated()
+    draw_updated()
     canvas.update()
 def execute():
     iteration_count = int(iteration_argument.get())

@@ -45,12 +45,12 @@ while count < len(data):
     count += 1
 
 print(my_map['native']['posix']['shared_memory'] / float(count))
-avg_native_posix_semaphore = my_map['native']['posix']['semaphore'] / float(count) * float(100000)
-avg_native_posix_mq = my_map['native']['posix']['message_queue'] / float(count) * float(100000)
-avg_native_posix_sm = my_map['native']['posix']['shared_memory'] / float(count) * float(1000)
-avg_native_sysv_semaphore = my_map['native']['sysv']['semaphore'] / float(count) * float(100000)
-avg_native_sysv_mq = my_map['native']['sysv']['message_queue'] / float(count) * float(100000)
-avg_native_sysv_sm = my_map['native']['sysv']['shared_memory'] / float(count) * float(100000) 
+avg_native_posix_semaphore = my_map['native']['posix']['semaphore'] / float(count)
+avg_native_posix_mq = my_map['native']['posix']['message_queue'] / float(count)
+avg_native_posix_sm = my_map['native']['posix']['shared_memory'] / float(count)
+avg_native_sysv_semaphore = my_map['native']['sysv']['semaphore'] / float(count)
+avg_native_sysv_mq = my_map['native']['sysv']['message_queue'] / float(count)
+avg_native_sysv_sm = my_map['native']['sysv']['shared_memory'] / float(count)
 print(avg_native_posix_semaphore)
 print(avg_native_posix_mq)
 print(avg_native_posix_sm)
@@ -64,12 +64,20 @@ avg_namespace_posix_sm = my_map['namespace']['posix']['shared_memory'] / float(c
 avg_namespace_sysv_semaphore = my_map['namespace']['sysv']['semaphore'] / float(count)
 avg_namespace_sysv_mq = my_map['namespace']['sysv']['message_queue'] / float(count)
 avg_namespace_sysv_sm = my_map['namespace']['sysv']['shared_memory'] / float(count)
+# data =  [
+#             ['Namespace POSIX', 'Namespace SysV', 'Native POSIX', 'Native SysV'],
+#             [ 'Semaphore',  avg_namespace_posix_semaphore, avg_namespace_sysv_semaphore,   avg_native_posix_semaphore,  avg_native_sysv_semaphore],
+#             ['Message Queue',  avg_namespace_posix_mq, avg_namespace_sysv_mq,   avg_native_posix_mq, avg_native_sysv_mq ],
+#             ['Shared Memory',  avg_namespace_posix_sm, avg_namespace_sysv_sm,   avg_native_posix_sm,  avg_native_sysv_sm],
+#         ]
+
+
 data =  [
-            ['Namespace POSIX', 'Namespace SysV', 'Native POSIX', 'Native SysV'],
-            [ 'Semaphore',  avg_namespace_posix_semaphore, avg_namespace_sysv_semaphore,   avg_native_posix_semaphore,  avg_native_sysv_semaphore],
-            ['Message Queue',  avg_namespace_posix_mq, avg_namespace_sysv_mq,   avg_native_posix_mq, avg_native_sysv_mq ],
-            ['Shared Memory',  avg_namespace_posix_sm, avg_namespace_sysv_sm,   avg_native_posix_sm,  avg_native_sysv_sm],
-        ]# Pop the headers from the data array
+             ['Namespace POSIX', 'Namespace SysV', 'Native POSIX', 'Native SysV'],
+             [ 'Semaphore',  1, 2,   3,  4],
+             ['Message Queue',  5, 6,   7, 8 ],
+             ['Shared Memory',  9, 10,   11,  12],
+         ]
 column_headers = data.pop(0)
 row_headers = [x.pop(0) for x in data]# Table data needs to be non-numeric text. Format the data
 # while I'm at it.

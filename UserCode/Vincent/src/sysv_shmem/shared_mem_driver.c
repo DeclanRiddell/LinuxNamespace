@@ -9,7 +9,11 @@
 
 int SYS_V_shared_memory_execute(int iteration_count, int native){  
 
-
+    elapsedTime = 0.0f;
+    averageClient = 0.0f;
+    averageServer = 0.0f;
+    msgPerSecondSYSV= 0.0f;
+    counterSYSV = 0;
     
     gettimeofday(&start,NULL); //starts timer
     while(counterSYSV < iteration_count){
