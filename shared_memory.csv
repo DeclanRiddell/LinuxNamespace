@@ -1259,3 +1259,5 @@ shared_memory,sysv,namespace,0.003955,3
 shared_memory,sysv,namespace,0.003935,3
 shared_memory,sysv,namespace,0.003924,3
 shared_memory,sysv,namespace,0.006000,1
+shared_memory,posix,native,0.005636,11
+shared_memory,sysv,native,0.003727,11

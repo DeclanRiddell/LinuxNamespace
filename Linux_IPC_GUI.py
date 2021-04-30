@@ -194,7 +194,7 @@ def create_graph():
     else:
         fig = sns.catplot(x = "AVG_TIME", y = "ENVIRONMENT" , data = msgq_data, kind = "strip", hue = "LIBRARY", dodge = True, palette = sns.color_palette(['orange', 'blue']))
         plt.title('Message Queue Graph')
-    fig.set_xticklabels(rotation=40, ha='right')
+        fig.set_xticklabels(rotation=40, ha='right')
     plt.tight_layout()
     plt.savefig('Resources/msgq_graph.png', dpi = 200)
 
