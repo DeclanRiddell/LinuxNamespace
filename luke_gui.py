@@ -237,7 +237,7 @@ def update_graph(command):
     create_graph()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
-    draw_updated()
+    #draw_updated()
     canvas.update()
 def execute():
     iteration_count = int(iteration_argument.get())
