@@ -6,6 +6,11 @@
 
 int POSIX_shared_memory_execute(int iteration_count, int native){
 
+    elapsedTimePosix = 0.0f;
+    averageClientPosix = 0.0f;
+    averageServerPosix = 0.0f;
+    msgPerSecondPosix = 0.0f;
+    posixCounter = 0;
 
     gettimeofday(&startPosix, NULL);
     while(posixCounter < iteration_count){

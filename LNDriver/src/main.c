@@ -25,25 +25,50 @@
 #define EXECUTE_ALEX_S      10
 #define EXECUTE_VINCENT_S   11
 #define EXECUTE_DECLAN_S    12
-int iteration_count;
+int iteration_count = 1;
+int loop_count = 1;
 int native = 0;
 
 //AlexLib execution
 void execute_alex_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_message_queue_execute(iteration_count, native));}
-    else{ DBG_WRAP_DRIVER(SYS_V_message_queue_execute(iteration_count, native));}
+    if(posix == 1){ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(POSIX_message_queue_execute(iteration_count, native));
+        }
+    }
+    else{ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(SYS_V_message_queue_execute(iteration_count, native));
+        }
+    }
 }
 
 //EricLib execution
 void execute_eric_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_semaphore_execute(iteration_count, native));}
-    else{ DBG_WRAP_DRIVER(SYS_V_semaphore_execute(iteration_count, native));}
+    if(posix == 1){ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(POSIX_semaphore_execute(iteration_count, native));
+        }
+    }
+    else{ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(SYS_V_semaphore_execute(iteration_count, native));
+        }
+    }
 }
 
 //VincentLib execution
 void execute_vincent_lib(short posix){
-    if(posix == 1){ DBG_WRAP_DRIVER(POSIX_shared_memory_execute(iteration_count, native));}
-    else{ DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(iteration_count, native));}
+    if(posix == 1){ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(POSIX_shared_memory_execute(iteration_count, native));
+        }
+    }
+    else{ 
+        for(int i = 0; i < loop_count; i++){
+            DBG_WRAP_DRIVER(SYS_V_shared_memory_execute(iteration_count, native));
+        }
+    }
 }
 
 
@@ -128,7 +153,9 @@ int driver(int argc, char* argv[]){
     execution_order = atoi(argv[1]);
     int run_namespace = atoi(argv[2]);
     native = run_namespace ? 1 : 0;
+    printf("Argc %d", argc);
     iteration_count = atoi(argv[3]);
+    loop_count = atoi(argv[4]);
     LOG("Iteration count = %d", iteration_count, native);
     LOG("run_namespace ? %d", run_namespace );
     if(!run_namespace) return run_IPCS();

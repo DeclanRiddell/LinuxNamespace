@@ -59,6 +59,13 @@ def create_graph():
     #plt.show()
     plt.savefig('Resources/xd_graph.png')
 
+    sns.set(style = "ticks", color_codes = True)
+
+    fig = sns.catplot(x = "AVG_TIME", y = "IPC", data = ipc_data, kind = "strip", hue = "LIBRARY", dodge=True)
+    plt.savefig('test_pic.png', dpi = 100)
+    #plt.show()
+    plt.savefig('Resources/bar_graph.png')
+
 def method2():
     distro_label = Label(picker_frame, text="Namespace\t\tNative", bg=p_col).pack()
     namespace_lib_label = Label(picker_frame, text="POSIX\t\tSysv\tPOSIX\t\tSysv", bg=p_col).pack()
@@ -226,9 +233,7 @@ def sub_p(command):
 
 def update_graph(command):
     print(command)
-    loop_count = int(loop_argument.get())
-    for i in range(loop_count):
-        sub_p(command)
+    sub_p(command)
     create_graph()
     #sub_p('sudo python3 create_graph.py')   
     #sub_p('sudo python3 bell_curve.py')   
@@ -236,25 +241,27 @@ def update_graph(command):
     canvas.update()
 def execute():
     iteration_count = int(iteration_argument.get())
+    loop_count = int(loop_argument.get())
+
     #Native POSIX IPCs
-    if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count))
-    if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 0 ' + str(iteration_count))
-    if(my_map['native']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 0 ' + str(iteration_count))
+    if(my_map['native']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 0 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['native']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 0 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['native']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 0 ' + str(iteration_count) + ' ' + str(loop_count))
 
     #Native SysV IPCs
-    if(my_map['native']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 0 ' + str(iteration_count))
-    if(my_map['native']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 0 ' + str(iteration_count))
-    if(my_map['native']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 0 ' + str(iteration_count))
+    if(my_map['native']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 0 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['native']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 0 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['native']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 0 ' + str(iteration_count) + ' ' + str(loop_count))
 
     #Namespace POSIX IPCs
-    if(my_map['namespace']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 1 ' + str(iteration_count))
-    if(my_map['namespace']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 1 ' + str(iteration_count))
-    if(my_map['namespace']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 1 ' + str(iteration_count))
+    if(my_map['namespace']['posix']['semaphore'].get()): update_graph('sudo ' +  driver + ' 5 1 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['namespace']['posix']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 6 1 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['namespace']['posix']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 7 1 ' + str(iteration_count) + ' ' + str(loop_count))
 
     #Namespace SysV IPCs
-    if(my_map['namespace']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 1 ' + str(iteration_count))
-    if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 1 ' + str(iteration_count))
-    if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 1 ' + str(iteration_count))
+    if(my_map['namespace']['sysv']['semaphore'].get()): update_graph('sudo ' +  driver + ' 9 1 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['namespace']['sysv']['messagequeue'].get()): update_graph('sudo ' +  driver + ' 10 1 ' + str(iteration_count) + ' ' + str(loop_count))
+    if(my_map['namespace']['sysv']['sharedmemory'].get()): update_graph('sudo ' +  driver + ' 11 1 ' + str(iteration_count) + ' ' + str(loop_count))
 
     update_log()
 
